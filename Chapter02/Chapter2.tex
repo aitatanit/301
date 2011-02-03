@@ -1,0 +1,422 @@
+\section{Motion in One Dimension}
+\subsection{Introduction}
+The purpose of this section is to introduce the concepts of {\em displacement},
+{\em velocity}, and {\em acceleration}. For the sake of simplicity, we shall
+restrict our attention to 1-dimensional motion.
+
+\subsection{Displacement}
+Consider a body moving in 1 dimension: {\em e.g.}, a train traveling down a straight
+railroad track, or a truck driving down an interstate in Kansas. Suppose that we have
+a team of observers who continually report the location of this body to us as time
+progresses. To be more exact, our observers report the distance $x$ of the body
+  from
+some arbitrarily chosen reference point located on the track on which it is constrained to move. This
+point is known as the {\em origin} of our coordinate system. A {\em positive} $x$ value implies
+that the body is located $x$ meters to the {\em right} of the origin, whereas a {\em negative}
+$x$ value implies that the body is located $|x|$ meters to the {\em left} of the origin.
+Here, $x$ is termed the {\em displacement} of the body from the origin. See Fig.~\ref{f2}.
+Of course, if the body is extended then our observers will have to report the displacement
+$x$ of some conveniently chosen reference point on the body ({\em e.g.}, its centre
+of mass) from the origin.
+
+Our information regarding the body's motion  consists of a set of data points,
+each specifying the displacement $x$ of the body at some time $t$. It is
+usually illuminating to graph these points. Figure~\ref{f3} shows an example of such a graph. 
+As is often the case, it is possible to fit the data points appearing in this
+graph using a relatively
+simple analytic curve. Indeed, the curve associated with Fig.~\ref{f3} is
+\begin{equation}\label{e21}
+x = 1 + t + \frac{t^2}{2} - \frac{t^4}{4}.
+\end{equation}
+
+\begin{figure}[b]
+\epsfysize=1in
+\centerline{\epsffile{Chapter02/fig002.eps}}
+\caption{\em Motion in 1 dimension}\label{f2}   
+\end{figure}
+
+\begin{figure}[t]
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig003.eps}}
+\caption{\em Graph of displacement versus time}\label{f3}   
+\end{figure}
+
+\subsection{Velocity}
+Both Fig.~\ref{f3} and formula (\ref{e21}) effectively specify the location
+of the body whose motion we are studying as time progresses.
+Let us now consider how we can use this information to determine the body's
+instantaneous {\em velocity} as a function of time. The conventional
+definition of velocity is as follows:
+\begin{quote}
+{\sf Velocity is the rate of change of displacement with time.}
+\end{quote}
+This definition implies that
+\begin{equation}\label{e22}
+v = \frac{{\mit\Delta}x}{{\mit\Delta} t},
+\end{equation}
+where $v$ is the body's velocity at time $t$, and ${\mit\Delta} x$ is the change in displacement
+of the body between times $t$ and $t+{\mit\Delta} t$. 
+
+How should we choose the
+time interval ${\mit\Delta} t$ appearing in Eq.~(\ref{e22})?
+Obviously,  in the simple case in which the
+body is moving with {\em constant} velocity,  we can make ${\mit\Delta} t$ as
+large or small as we like, and it will not affect the value of $v$. Suppose, however,
+that $v$ is constantly changing in time, as is generally the case. 
+In this situation, ${\mit\Delta} t$ must be kept sufficiently small that the body's velocity
+does not change appreciably between times $t$ and $t+{\mit\Delta} t$. If
+${\mit\Delta} t$ is made too large then formula (\ref{e22}) becomes invalid. 
+
+Suppose that we require a {\em general}  expression for instantaneous velocity which
+is valid irrespective of how rapidly or slowly the body's velocity changes in time. 
+We can achieve this goal by taking the limit of Eq.~(\ref{e22}) as ${\mit\Delta} t$ approaches
+zero. This ensures that no matter how rapidly $v$ varies with time, the velocity
+of the body is always approximately constant in the interval $t$ to $t+{\mit\Delta} t$. 
+Thus,
+\begin{equation}\label{e23}
+v = \lim_{{\mit\Delta}t\rightarrow 0}\frac{{\mit\Delta}x}{{\mit\Delta} t}=
+\frac{dx}{dt},
+\end{equation}
+where $dx/dt$ represents the {\em derivative} of $x$ with respect to $t$.  The above definition 
+is particularly useful if we can represent $x(t)$ as an
+analytic function, because it allows us to  immediately evaluate the instantaneous velocity
+$v(t)$ via the rules of calculus. Thus, if $x(t)$ is given by formula (\ref{e21})
+then
+\begin{equation}
+v = \frac{dx}{dt} = 1 + t - t^3.
+\end{equation}
+Figure~\ref{f4} shows the graph of $v$ versus $t$ obtained from  the above expression.
+Note that when $v$ is positive  the body is moving to the right ({\em i.e.}, $x$ is
+increasing in time). Likewise, when $v$ is negative  the body is moving to the
+left ({\em i.e.}, $x$ is
+decreasing  in time). Finally, when $v=0$ the body is instantaneously at rest.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig004.eps}}
+\caption{\em Graph of instantaneous velocity versus time associated with the motion
+specified in Fig.~\ref{f3}}\label{f4}   
+\end{figure}
+
+The terms velocity and speed are often confused with one another.
+A velocity can be either  positive or negative, depending on the 
+direction of motion. The conventional definition of {\em speed} is that
+it is the magnitude of velocity ({\em i.e.}, it is $v$ with the sign stripped
+off). It follows that a body can never possess a negative speed.
+
+\subsection{Acceleration}
+The conventional
+definition of acceleration is as follows:
+\begin{quote}
+{\sf Acceleration is the rate of change of velocity with time.}
+\end{quote}
+This definition implies that
+\begin{equation}\label{e25}
+a = \frac{{\mit\Delta}v}{{\mit\Delta} t},
+\end{equation}
+where $a$ is the body's acceleration at time $t$, and ${\mit\Delta} v$ is the change in velocity
+of the body between times $t$ and $t+{\mit\Delta} t$. 
+
+How   should we choose the
+time interval ${\mit\Delta} t$ appearing in Eq.~(\ref{e25})? Again, in the
+simple case in which  the
+body is moving with {\em constant} acceleration,  we can make ${\mit\Delta} t$ as
+large or small as we like, and it will not affect the value of $a$. Suppose, however,
+that $a$ is constantly changing in time, as is generally the case. 
+In this situation, ${\mit\Delta} t$ must be kept sufficiently small that the body's acceleration
+does not change appreciably between times $t$ and $t+{\mit\Delta} t$. 
+
+A general  expression for instantaneous acceleration,  which
+is valid irrespective of how rapidly or slowly the body's acceleration changes in time, 
+can be obtained by taking the limit of Eq.~(\ref{e25}) as ${\mit\Delta} t$ approaches
+zero:
+\begin{equation}\label{e26}
+a = \lim_{{\mit\Delta}t\rightarrow 0}\frac{{\mit\Delta}v}{{\mit\Delta} t}=
+\frac{dv}{dt}=\frac{d^2 x}{dt^2}.
+\end{equation}
+  The above definition is particularly useful if we can represent $x(t)$ as an
+analytic function, because it allows us to immediately evaluate the instantaneous acceleration
+$a(t)$  via the rules of calculus. Thus, if $x(t)$ is given by formula (\ref{e21})
+then
+\begin{equation}
+a = \frac{d^2 x}{dt^2} = 1 - 3 t^2.
+\end{equation}
+Figure~\ref{f5} shows the graph of $a$ versus time obtained from the above expression.
+Note that when $a$ is positive  the body is {\em accelerating} to the right  ({\em i.e.}, $v$ is
+increasing in time). Likewise, when $a$ is negative  the body is {\em decelerating}
+  ({\em i.e.}, $v$ is
+decreasing  in time). 
+
+\begin{figure}[t]
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig005.eps}}
+\caption{\em Graph of instantaneous acceleration versus time associated with the  motion
+specified in Fig.~\ref{f3}}\label{f5}   
+\end{figure}
+
+Fortunately, it is generally not necessary to evaluate the rate of change of acceleration with time,
+since this quantity does not appear in Newton's laws of motion.
+
+\subsection{Motion with Constant Velocity}
+The simplest type of motion (excluding the trivial case in which the body under
+investigation remains at rest) consists of motion with {\em constant velocity}.
+This type of motion occurs in everyday life whenever an object slides over a horizontal,
+low friction surface: {\em e.g.}, a puck sliding across a hockey rink.
+ 
+Fig.~\ref{f6} shows the graph of displacement versus time for a body
+moving with constant velocity. It can be seen that the graph consists of
+a {\em straight-line}. This line can be represented algebraically as
+\begin{equation}
+x = x_0 + v\,t.
+\end{equation}
+Here, $x_0$ is the displacement at time $t=0$: this quantity can be  determined from the
+graph as the {\em intercept} of the
+straight-line with the $x$-axis. Likewise, $v=dx/dt$ is the constant velocity of
+the body: this quantity can be determined from the graph as the {\em gradient} of the straight-line
+({\em i.e.}, the ratio ${\mit\Delta}x/{\mit\Delta} t$, as shown). Note that
+$a=d^2 x/dt^2=0$, as expected.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig006.eps}}
+\caption{\em Graph of displacement versus time for a body moving with constant velocity}\label{f6}   
+\end{figure}
+
+Fig.~\ref{f7} shows a  displacement versus time graph for a slightly  more
+complicated case of motion with constant velocity. The body in question moves
+to the right (since $x$ is clearly increasing with $t$) with a constant velocity (since
+the graph is a straight-line) between times $A$ and $B$. The body then moves to
+the right (since $x$ is still increasing in time) with a somewhat larger constant velocity
+(since the graph is again a straight line, but possesses a larger gradient than before) between times
+$B$ and $C$. The body remains at rest (since the graph is horizontal) between times $C$ and $D$.
+Finally, the body moves to the left (since $x$ is decreasing with $t$) with a constant
+velocity (since
+the graph is a straight-line) between times $D$ and $E$.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig007.eps}}
+\caption{\em Graph of displacement versus time}\label{f7}   
+\end{figure}
+
+\subsection{Motion with Constant Acceleration}\label{caccn}
+Motion with constant acceleration occurs in everyday life whenever an
+object is dropped: the object moves downward with the constant
+acceleration $9.81\,{\rm m\,s^{-2}}$, under the influence of gravity.
+
+Fig.~\ref{f8} shows the graphs of displacement versus time and
+velocity versus time for a body
+moving with constant acceleration. It can be seen that the displacement-time graph consists of
+a {\em curved-line} whose gradient (slope) is increasing in time. 
+This line can be represented algebraically as
+\begin{equation}\label{e2a}
+x = x_0 + v_0\,t + \frac{1}{2}\,a\,t^2.
+\end{equation}
+Here, $x_0$ is the displacement at time $t=0$: this quantity can be  determined from the
+graph as the {\em intercept} of the
+curved-line with the $x$-axis. Likewise, $v_0$ is the body's instantaneous
+velocity at time $t=0$. 
+
+\begin{figure}
+\epsfysize=5.in
+\centerline{\epsffile{Chapter02/fig008.eps}}
+\caption{\em Graphs of displacement versus time and velocity versus time
+for a body moving with constant acceleration}\label{f8}   
+\end{figure}
+
+The velocity-time graph consists of a {\em straight-line} which can be represented
+algebraically as
+\begin{equation}\label{e2b}
+v = \frac{dx}{dt}= v_0 + a\,t.
+\end{equation}
+The quantity $v_0$ is determined from the graph as the  {\em intercept} of the
+straight-line with the $x$-axis. The quantity $a$ is the constant acceleration: this 
+ can be determined  graphically as the {\em gradient} of the straight-line
+({\em i.e.}, the ratio ${\mit\Delta}v/{\mit\Delta} t$, as shown). Note that
+$dv/dt=a$, as expected.
+
+Equations (\ref{e2a}) and (\ref{e2b}) can be rearranged to give the
+following set of three useful formulae which characterize motion with
+constant acceleration:
+\begin{eqnarray}
+s &=& v_0\,t + \frac{1}{2} \,a\,t^2,\label{e211}\\
+v  &=& v_0 + a\,t,\\
+v^2 &=& v_0^{\,2} + 2\,a\,s.\label{e214}
+\end{eqnarray}
+Here, $s=x-x_0$ is the net distance traveled after $t$ seconds.
+
+Fig.~\ref{f9} shows a  displacement versus time graph for a slightly  more
+complicated case of accelerated motion. The body in question accelerates
+to the right [since the gradient (slope) of the graph is increasing in time] 
+ between times $A$ and $B$. The body then moves to
+the right (since $x$ is  increasing in time) with a  constant velocity
+(since the graph is a straight line) between times
+$B$ and $C$. 
+Finally, the body decelerates [since the gradient (slope) of the graph is decreasing in time]
+ between times $C$ and $D$.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig009.eps}}
+\caption{\em Graph of displacement versus time}\label{f9}   
+\end{figure}
+
+\subsection{Free-Fall Under Gravity}
+Galileo Galilei was the first scientist to appreciate that, {\em neglecting the
+effect of air resistance},  all bodies in free-fall close to the Earth's
+surface accelerate vertically downwards with the same acceleration: namely,
+$g=9.81\,{\rm m\,s^{-2}}$.\footnote{Actually, the acceleration due to gravity varies
+slightly over the Earth's surface because of the combined effects of the Earth's rotation and
+the Earth's slightly flattened shape. The acceleration at the poles is about
+$9.834\,{\rm m\,s^{-2}}$, whereas the acceleration at the equator is
+only $9.780\,{\rm m\,s^{-2}}$. The {\em average} acceleration is $9.81\,{\rm m\,s^{-2}}$.}
+The neglect of air resistance is a fairly good approximation for large objects
+which travel relatively slowly ({\em e.g.}, a shot-putt, or a basketball), but
+becomes a poor approximation for small objects which travel relatively rapidly
+({\em e.g.}, a golf-ball, or a bullet fired from a pistol).
+
+Equations~(\ref{e211})--(\ref{e214}) can easily be modified to deal with the
+special case of an object free-falling under gravity:
+\begin{eqnarray}
+s &=& v_0\,t -\frac{1}{2} \,g\,t^2,\label{e215}\\
+v  &=& v_0 - g\,t,\label{e217}\\
+v^2 &=& v_0^{\,2} - 2\,g\,s.\label{e218}
+\end{eqnarray}
+Here, $g=9.81\,{\rm m\,s^{-2}}$ is the downward acceleration due to gravity, $s$ is the
+distance the object has moved vertically between times  $t=0$ and $t$ (if $s>0$ then the object has
+risen $s$ meters, else if $s<0$ then the object has
+fallen $|s|$ meters), and  $v_0$ is the object's instantaneous velocity at $t=0$. Finally,
+$v$ is the object's instantaneous velocity at time $t$. 
+
+Let us illustrate the use of Eqs.~(\ref{e215})--(\ref{e218}). Suppose that
+a ball is released from rest and allowed to fall under the influence of gravity.
+How long does it take the ball to fall $h$ meters? Well, according to Eq.~(\ref{e215})
+[with $v_0=0$ (since the ball is released from rest), and $s=-h$ (since we wish the
+ball to {\em fall} $h$ meters)], $h= g\,t^2/2$, so the time of fall is
+\begin{equation}\label{e2.19}
+t = \sqrt{\frac{2\,h}{g}}.
+\end{equation}
+
+Suppose that a ball is thrown vertically upwards from ground level with velocity $u$. 
+To what height does the ball rise, 
+how
+long does it remain in the air, and with what velocity does it strike the
+ground? The ball attains its maximum height when it is momentarily at rest
+({\em i.e.}, when $v=0$). According to Eq.~(\ref{e217}) (with $v_0=u$), 
+this occurs at time $t=u/g$. It follows from Eq.~(\ref{e215}) (with
+$v_0=u$,  and $t=u/g$) that the maximum height of the ball
+is given by
+\begin{equation}
+h = \frac{u^2}{2\,g}.
+\end{equation} 
+When the ball strikes the ground it has traveled zero net meters vertically, so $s=0$.
+It follows from   Eqs.~(\ref{e217}) and (\ref{e218}) (with $v_0=u$ and $t>0$) that $v=-u$. 
+In other words, the ball hits the ground with an equal and opposite velocity to that
+with
+which it was thrown into the air. Since the ascent and decent phases of the ball's
+trajectory are clearly symmetric, the ball's time of flight is
+simply twice the time required for the ball to attain its maximum height:
+{\em i.e.},
+\begin{equation}
+t = \frac{2\,u}{g}.
+\end{equation}
+
+\subsection*{\em Worked Example 2.1: Velocity-Time Graph}
+\begin{figure*}[h]
+\epsfysize=3in
+\centerline{\epsffile{Chapter02/fig009a.eps}}
+\end{figure*}
+{\em Question:} Consider the motion of the object whose velocity-time
+graph is given in the diagram.
+\begin{enumerate}
+\item What is the acceleration of the object between times $t=0$ and $t=2$?
+\item What is the acceleration of the object between times $t=10$ and $t=12$?
+\item What is the net displacement of the object between times $t=0$ and
+$t=16$?
+\end{enumerate}
+~\\
+{\em Answer:}
+\begin{enumerate}
+\item The $v$-$t$ graph is a straight-line between $t=0$ and $t=2$, indicating 
+constant acceleration during this time period. Hence,
+$$
+a = \frac{{\mit\Delta}v}{{\mit\Delta} t} = \frac{v(t=2)-v(t=0)}{2-0} = 
+\frac{8-0}{2} = 4\,{\rm m\,s^{-2}}.
+$$
+\item The $v$-$t$ graph is a straight-line between $t=10$ and $t=12$, indicating 
+constant acceleration during this time period. Hence,
+$$
+a = \frac{{\mit\Delta}v}{{\mit\Delta} t} = \frac{v(t=12)-v(t=10)}{12-10} = 
+\frac{4-8}{2} = -2\,{\rm m\,s^{-2}}.
+$$
+The negative sign indicates that the object is decelerating.
+\item Now, $v=dx/dt$, so
+$$
+x(16)-x(0) = \int_0^{16} v(t)\,dt.
+$$
+In other words, the net displacement between times $t=0$ and $t=16$ equals
+the area under the $v$-$t$ curve, evaluated  between these two times. Recalling that the
+area of a triangle is half its width times its height, the number of grid-squares
+under the $v$-$t$ curve is 25. The area of each grid-square is $2\times 2=4\,{\rm m}$.
+Hence,
+$$
+x(16)-x(0) = 4\times 25 = 100\,{\rm m}.
+$$
+\end{enumerate}
+
+\subsection*{\em Worked Example 2.2: Speed Trap}
+{\em Question:} In a speed trap, two pressure-activated strips are placed $120\,{\rm m}$
+apart on a highway on which the speed limit is $85\,{\rm km/h}$. A driver going $110\,{\rm km/h}$
+notices a police car just as he/she  activates the first strip, and immediately slows down. What
+deceleration is needed so that the car's average speed is within the speed limit
+when the car crosses the second strip?\\
+~\\
+{\em Answer:} Let $v_1= 110\,{\rm km/h}$ be the speed of the car at the first strip.
+ Let ${\mit\Delta} x = 120\,{\rm m}$ be the
+distance between the two strips, and let ${\mit\Delta} t$ be the time taken by the
+car to travel from one strip to the other. The average velocity of the car is
+$$
+\bar{v} = \frac{{\mit\Delta}x}{{\mit\Delta} t}.
+$$
+We need this velocity to be $85\,{\rm km/h}$. Hence, we require
+$$
+{\mit\Delta}t = \frac{{\mit\Delta}x}{\bar{v}} = \frac{120}{85\times (1000/3600)} = 5.082\,{\rm s}.
+$$ 
+Here, we have changed units from ${\rm km/h}$ to ${\rm m/s}$. Now,
+assuming that the acceleration $a$ of the car is uniform, we have
+$$
+{\mit\Delta} x = v_1\,{\mit\Delta} t + \frac{1}{2}\,a\,({\mit\Delta t})^2,
+$$
+which can be rearranged to give
+$$
+a = \frac{2\,({\mit\Delta}x - v_1\,{\mit\Delta} t)}{({\mit\Delta}t)^2} =
+\frac{ 2\,(120 - 110\times (1000/3600)\times 5.082)}{(5.082)^2} = -2.73\,
+{\rm m\,s^{-2}}.
+$$
+Hence, the required deceleration is $2.73\,
+{\rm m\,s^{-2}}$.
+
+\subsection*{\em Worked Example 2.3: The Brooklyn Bridge}
+{\em Question:} In 1886, Steve Brodie achieved notoriety by allegedly jumping off
+the recently completed Brooklyn bridge, for a bet,  and surviving. Given
+that the bridge rises 135\,ft over the East River, how long would Mr.~Brodie have
+been in the air, and with what speed would he have struck the water? Give
+all answers in mks units. You may neglect air resistance.\\
+~\\
+{\em Answer:} Mr.~Brodie's net vertical
+displacement was $h = -135\times 0.3048 = -41.15\, {\rm m}$. 
+Assuming that his initial velocity was zero, 
+$$
+h = -\frac{1}{2}\,g\,t^2,
+$$
+where $t$ was his time of flight. Hence,
+$$
+t = \sqrt{\frac{-2\,h}{g}} = \sqrt{\frac{2\times 41.15}{9.81}} = 2.896\,{\rm s}.
+$$
+His final velocity was
+$$
+v =- g\,t = -9.81\times 2.896 = -28.41\,{\rm m\,s}^{-1}.
+$$
+Thus, the speed with which he plunged into the East River was
+$28.41\,{\rm m\,s}^{-1}$, or $63.6\,{\rm mi/h}$\,! Clearly,
+Mr.~Brodie's story should be taken with a pinch of salt. 

@@ -1,0 +1,451 @@
+\section{Angular Momentum}\label{sangm}
+\subsection{Introduction}
+Two physical quantities are noticeable by their absence in Table~\ref{tt1}. Namely,
+momentum, and its rotational concomitant {\em angular momentum}. It turns
+out that angular momentum is a sufficiently important concept to merit a separate discussion.
+
+\subsection{Angular Momentum of a Point Particle}\label{sang}
+Consider a particle of mass $m$, position vector ${\bf r}$, and instantaneous velocity ${\bf v}$,
+which rotates about an axis 
+ passing through the origin of our coordinate system. We know that the
+particle's linear momentum  is written
+\begin{equation}
+{\bf p} = m\,{\bf v},
+\end{equation}
+and satisfies
+\begin{equation}\label{e90}
+\frac{d{\bf p}}{dt} = {\bf f},
+\end{equation}
+where ${\bf f}$ is the force acting on the particle. Let us search for the rotational
+equivalent of ${\bf p}$. 
+
+Consider the quantity
+\begin{equation}\label{e91}
+{\bf l} = {\bf r}\times {\bf p}.
+\end{equation}
+This quantity---which is known as {\em angular momentum}---is a vector of magnitude
+\begin{equation}
+l = r\,p\,\sin\theta,
+\end{equation}
+where $\theta$ is the angle subtended between the directions of ${\bf r}$ and ${\bf p}$. 
+The direction of ${\bf l}$ is defined to be mutually perpendicular to the directions
+of ${\bf r}$ and ${\bf p}$, in the sense given by the right-hand grip rule. In other
+words, if vector ${\bf r}$ rotates onto vector ${\bf p}$ (through an angle less
+than $180^\circ$), and the fingers of the right-hand are aligned with this rotation, then
+the thumb of the right-hand indicates the direction of ${\bf l}$. See Fig.~\ref{f86}.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig086.eps}}
+\caption{\em Angular momentum of a point particle about the origin.}\label{f86}  
+\end{figure}
+
+Let us differentiate Eq.~(\ref{e91}) with respect to time. We obtain
+\begin{equation}
+\frac{d{\bf l}}{dt} = \dot{\bf r} \times {\bf p} + {\bf r} \times \dot{\bf p}.
+\end{equation}
+Note that the derivative of a vector product is formed in much the same manner as
+the derivative of an ordinary product, except that the order of the various terms is
+ preserved. Now, we know that $\dot{\bf r} = {\bf v} = {\bf p}/m$ and $\dot{\bf p} = {\bf f}$.
+Hence, we obtain
+\begin{equation}
+\frac{d{\bf l}}{dt} = \frac{{\bf p} \times {\bf p}}{m} + {\bf r} \times {\bf f}.
+\end{equation}
+However, ${\bf p} \times {\bf p} = {\bf 0}$, since the vector product of two parallel
+vectors is zero. Also,
+\begin{equation}
+{\bf r} \times {\bf f} = \btau,
+\end{equation}
+where $\btau$ is the torque acting on the particle about an axis passing through the
+origin. We conclude that
+\begin{equation}
+\frac{d{\bf l}}{dt} = \btau.
+\end{equation}
+Of course, this equation is analogous to Eq.~(\ref{e90}), which suggests that angular
+momentum, ${\bf l}$,  plays the role of linear momentum, ${\bf p}$, in rotational
+dynamics.
+
+For the special case of a particle of mass $m$ executing a {\em circular} orbit of radius $r$,
+with instantaneous velocity $v$ and instantaneous angular velocity $\omega$, the
+magnitude of the particle's angular momentum is simply
+\begin{equation}
+l = m\,v\,r = m\,\omega\,r^2.
+\end{equation}
+
+\subsection{Angular Momentum of an Extended Object}
+Consider a rigid object rotating about some fixed axis with angular velocity $\bomega$.
+Let us model this object as a swarm of $N$ particles. Suppose that the $i$th particle
+has mass $m_i$, position vector ${\bf r}_i$, and velocity ${\bf v}_i$. 
+Incidentally, it is
+assumed that the object's axis of rotation passes through the origin of our
+coordinate system. The total angular momentum of the object, ${\bf L}$, is simply the
+vector sum of the angular momenta of the $N$ particles from which it is made up. Hence,
+\begin{equation}
+{\bf L} = \sum_{i=1,N} m_i\,{\bf r}_i\times {\bf v}_i.
+\end{equation}
+Now, for a rigidly rotating object we can write (see Sect.~\ref{svp})
+\begin{equation}
+{\bf v}_i = \bomega\times {\bf r}_i.
+\end{equation}
+Let 
+\begin{equation}
+\bomega = \omega\,{\bf k},
+\end{equation}
+where ${\bf k}$ is a unit vector pointing along the object's axis of rotation (in the sense
+given by the right-hand grip rule).
+It follows that
+\begin{equation}
+{\bf L} = \omega \,\sum_{i=1,N} m_i\,{\bf r}_i\times ({\bf k}\times {\bf r}_i).
+\end{equation}
+
+Let us calculate the component of ${\bf L}$ along the object's rotation axis---{\em i.e.},
+the component along the ${\bf k}$ axis. We can write
+\begin{equation}
+L_k = {\bf L}\cdot {\bf k} = \omega \,\sum_{i=1,N} m_i\,
+{\bf k}\cdot {\bf r}_i\times ({\bf k}\times {\bf r}_i).
+\end{equation}
+However, since ${\bf a}\cdot {\bf b}\times {\bf c} = {\bf a}\times {\bf b} \cdot {\bf c}$,
+the above expression can be rewritten
+\begin{equation}
+L_k  = \omega \,\sum_{i=1,N} m_i\,
+({\bf k}\times {\bf r}_i)\cdot({\bf k}\times {\bf r}_i)= \omega \,\sum_{i=1,N} m_i\,
+|{\bf k}\times {\bf r}_i|^2.
+\end{equation}
+Now,
+\begin{equation}
+\sum_{i=1,N} m_i\,
+|{\bf k}\times {\bf r}_i|^2 = I_k,
+\end{equation}
+where $I_k$ is the moment of inertia of the object about the ${\bf k}$ axis.
+(see Sect.~\ref{smoi}). Hence, it follows that
+\begin{equation}
+L_k = I_k\,\omega.
+\end{equation}
+
+According to the above formula, the component of a rigid body's angular
+momentum vector along its axis of rotation  is simply the product
+of the body's moment of inertia about this axis and the body's angular velocity.
+Does this result  imply that we can automatically write
+\begin{equation}
+{\bf L} = I \,\bomega?
+\end{equation}
+Unfortunately, in general, the answer to the above question is {\em no}! This 
+conclusion follows because the
+body may possess non-zero angular momentum components about axes perpendicular to
+its axis of rotation. Thus, in general, the angular momentum vector of a rotating body
+is {\em not} parallel to its angular velocity vector. This is a major difference from
+translational motion, where linear momentum is always found to be parallel
+to linear velocity. 
+
+For a rigid object rotating with angular velocity $\bomega = (\omega_x$, $\omega_y$,
+$\omega_z)$, we can write the object's angular momentum ${\bf L} = (L_x$, $L_y$,
+$L_z)$ in the form
+\begin{eqnarray}
+L_x &=& I_x\,\omega_x,\\[0.5ex]
+L_y &=& I_y\,\omega_y,\\[0.5ex]
+L_z &=& I_z\,\omega_z,
+\end{eqnarray}
+where $I_x$ is the moment of inertia of the object about the $x$-axis, {\em etc.} Here, it is
+again assumed that the origin of our coordinate system lies on the object's
+axis of rotation. Note that the above equations are only valid when the $x$-, $y$-, and
+$z$-axes are aligned in a certain very special manner---in fact, they must be aligned along the
+so-called {\em principal axes} of the object (these axes invariably coincide with the object's
+main symmetry axes). Note that it is always possible to find three, mutually perpendicular,
+principal axes of rotation which pass through a given point in a rigid body.
+ Reconstructing ${\bf L}$ from its components, we obtain
+\begin{equation}\label{e93}
+{\bf L} = I_x\,\omega_x\,\hat{\bf x} + I_y\,\omega_y\,\hat{\bf y} + I_z\,\omega_z\,\hat{\bf z},
+\end{equation}
+where $\hat{\bf x}$ is a unit vector pointing along the $x$-axis, {\em etc.}
+It is clear, from the above equation, that the reason ${\bf L}$ is not generally parallel
+to $\bomega$ is because the moments of inertia of a rigid object about
+its  different
+possible axes of rotation are {\em not generally the same}. In other words, if $I_x=I_y=I_z=I$ then
+${\bf L} = I\,\bomega$, and the angular momentum and angular velocity vectors
+are always parallel. However, if $I_x\neq I_y\neq I_z$, which is usually the case,
+ then ${\bf L}$ is not, in general, 
+parallel to $\bomega$. 
+
+Although Eq.~(\ref{e93}) suggests that the angular momentum of a rigid object
+is not generally parallel to its angular velocity, this equation also implies that there
+are, at least, {\em three} special axes of rotation  for which this is the case. 
+Suppose, for instance, that the object rotates about the $z$-axis, so that
+$\bomega = \omega_z\,\hat{\bf z}$. It follows from Eq.~(\ref{e93}) that
+\begin{equation}
+{\bf L} = I_z\,\omega_z\hat{\bf z} = I_z\,\bomega.
+\end{equation}
+Thus, in this case, the angular momentum vector is parallel to the angular
+velocity vector. The same can be said for rotation about the $x$- or $y$- axes. 
+We conclude that when a rigid object rotates about one of its principal axes
+then its angular momentum is parallel to its angular velocity, but not, in general,
+otherwise.
+
+How can we identify a principal axis of a rigid object? At the simplest level,
+a principal axis is one about which the object possesses {\em axial symmetry}. 
+The required type of symmetry is illustrated in Fig.~\ref{f87}. Assuming that
+the object can be modeled as a swarm of particles---for every
+particle of mass $m$, located a distance $r$ from the origin, and subtending an
+angle $\theta$ with the rotation axis, there must be an identical particle located on
+diagrammatically the opposite side of the rotation axis. As shown in the diagram,
+the angular momentum vectors of such a matched pair of particles can be added together to form
+a resultant angular momentum vector which is {\em parallel} to the axis of rotation. Thus, if
+the object is composed entirely of matched particle pairs then its angular momentum
+vector must be parallel to its angular velocity vector. The generalization of this
+argument to deal with continuous objects is fairly straightforward.  For instance, symmetry implies
+that any axis of rotation which passes through the centre of a uniform sphere is
+a principal axis of that object. Likewise, a perpendicular axis which passes through the
+centre of a uniform disk is a principal axis. Finally, a perpendicular axis which passes
+through the centre of a uniform rod is  a principal axis. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig087.eps}}
+\caption{\em A principal axis of rotation.}\label{f87}  
+\end{figure}
+
+\subsection{Angular Momentum of a Multi-Component System}\label{sam}
+Consider a system consisting of $N$ mutually interacting point particles.
+Such a system might represent a true multi-component system, such as an asteroid cloud,
+or it might represent an extended body.
+Let the $i$th particle, whose mass is $m_i$, be located at vector displacement ${\bf r}_i$.
+Suppose that this particle exerts a force ${\bf f}_{ji}$ on the $j$th particle. By Newton's third
+law of motion, the force ${\bf f}_{ij}$ exerted  by the $j$th particle on the $i$th  is
+given by
+\begin{equation}\label{e966}
+{\bf f}_{ij} = - {\bf f}_{ji}.
+\end{equation}
+Let us assume that the internal forces acting within the system are {\em central forces}---{\em i.e.},
+the force ${\bf f}_{ij}$, acting between particles $i$ and $j$, is directed along the
+{\em line of centres} of these particles. See Fig.~\ref{f88}.
+In other words,
+\begin{equation}
+{\bf f}_{ij} \propto ({\bf r}_i - {\bf r}_j).
+\end{equation}
+Incidentally, this is not a particularly restrictive assumption, since most forces occurring in nature are
+central forces. For instance, gravity is a central force, electrostatic forces are central,
+ and the internal stresses acting within a rigid body are approximately central.
+Suppose, finally, that the $i$th particle is subject to an external force ${\bf F}_i$. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig088.eps}}
+\caption{\em A multi-component system with central internal forces.}\label{f88}  
+\end{figure}
+
+The equation of motion of the $i$th particle can be written
+\begin{equation}
+\dot{\bf p}_i = \sum_{j=1,N}^{j\neq i} {\bf f}_{ij} + {\bf F}_i.
+\end{equation}
+Taking the vector product of this equation with the position vector ${\bf r}_i$, we
+obtain
+\begin{equation}\label{e988}
+{\bf r}_i\times \dot{\bf p}_i = \sum_{j=1,N}^{j\neq i} {\bf r}_i\times {\bf f}_{ij} + 
+{\bf r}_i\times {\bf F}_i.
+\end{equation}
+Now, we have already seen that
+\begin{equation}
+{\bf r}_i\times \dot{\bf p}_i = \frac{d ({\bf r}_i\times {\bf p}_i)}{dt}.
+\end{equation}
+We also know that the total angular momentum, ${\bf L}$, of the system (about the origin) can
+be written in the form
+\begin{equation}
+{\bf L} = \sum_{i=1,N} {\bf r}_i\times {\bf p}_i.
+\end{equation}
+Hence, summing Eq.~(\ref{e988}) over all particles, we obtain
+\begin{equation}\label{e977}
+\frac{d {\bf L}}{dt} = \sum_{i,j = 1,N}^{i\neq j} {\bf r}_i\times {\bf f}_{ij} + 
+\sum_{i=1,N} {\bf r}_i\times {\bf F}_i.
+\end{equation}
+
+Consider the first expression on the right-hand side of Eq.~(\ref{e977}). A general term,
+${\bf r}_i\times {\bf f}_{ij}$, in this sum can always be paired with a
+matching term, ${\bf r}_j\times {\bf f}_{ji}$, in which the indices have been swapped.
+Making use of Eq.~(\ref{e966}), the sum of a general matched pair  can be written
+\begin{equation}
+{\bf r}_i\times {\bf f}_{ij}+{\bf r}_j\times {\bf f}_{ji} = 
+({\bf r}_i-{\bf r}_j)\times {\bf f}_{ij}.
+\end{equation}
+However, if the internal forces are central in nature then ${\bf f}_{ij}$ is parallel
+to $({\bf r}_i-{\bf r}_j)$. Hence, the vector product of these two vectors is zero.
+We conclude that
+\begin{equation}
+{\bf r}_i\times {\bf f}_{ij}+{\bf r}_j\times {\bf f}_{ji} = {\bf 0},
+\end{equation}
+for any values of $i$ and $j$. Thus, the first expression on the right-hand side of Eq.~(\ref{e977})
+sums to zero. We are left with
+\begin{equation}\label{e955}
+\frac{d {\bf L}}{dt} = \btau,
+\end{equation}
+where
+\begin{equation}
+\btau = \sum_{i=1,N} {\bf r}_i\times {\bf F}_i
+\end{equation}
+is the net external torque acting on the system (about an axis
+passing through the origin). Of course, Eq.~(\ref{e955})
+is simply the rotational equation of motion for the system taken as a whole.
+
+Suppose that the system is {\em isolated}, such that it is subject to {\em zero net external torque}. 
+It follows from Eq.~(\ref{e955}) that, in this case, {\em the total angular momentum of the
+system is a conserved quantity}. To be more exact, the components of the
+total angular momentum taken about any three independent axes are individually conserved quantities. 
+Conservation of angular momentum  is an extremely useful concept which greatly simplifies the
+analysis of  a wide range of rotating systems. Let us consider some
+examples.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig089.eps}}
+\caption{\em Two movable weights on a rotating rod.}\label{f89}  
+\end{figure}
+
+Suppose that two identical weights of mass $m$ are attached to a light rigid rod which
+rotates without friction about a perpendicular axis passing through its mid-point. Imagine that
+the two weights are equipped with small motors which allow them to travel along the
+rod: the motors are synchronized in such a manner  that the distance  of the two
+weights from the axis of rotation is always the same. Let us call this common distance
+$d$, and let $\omega$ be the angular velocity of the rod. See Fig.~\ref{f89}. How
+does the angular velocity $\omega$ change as the distance $d$ is varied?
+
+Note that there are no external torques acting on the system. It follows that the
+system's angular momentum  must remain constant as the weights move along the rod. 
+Neglecting the contribution of the rod, the moment of inertia of the system is
+written
+\begin{equation}
+I = 2\,m\,d^2.
+\end{equation}
+Since the system is rotating about a principal axis, its angular momentum takes the form
+\begin{equation}
+L = I\,\omega =  2\,m\,d^2\,\omega.
+\end{equation}
+If $L$ is a constant of the motion then we obtain
+\begin{equation}
+\omega\,d^2 = {\rm constant}.
+\end{equation}
+In other words,  the
+system spins {\em faster} as the  weights move {\em inwards}
+ towards the axis of rotation, and {\em vice versa}.
+This effect is familiar from figure skating. When a skater spins about a vertical axis,
+her angular momentum is approximately a conserved quantity, since the ice
+exerts very little torque on her. Thus, if the skater starts spinning with
+outstretched arms, and then draws her arms inwards, then her rate of rotation
+will spontaneously increase in order to conserve angular momentum. The skater can
+slow her rate of rotation by simply pushing her arms outwards again.
+
+Suppose that a bullet of mass $m$ and velocity $v$ strikes, and becomes
+embedded in, a stationary rod of mass $M$ and length $2\,b$ which
+pivots about a frictionless perpendicular axle passing through its mid-point.
+Let the bullet strike the rod normally a distance $d$ from its
+axis of rotation. See Fig.~\ref{f90}. What is the instantaneous angular
+velocity $\omega$ of the rod (and bullet) immediately after the collision?
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig090.eps}}
+\caption{\em A bullet strikes a pivoted rod.}\label{f90}  
+\end{figure}
+
+Taking the bullet and the rod as a whole, this is again a system upon which no
+external torque acts. Thus, we expect the system's net angular momentum to
+be the same before and after the collision. Before the collision, only the
+bullet possesses angular momentum, since the rod is at rest. As is easily demonstrated, the
+bullet's angular momentum about the pivot point is
+\begin{equation}
+l = m\,v\,d:
+\end{equation}
+{\em i.e.}, the product of its mass, its velocity, and its distance of closest approach
+to the point about which the angular momentum is measured---this is a general result
+(for a point particle). After the collision, the bullet lodges a distance $d$
+from the pivot, and is forced to co-rotate with the
+rod. Hence, the angular momentum of the bullet after the collision is given by
+\begin{equation}
+l' = m\,d^2\,\omega,
+\end{equation}
+where $\omega$ is the angular velocity of the rod. The angular momentum of the
+rod after the collision is
+\begin{equation}
+L = I\,\omega,
+\end{equation}
+where $I= (1/12)\,M\,(2\,b)^2= (1/3)\,M\,b^2$ is the rod's moment of inertia (about a perpendicular
+axis passing through its mid-point). Conservation of angular
+momentum yields
+\begin{equation}
+l = l' + L,
+\end{equation}
+or
+\begin{equation}
+\omega = \frac{m\,v\,d}{I + m\,d^2}.
+\end{equation}
+
+\subsection*{\em Worked Example 9.1: Angular Momentum of a Missile}
+\noindent{\em Question:} A missile of mass $m=2.3\times 10^4\,{\rm kg}$ flies
+level to the ground at an
+altitude of $d=10,000\,{\rm m}$ with constant speed $v= 210\,{\rm m/s}$. What is the magnitude of the missile's angular momentum
+relative to a point on the ground directly below its flight
+path?
+
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter09/fig090a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} The missile's angular momentum about point $O$ is
+$$
+L = m\,v\,r\,\sin\theta,
+$$
+where $\theta$ is the angle subtended between the missile's velocity vector
+and its position vector relative to $O$. However,
+$$
+r\,\sin\theta = d,
+$$
+where $d$ is the distance of closest approach of the missile to point $O$. 
+Hence,
+$$
+L = m\,v\,d = (2.3\times 10^4)\times  210\times (1\times  10^4)= 4.83\times 10^{10}\,{\rm kg\,m^2/s}.
+$$
+
+
+\subsection*{\em Worked Example 9.2: Angular Momentum of a Sphere}
+\noindent{\em Question:} A uniform sphere of mass $M=5\,{\rm kg}$ and radius $a=0.2\,{\rm m}$
+spins about an axis passing through its centre with period $T=0.7\,{\rm s}$. What is the
+angular momentum of the sphere?
+
+\noindent{\em Answer:} The angular velocity of the sphere is
+$$
+\omega = \frac{2\,\pi}{T} = \frac{2\,\pi}{0.7}= 8.98\,{\rm rad./s}.
+$$
+The moment of inertia of the sphere is
+$$
+I = \frac{2}{5}\,M\,a^2 = 0.4\times 5\times(0.2)^2 = 0.08\,{\rm kg\,m^2}.
+$$
+Hence, the angular momentum of the sphere is
+$$
+L = I\,\omega = 0.08\times 8.98 = 0.718\,{\rm kg\,m^2/s}.
+$$
+
+\subsection*{\em Worked Example 9.3: Spinning Skater}
+\noindent{\em Question:} A skater spins at an initial angular velocity of $\omega_1=
+11\,{\rm rad./s}$ with her arms outstretched. The  skater then lowers her arms, thereby
+decreasing her moment of inertia by a factor $8$. What is the skater's final
+angular velocity? Assume that any friction between the skater's skates and the
+ice is negligible.
+
+\noindent{\em Answer:} Neglecting any friction between the skates and the ice, we
+expect the skater to spin with constant angular momentum. The skater's initial
+angular momentum is
+$$
+L_1 = I_1\,\omega_1,
+$$
+where $I_1$ is the skater's initial moment of inertia. The skater's final angular
+momentum is
+$$
+L_2 = I_2\,\omega_2,
+$$
+where $I_2$ is the skater's final moment of inertia, and $\omega_2$ is her final
+angular velocity. Conservation of angular momentum yields $L_1=L_2$, or
+$$
+\omega_2 = \frac{I_1}{I_2}\,\omega_2.
+$$
+Now, we are told that $I_1/I_2 = 8$. Hence,
+$$
+\omega_2 = 8\times 11 = 88\,{\rm rad./s}.
+$$

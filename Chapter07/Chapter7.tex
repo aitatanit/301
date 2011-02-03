@@ -1,0 +1,849 @@
+\section{Circular Motion}
+\subsection{Introduction}
+Up to now, we have basically only considered {\em rectilinear} motion: {\em i.e.}, motion
+in a straight-line. Let us now broaden our approach so as to take into account
+the most important type of non-rectilinear motion: namely, {\em circular} motion.
+
+\subsection{Uniform Circular Motion}
+Suppose that an object executes a circular orbit of radius
+$r$ with {\em uniform} tangential speed $v$. The instantaneous
+position of the object is most conveniently specified in terms of an
+angle $\theta$.  See Fig.~\ref{f58}. For instance, we could decide that $\theta=0^\circ$ corresponds
+to the object's location at $t=0$, in  which case we would write
+\begin{equation}
+\theta(t) = \omega\,t,
+\end{equation}
+where $\omega$ is termed the {\em angular velocity} of the object. For a uniformly
+rotating object, the angular velocity is simply the angle through which the object
+turns in one second.
+
+\begin{figure}[h]
+\epsfysize=1.7in
+\centerline{\epsffile{Chapter07/fig058.eps}}
+\caption{\em Circular motion.}\label{f58}  
+\end{figure}
+
+Consider the motion of the object in the time interval between
+$t=0$ and $t=t$. In this interval, the object rotates through an angle
+$\theta$, and traces out a circular arc of length $s$. See Fig.~\ref{f58}. 
+It is fairly obvious that the arc length $s$ is directly proportional to the angle
+$\theta$: but, what is the constant of proportionality? Well, an angle of
+$360^\circ$ corresponds to an arc length of $2\pi\,r$. Hence, an angle $\theta$
+must correspond to an arc length of
+\begin{equation}\label{e71}
+s = \frac{2\pi}{360^\circ} \,r\,\theta(^\circ).
+\end{equation}
+At this stage, it is convenient to define a new angular unit known as a {\em radian} (symbol rad.). An angle
+measured in radians is related to an angle measured in degrees via the
+following simple formula:
+\begin{equation}
+\theta({\rm rad.}) = \frac{2\pi}{360^\circ}\,\theta(^\circ).
+\end{equation}
+Thus, $360^\circ$ corresponds to $2\,\pi$ radians, $180^\circ$ corresponds to $\pi$ radians,
+$90^\circ$ corresponds to $\pi/2$ radians, and $57.296^\circ$ corresponds
+to 1 radian. When $\theta$ is measured in radians, Eq.~(\ref{e71}) simplifies
+greatly to give
+\begin{equation}
+s = r\,\theta.
+\end{equation}
+Henceforth, in this course, all angles are measured in radians {\em by default}.
+
+Consider the motion of the object in the short  interval between times $t$ and $t+\delta t$.
+In this interval, the object turns through a small angle $\delta\theta$ and
+traces out a short arc of length $\delta s$, where
+\begin{equation}\label{e72}
+\delta s = r\,\delta\theta.
+\end{equation}
+Now $\delta s/\delta t$ ({\em i.e.}, distance moved per unit time) 
+is simply the tangential velocity $v$, whereas $\delta\theta /\delta t$ 
+({\em i.e.}, angle turned through  per unit time) is simply the angular velocity
+$\omega$. Thus, dividing  Eq.~(\ref{e72}) by $\delta t$, we obtain 
+\begin{equation}
+v = r\,\omega.\label{e76}
+\end{equation}
+Note, however, that this formula is only valid if the angular velocity 
+$\omega$ is measured in {\em radians per second}. From now on, in this
+course, all angular velocities are measured in radians per second {\em by default}.
+
+An object that rotates with uniform angular velocity $\omega$ turns through
+$\omega$ radians in 1 second. Hence, the object turns through $2\,\pi$ radians
+({\em i.e.}, it executes a complete circle) in 
+\begin{equation}
+T = \frac{2\,\pi}{\omega}
+\end{equation}
+seconds. Here, $T$ is the {\em  repetition period} of the circular motion. If the object
+executes a complete cycle ({\em i.e.}, turns through $360^\circ$) in $T$ seconds,
+then the number of cycles executed per second is
+\begin{equation}
+f = \frac{1}{T} = \frac{\omega}{2\,\pi}.
+\end{equation}
+Here, the {\em repetition frequency}, $f$, of the motion is measured in
+{\em cycles per second}---otherwise known as {\em hertz} (symbol Hz).
+
+As an example, suppose that an object executes uniform circular motion,  radius
+$r=1.2\,{\rm m}$, at a frequency of $f=50\,{\rm Hz}$ ({\em i.e.}, the object executes a complete
+rotation 50 times a second). The repetition period of this motion is simply
+\begin{equation}
+T = \frac{1}{f} = 0.02\,{\rm s}.
+\end{equation}
+Furthermore, the angular frequency of the motion is given by
+\begin{equation}
+\omega = 2\pi\,f = 314.16\,{\rm rad. / s}.
+\end{equation}
+Finally, the tangential velocity of the object is
+\begin{equation}
+v = r\,\omega = 1.2\times 314.16 =376.99\,{\rm m/s}.
+\end{equation}
+
+\subsection{Centripetal Acceleration}
+An object executing a circular orbit of radius $r$ with uniform tangential
+speed $v$ possesses a velocity vector ${\bf v}$ whose magnitude is constant, but
+whose direction is continuously changing. It follows that the object must
+be {\em accelerating}, since (vector) acceleration is the rate of change of (vector)
+velocity, and the (vector) velocity is indeed varying in time.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter07/fig059.eps}}
+\caption{\em Centripetal acceleration.}\label{f59}  
+\end{figure}
+
+Suppose that the object moves from point $P$ to point $Q$ between times $t$ and $t+\delta t$, as
+shown in Fig.~\ref{f59}. Suppose, further, that the object  rotates
+through $\delta\theta$ radians in this time interval. The vector 
+ $\stackrel{\displaystyle \rightarrow}{PX}$, 
+shown in the diagram, is identical
+to the vector $\stackrel{\displaystyle \rightarrow}{QY}$.  Moreover, the angle subtended between vectors
+$\stackrel{\displaystyle \rightarrow}{PZ}$ and  $\stackrel{\displaystyle \rightarrow}{PX}$
+is simply $\delta\theta$. The vector $\stackrel{\displaystyle \rightarrow}{ZX}$ represents
+the change in vector velocity, $\delta{\bf v}$, between times $t$ and $t+\delta t$. It can be seen
+that this vector is directed {\em towards the centre of the circle}. From standard trigonometry,
+the length of vector $\stackrel{\displaystyle \rightarrow}{ZX}$ is 
+\begin{equation}
+\delta v = 2\,v\,\sin(\delta\theta/2).
+\end{equation}
+However, for small angles $\sin\theta \simeq \theta$, provided that $\theta$ 
+is measured in {\em radians}. Hence, 
+\begin{equation}
+\delta v\simeq v\,\delta\theta.
+ \end{equation}
+It follows that
+\begin{equation}
+a = \frac{\delta v}{\delta t} = v\,\frac{\delta\theta}{\delta t} = v\,\omega,
+\end{equation}
+where $\omega = \delta \theta/\delta t$ is the angular velocity of the object, measured
+in {\em radians per second}.
+In summary,  an object executing a circular orbit, radius $r$, with uniform tangential
+velocity $v$, and uniform angular velocity $\omega=v/r$, possesses an acceleration
+directed towards the centre of the circle---{\em i.e.}, a {\em centripetal} acceleration---of
+magnitude
+\begin{equation}
+a = v\,\omega = \frac{v^2}{r} = r\,\omega^2.\label{e715}
+\end{equation}
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter07/fig060.eps}}
+\caption{\em Weight on the end of a cable.}\label{f60}  
+\end{figure}
+
+Suppose that a weight, of mass $m$, is attached to the end of a cable, of
+length $r$, and whirled around such that the weight executes a horizontal circle,
+ radius $r$, with uniform tangential velocity $v$. As we have just learned,
+the weight is subject to a centripetal acceleration of magnitude $v^2/r$. Hence,
+the weight experiences a centripetal force
+\begin{equation}
+f = \frac{m\,v^2}{r}.
+\end{equation}
+What provides this force? Well, in the present example, the force is provided by the
+{\em tension} $T$ in the cable. Hence, $T=m\,v^2/r$. 
+
+Suppose that the cable is such that it  snaps whenever the tension in it
+exceeds a certain critical value $T_{\rm max}$. It follows that there is a
+maximum velocity with which the weight can be whirled around: namely,
+\begin{equation}
+v_{\rm max} = \sqrt{\frac{r\,T_{\rm max}}{m}}.
+\end{equation}
+If $v$ exceeds $v_{\rm max}$ then the cable  will  break. As soon as the cable snaps,
+the weight will cease to be subject to a centripetal force, so it will fly off---with 
+velocity $v_{\rm max}$---along the {\em straight-line}
+which is {\em tangential} to the circular orbit it was previously executing.
+
+\subsection{Conical Pendulum}
+Suppose that an object, mass $m$, is attached to the end of a light inextensible
+string whose other end is attached to a rigid beam. Suppose, further, that the
+object is given an initial horizontal velocity such that it executes a
+horizontal circular orbit of radius $r$ with angular velocity $\omega$. See
+Fig.~\ref{f61}. Let $h$ be the vertical distance between the beam and the plane of
+the circular orbit, and let $\theta$ be the angle subtended by the string with
+the downward vertical.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter07/fig061.eps}}
+\caption{\em A conical pendulum.}\label{f61}  
+\end{figure}
+
+The object is subject to two forces: the gravitational force $m\,g$ which acts vertically
+downwards, and the tension force $T$ which acts upwards along the string. The tension
+force can be resolved into a component $T\,\cos\theta$ which acts vertically upwards, and
+a component $T\,\sin\theta$ which acts towards the centre of the circle. Force balance
+in the vertical direction yields
+\begin{equation}\label{con1}
+T\,\cos\theta = m\,g.
+\end{equation}
+In other words, the vertical component of the tension force balances the weight of the object.
+
+Since the object is executing a circular orbit, radius $r$, with angular velocity $\omega$,
+it experiences a centripetal acceleration $\omega^2\,r$. Hence, it is subject to
+a centripetal force $m\,\omega^2\,r$. This force is provided by the component of
+the string tension which acts towards the centre of the circle. In other words,
+\begin{equation}\label{con2}
+T\,\sin\theta = m\,\omega^2\,r.
+\end{equation}
+
+Taking the ratio of Eqs.~(\ref{con1}) and (\ref{con2}), we obtain
+\begin{equation}
+\tan\theta = \frac{\omega^2\,r}{g}.
+\end{equation}
+However, by simple trigonometry,
+\begin{equation}
+\tan\theta = \frac{r}{h}.
+\end{equation}
+Hence, we find
+\begin{equation}
+\omega = \sqrt{\frac{g}{h}}.
+\end{equation}
+Note that if $l$ is the length of the string then $h=l\,\cos\theta$. It follows that
+\begin{equation}
+\omega = \sqrt{\frac{g}{l\,\cos\theta}}.
+\end{equation}
+
+For instance, if the length of the string is $l=0.2\,{\rm m}$ and the conical angle is $\theta=30^\circ$
+then the angular velocity of rotation is given by
+\begin{equation}
+\omega = \sqrt{\frac{9.81}{0.2\times \cos 30^\circ}} = 7.526\,{\rm rad./s}.
+\end{equation}
+This translates to a rotation frequency in cycles per second of
+\begin{equation}
+f = \frac{\omega}{2\,\pi} = 1.20\,{\rm Hz}.
+\end{equation}
+
+\subsection{Non-Uniform Circular Motion}\label{s75}
+Consider an object which executes {\em non-uniform} circular motion, as shown in Fig.~\ref{f62}.
+Suppose that the motion is confined to a 2-dimensional plane. We can specify the
+instantaneous position of the object in terms of its {\em polar coordinates} $r$ and
+$\theta$. Here, $r$ is the radial distance of the object from the origin, whereas $\theta$
+is the angular bearing of the object from the origin, measured with respect to some arbitrarily chosen
+direction. We imagine that both $r$ and $\theta$ are changing in time. As an example of
+non-uniform circular motion, consider the motion of the Earth around the Sun. Suppose that 
+the origin of our coordinate system corresponds to the position of the Sun. As the Earth rotates, its
+angular bearing $\theta$, relative to the Sun, obviously changes in time. 
+However, since the
+Earth's orbit is slightly {\em elliptical}, its radial distance $r$ from the
+Sun also varies in time. Moreover, as the Earth moves closer to the Sun, its rate of
+rotation speeds up, and {\em vice versa}. Hence, the rate of change of $\theta$ with
+time is non-uniform.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter07/fig062.eps}}
+\caption{\em Polar coordinates.}\label{f62}  
+\end{figure}
+
+Let us define two unit vectors, ${\bf e}_r$ and ${\bf e}_\theta$. Incidentally,
+a unit vector simply a vector whose length is unity. 
+As shown in Fig.~\ref{f62}, the {\em radial}
+unit vector ${\bf e}_r$ always points from the origin to the instantaneous position of the object.
+Moreover, the {\em tangential} unit vector ${\bf e}_\theta$ is always {\em normal}
+to  ${\bf e}_r$, in the direction of increasing $\theta$. The position vector ${\bf r}$
+of the object can be written
+\begin{equation}
+{\bf r} = r\,{\bf e}_r.\label{ec33}
+\end{equation}
+In other words, vector ${\bf r}$ points in the same direction as the radial unit vector 
+${\bf e}_r$, and is of
+length $r$. We can write the object's velocity in the form
+\begin{equation}\label{ec56}
+{\bf v} = \dot{\bf r} = v_r\,{\bf e}_r + v_\theta\,{\bf e}_\theta,
+\end{equation}
+whereas the acceleration is written
+ \begin{equation}\label{ec57}
+{\bf a} = \dot{\bf v} = a_r\,{\bf e}_r + a_\theta\,{\bf e}_\theta.
+\end{equation}
+Here, $v_r$ is termed the object's {\em radial velocity}, whilst $v_\theta$ is
+termed the {\em tangential velocity}. Likewise, $a_r$ is the {\em radial acceleration},
+and $a_\theta$ is the {\em tangential acceleration}. But, how do we express these
+quantities in terms of the object's polar coordinates $r$ and $\theta$? It turns out that this
+is a far from straightforward task. For instance, if we simply differentiate Eq.~(\ref{ec33})
+with respect to time, we obtain
+\begin{equation}
+{\bf v}=\dot{r}\,{\bf e}_r + r\,\dot{\bf e}_r,
+\end{equation}
+where $\dot{\bf e}_r$ is the time derivative of the radial unit vector---this quantity
+is non-zero because ${\bf e}_r$ {\em changes direction} as the object moves. Unfortunately,
+it is not entirely clear how to evaluate $\dot{\bf e}_r$. In the following, we
+outline a famous trick for calculating $v_r$, $v_\theta$, {\em etc.} without
+ever having to evaluate the time derivatives of the unit vectors
+${\bf e}_r$ and ${\bf e}_\theta$. 
+
+Consider a general {\em complex number},
+\begin{equation}
+z = x +  i\,y,
+\end{equation}
+where $x$ and $y$ are real, and $i$ is the square root of $-1$ ({\em i.e.}, $i^2=-1$).
+Here, $x$ is the real part of $z$, whereas $y$ is the imaginary part.
+We can visualize $z$ as a point in the so-called {\em complex plane}: {\em i.e.}, a 2-dimensional
+plane
+in which the real parts of complex numbers are plotted along one Cartesian axis, whereas the
+corresponding imaginary parts are plotted along the other axis.
+ Thus, the coordinates
+of $z$ in the complex plane are simply ($x$, $y$). See Fig.~\ref{f63}. In other words,
+we can use a complex number to represent a position vector in a 2-dimensional plane.
+Note that the length of the vector is equal to the {\em modulus} of the corresponding complex
+number. Incidentally, the modulus of $z = x + i\,y$ is defined
+\begin{equation}
+|z| = \sqrt{x^2 + y^2}.
+\end{equation}
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter07/fig063.eps}}
+\caption{\em Representation of a complex number in the complex plane.}\label{f63}  
+\end{figure}
+
+Consider the complex number ${\rm e}^{\,i\,\theta}$, where $\theta$ is real.
+A famous result in complex analysis---known as {\em de Moivre's theorem}---allows us
+to split this number into its real and imaginary components:
+\begin{equation}
+{\rm e}^{\,i\,\theta} = \cos\theta + i\,\sin\theta.\label{ec44}
+\end{equation}
+Now, as we have just discussed, we can think of  ${\rm e}^{\,i\,\theta}$ as representing a vector
+in the complex plane: the real and imaginary parts of ${\rm e}^{\,i\,\theta}$
+form the coordinates of the head of the vector, whereas the tail of the vector
+corresponds to the origin. What are the properties of this vector? Well,
+the length of the vector is given by
+\begin{equation}
+\left|{\rm e}^{\,i\,\theta}\right| = \sqrt{\cos^2\theta + \sin^2\theta } = 1.
+\end{equation}
+In other words, ${\rm e}^{\,i\,\theta}$ represents a {\em unit vector}.
+In fact, it is clear from Fig.~\ref{f64} that ${\rm e}^{\,i\,\theta}$ represents
+the radial unit vector ${\bf e}_r$ for an object whose angular polar
+coordinate (measured anti-clockwise from the real axis) is $\theta$. 
+Can we also find a complex representation of the corresponding tangential
+unit vector ${\bf e}_\theta$? Actually, we can. The
+complex number $i\,{\rm e}^{\,i\,\theta}$ can be written
+\begin{equation}
+i\,{\rm e}^{\,i\,\theta} = -\sin\theta + i\,\cos\theta.
+\end{equation}
+Here, we have just multiplied Eq.~(\ref{ec44}) by $i$, making use of the fact
+that $i^2 = -1$. This number again represents a unit vector, since
+\begin{equation}
+\left|i\,{\rm e}^{\,i\,\theta}\right| = \sqrt{\sin^2\theta + \cos^2\theta } = 1.
+\end{equation}
+Moreover, as is clear from Fig.~\ref{f64}, this vector is normal to ${\bf e}_r$, in the
+direction of increasing $\theta$. In other words, $i\,{\rm e}^{\,i\,\theta}$ represents
+the tangential unit vector ${\bf e}_\theta$. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter07/fig064.eps}}
+\caption{\em Representation of the unit vectors ${\bf e}_r$ and
+${\bf e}_\theta$ in  the  complex plane.}\label{f64}  
+\end{figure}
+
+Consider an object executing non-uniform circular motion in the complex plane. By analogy
+with Eq.~(\ref{ec33}), we can represent the instantaneous position vector of
+this object via the complex number
+\begin{equation}
+z = r\, {\rm e}^{\,i\,\theta}.\label{ec55}
+\end{equation}
+Here, $r(t)$ is the object's radial distance from the origin, whereas $\theta(t)$
+is its angular bearing relative to the real axis. Note that, in the above formula, we are using
+${\rm e}^{\,i\,\theta}$ to represent the radial unit vector ${\bf e}_r$. Now,
+if $z$ represents the position vector of the object, then $\dot{z} = dz/dt$ must
+represent the object's velocity vector. Differentiating Eq.~(\ref{ec55}) with
+respect to time, using the standard rules of calculus, we obtain
+\begin{equation}
+\dot{z} = \dot{r}\,{\rm e}^{\,i\,\theta} + r\,\dot{\theta}\,i\,{\rm e}^{\,i\,\theta}.
+\end{equation}
+Comparing with Eq.~(\ref{ec56}), recalling that ${\rm e}^{\,i\,\theta}$ represents ${\bf e}_r$
+and $i\,{\rm e}^{\,i\,\theta}$ represents ${\bf e}_\theta$, we obtain
+\begin{eqnarray}
+v_r &=& \dot{r},\label{e738}\\[0.5ex]
+v_\theta &=& r\,\dot{\theta}=r\,\omega,\label{e739}
+\end{eqnarray}
+where $\omega = d\theta/dt$ is the object's instantaneous angular velocity. Thus,
+as desired,
+we have obtained expressions for the radial and tangential velocities of the
+object in terms of its polar coordinates, $r$ and $\theta$.
+We can go further. Let us differentiate $\dot{z}$ with respect to time,
+in order to obtain a complex number representing the object's vector
+acceleration. Again, using the standard rules of calculus, we obtain
+\begin{equation}
+\ddot{z} = (\ddot{r}-r\,\dot{\theta}^2)\,{\rm e}^{\,i\,\theta} + (r\,\ddot{\theta}+2\,\dot{r}\,
+\dot{\theta})\,i\,{\rm e}^{\,i\,\theta}.
+\end{equation}
+Comparing with Eq.~(\ref{ec57}), recalling that ${\rm e}^{\,i\,\theta}$ represents ${\bf e}_r$
+and $i\,{\rm e}^{\,i\,\theta}$ represents ${\bf e}_\theta$, we obtain
+\begin{eqnarray}
+a_r &=& \ddot{r}-r\,\dot{\theta}^2 = \ddot{r}-r\,\omega^2,\label{e741}\\[0.5ex]
+a_\theta &=& r\,\ddot{\theta}+2\,\dot{r}\,
+\dot{\theta} = r\,\dot{\omega} + 2\,\dot{r}\,\omega.\label{e742}
+\end{eqnarray}
+Thus, we now have expressions for the object's radial and tangential accelerations in terms
+of $r$ and $\theta$. The beauty of this derivation is that the complex analysis
+has automatically taken care of the fact that the unit vectors
+${\bf e}_r$ and ${\bf e}_\theta$ change direction as the object moves.
+
+Let us now consider the commonly occurring special case in which an object executes a circular
+orbit at {\em fixed radius}, but varying angular velocity. Since the radius is fixed, it follows
+that $\dot{r}=\ddot{r}=0$. According to Eqs.~(\ref{e738}) and (\ref{e739}), the radial
+velocity of the object is zero, and the tangential velocity takes the form
+\begin{equation}
+v_\theta = r\,\omega.
+\end{equation}
+Note that the above equation is exactly the same as Eq.~(\ref{e76})---the only difference
+is that we have now proved that this relation holds for non-uniform, as well as uniform,
+circular motion.
+According to Eq.~(\ref{e741}), the radial acceleration is given by
+\begin{equation}
+a_r = -r\,\omega^2.
+\end{equation}
+The minus sign indicates that this acceleration is directed towards the centre of the
+circle. Of course, the above equation is equivalent to Eq.~(\ref{e715})---the only difference
+is that we have now proved that this relation holds for non-uniform, as well as uniform,
+circular motion. Finally, according to Eq.~(\ref{e742}), the tangential acceleration
+takes the form
+\begin{equation}
+a_\theta = r\,\dot{\omega}.
+\end{equation}
+The existence of a non-zero tangential acceleration (in the former case) is the one difference between
+non-uniform and uniform circular motion (at constant radius).
+
+\subsection{Vertical Pendulum}
+Let us now examine an example of non-uniform circular motion. 
+Suppose that an object of mass $m$ is attached to the end of a light rigid rod, or light string, of length
+$r$. The other end of the rod, or string, is attached to a stationary pivot
+ in such a manner that the object is free to execute a vertical circle about this pivot. Let $\theta$
+measure the angular position of the object, measured with
+respect to the downward vertical. Let $v$ be the velocity of the object at $\theta=0^\circ$.
+ How large do we have to make $v$ in order for the object to execute a complete
+vertical circle?
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter07/fig065.eps}}
+\caption{\em Motion in a vertical circle.}\label{f65}  
+\end{figure}
+
+Consider Fig.~\ref{f65}. Suppose that the object moves from point $A$, where its tangential 
+velocity is $v$, to
+point $B$, where its tangential velocity is $v'$. Let us, first of all, obtain the relationship
+between $v$ and $v'$. This is most easily achieved by considering energy conservation.
+At point $A$, the object is situated a vertical distance $r$ below the pivot, whereas at point $B$ the
+vertical distance below the pivot has been reduced to $r\,\cos\theta$. Hence, in moving
+from $A$ to $B$ the object gains potential energy $m\,g\,r\,(1-\cos\theta)$. This gain
+in potential energy must be offset by a corresponding loss in kinetic energy. Thus,
+\begin{equation}
+\frac{1}{2}\,m\,v^2 - \frac{1}{2}\,m\,{v'}^{\,2} = m\,g\,r\,(1-\cos\theta),
+\end{equation}
+which reduces to
+\begin{equation}\label{e747}
+{v'}^{\,2} = v^2 - 2\,r\,g\,(1-\cos\theta).
+\end{equation}
+
+Let us now examine the radial acceleration of the object at point $B$. The radial forces
+acting on the object are the tension $T$ in the rod, or string, which acts towards
+the centre of the circle, and the component $m\,g\,\cos\theta$ of the object's weight,
+which acts away from the centre of the circle. Since the object is executing
+circular motion with instantaneous tangential velocity $v'$, it must experience
+an instantaneous acceleration ${v'}^{\,2}/r$ towards the centre of the circle. Hence,
+Newton's second law of motion yields
+\begin{equation}\label{e748}
+\frac{m\,{v'}^{\,2}}{r} = T - m\,g\,\cos\theta.
+\end{equation}
+Equations~(\ref{e747}) and (\ref{e748}) can be combined to give
+\begin{equation}\label{e799}
+T = \frac{m\,v^2}{r} + m\,g\,(3\,\cos\theta -2).
+\end{equation}
+
+Suppose that the object is, in fact, attached to the end of a piece of string, rather than a
+rigid rod. One important property of strings is that, unlike rigid rods, they cannot
+support negative tensions. In other words, a string can only pull objects attached to its
+two ends together---it cannot push them apart. Another way of putting this is that if the
+tension in a string ever becomes negative then the string will become slack and collapse.
+Clearly, if our object is to execute a full vertical circle then then tension $T$ in the
+string must
+remain positive for all values of $\theta$. It is clear from Eq.~(\ref{e799}) that the
+tension attains its minimum value when $\theta =180^\circ$ (at which point $\cos\theta=-1$). This
+is hardly surprising, since $\theta=180^\circ$ corresponds to the point at which the
+object attains its maximum height, and, therefore, its minimum tangential velocity. It is certainly
+the case that if the string tension is positive at this point then it must be positive
+at all other points. Now, the tension at $\theta=180^\circ$ is given by
+\begin{equation}
+T_0 =  \frac{m\,v^2}{r} -5\,m\,g.
+\end{equation}
+Hence, the condition for the object to execute a complete vertical circle without the
+string becoming slack is $T_0>0$, or
+\begin{equation}\label{e788}
+v^2 > 5\,r\,g.
+\end{equation}
+Note that this condition is independent of the mass of the object.
+
+Suppose that the object is attached to the end of a rigid rod, instead of a
+piece of string. There is now no constraint on the tension, since a rigid rod can
+quite easily support a negative tension ({\em i.e.}, it can push, as well as pull, on objects
+attached to its two ends). 
+However, in order for the object to execute a complete vertical circle the square of its
+tangential velocity ${v'}^{\,2}$ must remain positive at all values of $\theta$. 
+It is clear from Eq.~(\ref{e747}) that 
+${v'}^{\,2}$ attains its minimum value when $\theta =180^\circ$. This
+is, again, hardly surprising. Thus, if ${v'}^{\,2}$ is positive at this point then it must be positive
+at all other points. Now, the expression for ${v'}^{\,2}$ at $\theta=180^\circ$ is
+\begin{equation}
+({v'}^{\,2})_0 = v^2 - 4\,r\,g.
+\end{equation}
+Hence, the condition for the object to execute a complete vertical circle is $({v'}^{\,2})_0 >0$, or
+\begin{equation}
+v^2 > 4\,r\,g.
+\end{equation}
+Note that this condition is slightly easier to satisfy than the condition (\ref{e788}). In other words,
+it is slightly easier to cause an object attached to the end of a rigid rod to execute a
+vertical circle than it is to cause an object attached to the end of a string
+to execute the same circle. The reason for this is that the rigidity of the rod
+helps support the object when it is situated above the pivot point.
+
+\subsection{Motion on Curved Surfaces}
+Consider a smooth rigid vertical hoop of internal radius $r$, as shown in Fig.~\ref{f66}.
+Suppose that an object of mass $m$ slides without friction around the inside of this hoop.
+What is the motion of this object? Is it possible for the object to execute a complete
+vertical circle?
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter07/fig066.eps}}
+\caption{\em Motion on the inside of a vertical hoop.}\label{f66}  
+\end{figure}
+
+ Suppose that the object moves from point $A$ to
+point $B$ in Fig.~\ref{f66}.  In doing so, it gains potential energy $m\,g\,r\,(1-\cos\theta)$,
+where $\theta$ is the angular coordinate of the object measured with
+respect to the downward vertical. This gain
+in potential energy must be offset by a corresponding loss in kinetic energy. Thus,
+\begin{equation}
+\frac{1}{2}\,m\,v^2 - \frac{1}{2}\,m\,{v'}^{\,2} = m\,g\,r\,(1-\cos\theta),
+\end{equation}
+which reduces to
+\begin{equation}\label{e747a}
+{v'}^{\,2} = v^2 - 2\,r\,g\,(1-\cos\theta).
+\end{equation}
+Here, $v$ is the velocity at point $A$ ($\theta=0^\circ$), and $v'$ is the velocity
+at point $B$ ($\theta =\theta^\circ$). 
+
+Let us now examine the radial acceleration of the object at point $B$. The radial forces
+acting on the object are the reaction $R$ of the vertical hoop, which acts towards
+the centre of the hoop, and the component $m\,g\,\cos\theta$ of the object's weight,
+which acts away from the centre of the hoop. Since the object is executing
+circular motion with instantaneous tangential velocity $v'$, it must experience
+an instantaneous acceleration ${v'}^{\,2}/r$ towards the centre of the hoop. Hence,
+Newton's second law of motion yields
+\begin{equation}\label{e748a}
+\frac{m\,{v'}^{\,2}}{r} = R - m\,g\,\cos\theta.
+\end{equation}
+
+Note, however, that there is a constraint on the reaction $R$ that the hoop
+can exert on the object. This reaction must always be {\em positive}. In other
+words, the hoop can push the object away from itself, but it can never pull
+it towards itself. Another way of putting this is that if the reaction ever becomes
+negative then the object will fly off the surface of the hoop, since it is no longer
+being pressed into this surface. It should be clear, by now, that the problem
+we are considering is exactly analogous to the earlier problem of an object attached to the end
+of a piece of string which is executing a vertical circle, with the reaction $R$ of the
+hoop playing the role of the tension $T$ in the string.
+
+Let us imagine that the hoop under consideration is a ``loop the loop'' segment in a
+fairground roller-coaster. The object sliding around the inside of the loop then becomes
+the roller-coaster train. Suppose that the fairground operator can vary the
+velocity $v$ with which the train is sent into the bottom of the loop
+ ({\em i.e.}, the velocity at $\theta=0^\circ$). What is the safe
+range of $v$? Now, if the train starts at $\theta=0^\circ$ with velocity $v$ then
+there are only {\em three} possible outcomes. Firstly, the train can execute a complete
+circuit of the loop. Secondly, the train can slide part way up the loop, come to a halt,
+reverse direction, and then slide back down again. Thirdly, the train can slide part way up the loop,
+but then fall off the loop. Obviously, it is the third possibility that the fairground
+operator would wish to guard against. 
+
+Using the analogy between this problem and the problem of a mass on the end of a piece
+of string executing a vertical circle, the condition for the roller-coaster train to
+execute a complete circuit is
+\begin{equation}\label{e755}
+v^2 > 5\,r\,g.
+\end{equation}
+Note, interestingly enough, that this condition is independent of the mass of the train.
+
+Equation~(\ref{e748a}) yields
+\begin{equation}
+{v'}^{\,2} = \frac{r\,R}{m} - r\,g\,\cos\theta.
+\end{equation}
+Now, the condition for the train to reverse direction without falling off the loop
+is ${v'}^{\,2}=0$ with $R>0$. Thus, the train reverses direction when
+\begin{equation}
+R=   m\,g\,\cos\theta.
+\end{equation}
+Note that this equation can only be satisfied for positive $R$ when $\cos\theta>0$.
+In other words, the train can only turn around without falling off the loop
+if the turning point lies in the {\em lower half} of the loop ({\em i.e.},
+$-90^\circ<\theta<90^\circ$).
+The condition for the train to fall off the loop is
+\begin{equation}
+{v'}^{\,2} =- r\,g\,\cos\theta.
+\end{equation}
+Note that this equation can only be satisfied for positive ${v'}^{\,2}$ when $\cos\theta<0$.
+In other words, the train can only fall off the loop when it is situated in the {\em upper half} of the
+loop. It is fairly clear that if the train's initial velocity is not sufficiently large for
+it to execute a complete circuit of the loop, and not sufficiently small for it to turn around before
+entering the upper half of the loop, then it must inevitably fall off the loop somewhere in the
+loop's upper half. The critical value of $v^2$ above which the train
+executes a complete circuit is $5\,r\,g$ [see Eq.~(\ref{e755})]. The critical value of $v^2$ at which the train just
+turns around before entering the upper half of the loop is $2\,r\,g$ [this is obtained
+from Eq.~(\ref{e747a}) by setting $v'=0$ and $\theta=90^\circ$]. Hence, the
+dangerous range of $v^2$ is
+\begin{equation}
+2\,r\,g < v^2< 5\,r\,g.
+\end{equation}
+For $v^2<2\,r\,g$, the train turns around in the lower half of the loop.
+For $v^2 >  5\,r\,g$, the train executes a complete circuit around the loop. However, for
+$2\,r\,g < v^2< 5\,r\,g$, the train falls off the loop somewhere in its upper half.
+
+\begin{figure}
+\epsfysize=1.75in
+\centerline{\epsffile{Chapter07/fig067.eps}}
+\caption{\em A skier on a hemispherical mountain.}\label{f67}  
+\end{figure}
+
+Consider a skier of mass $m$ skiing down a hemispherical mountain of radius $r$, as
+shown in Fig.~\ref{f67}. Let $\theta$ be the angular coordinate of the skier, measured
+with respect to the upward vertical. Suppose that the skier starts at rest ($v=0$) on top
+of the mountain ($\theta=0^\circ$), and slides down the mountain without friction.
+At what point does the skier fly off the surface of the mountain?
+
+Suppose that the skier has reached angular coordinate $\theta$. At this stage, the
+skier has fallen though a height $r\,(1-\cos\theta)$. Thus, the tangential
+velocity $v$ of the skier is given by energy conservation:
+\begin{equation}\label{e7aa}
+\frac{1}{2}\,m\,v^2 = m\,g\,r\, (1-\cos\theta).
+\end{equation}
+Let us now consider the skier's radial acceleration. The radial forces acting
+on the skier are the reaction $R$ exerted by the mountain, which acts radially
+outwards, and the component of the skier's weight $m\,g\,\cos\theta$, which
+acts radially inwards. Since the skier is executing circular motion, radius $r$,
+with instantaneous tangential velocity $v$, he/she experiences an instantaneous
+inward radial acceleration $v^2/r$. Hence, Newton's second law of motion
+yields
+\begin{equation}\label{e7bb}
+m\,\frac{v^2}{r} = m\,g\,\cos\theta - R.
+\end{equation}
+
+Equations (\ref{e7aa}) and (\ref{e7bb}) can be combined to give
+\begin{equation}
+R = m\,g\,(3\,\cos\theta-2).
+\end{equation}
+As before, the reaction $R$ is constrained to be {\em  positive}---the
+mountain can push outward on the skier, but it cannot pull the skier inward.
+In fact, as soon as the reaction becomes negative, the skier flies of
+the surface of the mountain. This occurs when $\cos\theta_0 = 2/3$, or
+$\theta_0 = 48.19^\circ$. The height through which the skier falls
+before becoming a ski-jumper is $h=r\,(1-\cos\theta_0) = a/3$.
+
+\subsection*{\em Worked Example 7.1: Banked Curve}
+\noindent{\em Question:} Civil engineers generally {\em bank} curves on roads in such a manner
+that a car going around the curve at the recommended speed does not have to
+rely on  friction between its tires and the road surface in order to round the curve.
+Suppose that the radius of curvature of a given curve is $r=60\,{\rm m}$, and that
+the recommended speed is $v=40\,{\rm km/h}$. At what angle $\theta$ should the
+curve be banked?
+
+\begin{figure*}
+\epsfysize=1.75in
+\centerline{\epsffile{Chapter07/fig067a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Consider a car of mass $m$ going around the curve. The car's
+weight, $m\,g$, acts vertically downwards. The road surface exerts an upward normal reaction $R$
+on the car.
+The vertical component of the reaction must balance the downward weight of the car, so
+$$
+R\,\cos\theta = m\,g.
+$$
+The horizontal component of the reaction, $R\,\sin\theta$, acts towards the centre of curvature of
+the road.  This 
+component provides the force $m\,v^2/r$ towards the centre of the curvature which the
+car experiences as it rounds the curve. In other words,
+$$
+ R\,\sin\theta = m\,\frac{v^2}{r},
+$$
+which yields
+$$
+\tan\theta = \frac{v^2}{r\,g}, 
+$$
+or
+$$
+\theta =\tan^{-1}\left(\frac{v^2}{r\,g}\right).
+$$
+Hence,
+$$
+\theta = \tan^{-1}\left(\frac{(40\times 1000/3600)^2}{60\times9.81}\right)= 11.8^\circ.
+$$
+Note that if the car attempts to round the curve at the wrong speed then
+$m\,v^2/r\neq m\,g\,\tan\theta$, and the difference has to be made up by a
+sideways friction force exerted between the car's tires and the road surface. Unfortunately,
+this does not always work---especially if the road surface is wet!
+
+\subsection*{\em Worked Example 7.2: Circular Race Track}
+\noindent{\em Question:} A car of mass $m=2000\,{\rm kg}$ travels around a flat
+circular race track of radius $r = 85\,{\rm m}$. The car starts at rest, and its
+speed increases at the constant rate $a_\theta = 0.6\,{\rm m/s}$. What is the speed
+of the car at the point when its centripetal and tangential accelerations are equal?
+
+\noindent{\em Answer:} The tangential acceleration of the car is $a_\theta = 0.6\,{\rm m/s}$.
+When the car travels with tangential velocity $v$ its centripetal acceleration is
+$a_r=v^2/r$. Hence, $a_r = a_\theta$ when
+$$
+\frac{v^2}{r} = a_\theta,
+$$
+or
+$$
+v = \sqrt{r\, a_\theta} = \sqrt{85\times 0.6} = 7.14\,{\rm m/s}.
+$$
+
+\subsection*{\em Worked Example 7.3: Amusement Park Ride}
+\noindent{\em Question:} An amusement park ride consists of a vertical cylinder that
+spins about a vertical axis. When the cylinder spins sufficiently fast, any person
+inside it is held up against the wall. Suppose that the coefficient of static
+friction between a typical person and the wall is $\mu=0.25$. Let the mass of an typical
+person be $m=60\,{\rm kg}$, and let $r=7\,{\rm m}$ be the radius of the cylinder. 
+Find the critical angular velocity of the cylinder above which a typical person
+will not slide down the wall. How many revolutions per second
+is the cylinder executing at this critical velocity?
+
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter07/fig067b.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} In the vertical direction, the person is subject to
+a downward force $m\,g$ due to gravity, and a maximum upward force $f=\mu\,R$ due
+to friction with the wall. Here, $R$ is the normal reaction between the person
+and the wall. In order for the person not to slide down the wall, we require
+$f>m\,g$. Hence, the critical case corresponds to 
+$$
+f=\mu\,R=m\,g.
+$$
+
+In the radial direction, the person is subject to a single force: namely, the reaction
+$R$ due to the wall, which acts radially inwards. If the cylinder (and, hence, the person)
+rotates with angular velocity $\omega$, then this force must provided the acceleration
+$r\,\omega^2$ towards the axis of rotation. Hence,
+$$
+R = m\,r\,\omega^2.
+$$
+It follows that, in the critical case,
+$$
+\omega = \sqrt{\frac{g\,}{\mu\,r}} = \sqrt{\frac{9.81}{0.25\times 7}} = 2.37\,{\rm rad/s}.
+$$
+The corresponding number of revolutions per second is
+$$
+f = \frac{\omega}{2\,\pi} = \frac{2.37}{2\times 3.1415} = 0.38\,{\rm Hz}.
+$$
+
+\subsection*{\em Worked Example 7.4: Aerobatic Maneuver} 
+
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter07/fig067c.eps}}
+\end{figure*}
+
+\noindent{\em Question:} A stunt pilot experiences weightlessness
+momentarily at the top of a ``loop the loop'' maneuver. Given that the
+speed of the stunt plane is $v=500\,{\rm km/h}$, what is the radius $r$ of the
+loop?
+
+\noindent{\em Answer:} Let $m$ be the mass of the pilot.
+Consider the radial acceleration of the pilot at the
+top of the loop. The pilot is subject to two radial forces: the gravitational
+force $m\,g$, which acts towards the centre of the loop, and the reaction force $R$,
+due to the plane, which acts away from the centre of the loop. Since the pilot
+experiences an acceleration $v^2/r$ towards the centre of the loop, Newton's second
+law of motion yields
+$$
+m\,\frac{v^2}{r} = m\,g- R.
+$$
+Now, the reaction $R$ is equivalent to the apparent weight of the pilot. 
+In particular, if the pilot is ``weightless'' then he/she exerts no force on the plane, and,
+therefore, the plane exerts no reaction force on the pilot. Hence, if the pilot is 
+weightless at the top of the loop then $R=0$, giving
+$$
+r = \frac{v^2}{g} = \frac{(500\times 1000/3600)^2}{9.81} = 1.97\,{\rm km}.
+$$
+
+\subsection*{\em Worked Example 7.5: Ballistic Pendulum} 
+\noindent{\em Question:} A bullet of mass $m=10\,{\rm g}$ strikes a pendulum bob
+of mass $M=1.3\,{\rm kg}$ horizontally with speed $v$,  and then becomes embedded in the bob. The bob
+is initially at rest, and is suspended by a stiff rod of length $l=0.6\,{\rm m}$
+and negligible mass. The bob is free to rotate in the vertical direction.
+What is the minimum value of $v$ which causes the bob to execute a
+complete vertical circle? How does the answer change if the bob is suspended from 
+a light flexible rod (of the same length), instead of a stiff rod?
+
+\noindent{\em Answer:} When the bullet strikes the bob, and then sticks to it, the bullet and
+bob move off with a velocity  $v'$ which is given by momentum conservation:
+$$
+m\,v = (M+m)\,v'.
+$$
+Hence,
+$$
+v' = \frac{m\,v}{M+m}.
+$$
+
+Consider the case where the bob is suspended by a rigid rod.
+If the bob and bullet  only just manage to execute a vertical loop, then their initial kinetic
+energy $(1/2)\,(M+m)\,{v'}^{\,2}$ must only just be sufficient to lift them from the bottom 
+to the top of the loop---a distance $2\,l$. Hence, in this critical case,
+energy conservation yields
+$$
+\frac{1}{2}\,(M+m)\,{v'}^{\,2} = (M+m)\,2\,g\,l,
+$$
+which implies
+$$
+{v'}^{\,2} = 4\,g\,l,
+$$
+or
+$$
+v =  \frac{ (M+m)\,\sqrt{4\,g\,l} }{ m }  = 
+\frac{1.31\times\sqrt{4\times 9.81\times 0.6}}{0.01}
+=635.6\,{\rm m/s}.
+$$
+
+Consider the case where the bob is suspended by a flexible rod.
+The velocity $v''$ of the bob and bullet at the top of the loop is obtained from energy
+conservation:
+$$
+\frac{1}{2}\,(M+m)\,{v''}^{\,2} = \frac{1}{2}\,(M+m)\,{v'}^{\,2} - (M+m)\,2\,g\,l.
+$$
+If the bob and bullet  only just manage to execute a vertical loop, then the tension
+in the rod is zero at the top of the loop. Hence, the acceleration due to
+gravity $g$ must account exactly for the required acceleration ${v''}^2/l$ towards the centre of the loop:
+$$
+\frac{{v''}^{\,2}}{l} = g.
+$$
+It follows that, in this critical case,
+$$
+{v'}^{\,2} = 5\,g\,l,
+$$
+or
+$$
+v =  \frac{(M+m)\,\sqrt{5\, g\,l} }{ m }  = 
+\frac{1.31\times\sqrt{5\times 9.81\times 0.6}}{0.01}
+=710.7\,{\rm m/s}.
+$$

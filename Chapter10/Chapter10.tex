@@ -1,0 +1,712 @@
+\section{Statics}
+\subsection{Introduction}
+Probably the most useful application of the laws of mechanics is the study
+of situations in which nothing moves---this discipline is known as {\em statics}. 
+The principles of statics are employed by engineers whenever they design 
+stationary structures, such as buildings,
+bridges, and tunnels, in order to ensure that these
+structures do not collapse.
+
+\subsection{Principles of Statics}
+Consider a general extended body which is subject to a number of external forces. 
+Let us model this body as a swarm of $N$ point particles. In the limit that
+$N\rightarrow\infty$, this model becomes a fully accurate representation of the body's
+dynamics.
+
+In Sect.~\ref{scm} we determined that the overall translational equation
+of motion of a general $N$-component system  can
+be written in the form
+\begin{equation}\label{e101}
+\frac{d{\bf P}}{dt} = {\bf F}.
+\end{equation}
+Here, ${\bf P}$ is the total linear momentum of the system, and
+\begin{equation}
+{\bf F} =  \sum_{i=1,N} {\bf F}_i
+\end{equation}
+is the resultant of all the external forces acting on the system. Note that ${\bf F}_i$
+is the external force acting on the $i$th component of the system.
+
+Equation~(\ref{e101}) effectively determines the {\em translational motion} of the system's centre of mass.
+Note, however, that in order to fully determine the motion of the system we must also follow its
+{\em rotational motion}  about its centre of mass (or any other convenient reference point).
+In Sect.~\ref{sam} we determined that the overall rotational equation of motion
+of a general $N$-component system (with central internal forces) can
+be written in the form
+\begin{equation}\label{e102}
+\frac{d {\bf L}}{dt} = \btau.
+\end{equation}
+Here, ${\bf L}$ is the total angular momentum of the system (about the origin of
+our coordinate scheme), and
+\begin{equation}
+\btau = \sum_{i=1,N} {\bf r}_i\times {\bf F}_i
+\end{equation}
+is the resultant of all the external torques acting on the system (about the
+origin of our coordinate scheme). In the above, ${\bf r}_i$ is the vector
+displacement of the $i$th component of the system.
+
+What conditions must be satisfied by the various external forces and torques acting
+on the system if it  is to remain stationary in time? Well,
+if the system does not evolve in time then its net linear momentum, ${\bf P}$,
+and its net angular momentum, ${\bf L}$, must both remain constant. 
+In other words, $d{\bf P} /dt = d{\bf L}/dt = {\bf 0}$. 
+It
+follows from Eqs.~(\ref{e101}) and (\ref{e102}) that
+\begin{eqnarray}
+{\bf F} &=& {\bf 0},\\[0.5ex]
+\btau &=& {\bf 0}.
+\end{eqnarray}
+In other words, the net external force acting on system must be zero, and the
+net external torque acting on the system must be zero. To be more exact:
+\begin{quote}
+{\sf The components of the net external force acting along any three independent directions
+must all be zero};
+\end{quote}
+ and 
+\begin{quote}
+{\sf The magnitudes of the net external torques acting about any three independent axes
+(passing through the origin of the coordinate system) must all be zero}. 
+\end{quote}
+In a nutshell,
+these are the principles of statics.
+
+It is clear that the above principles are {\em necessary} conditions for a general physical
+system not to evolve in time. But, are they also {\em sufficient} conditions? In other
+words, is it necessarily true that a general system which satisfies these conditions does not
+exhibit any time variation? The answer to this question is as follows: if the
+system under investigation is a {\em rigid body}, such that the motion of any
+component of the body necessarily implies the motion of the whole body, then the
+above principles are necessary and sufficient conditions for the existence of an equilibrium
+state. On the other hand, if the system is not a rigid body, so
+that some components of the body can move independently of others, then
+the above conditions only guarantee that the system remains static in an average
+sense.
+
+Before we attempt to apply the principles of statics, there are a couple
+of important points which need clarification. Firstly, does it matter about
+which point we calculate the net torque acting on the system? To be more
+exact, if we determine that the net torque acting about a given point
+is zero does this necessarily imply that the net torque acting about any
+other point is also zero? Well, 
+\begin{equation}
+\btau = \sum_{i=1,N} {\bf r}_i\times {\bf F}_i
+\end{equation}
+is the net torque acting on the system about the origin of our coordinate scheme.
+The net torque about some general point ${\bf r}_0$ is simply
+\begin{equation}
+\btau' = \sum_{i=1,N} ({\bf r}_i-{\bf r}_0)\times {\bf F}_i.
+\end{equation}
+However, we can rewrite the above expression as
+\begin{equation}
+\btau' = \sum_{i=1,N} {\bf r}_i\times {\bf F}_i - {\bf r}_0\times \left(\sum_{i=1,N}{\bf F}_i\right)
+=\btau + {\bf r}_0\times {\bf F} .
+\end{equation}
+Now, if the system is in equilibrium then ${\bf F} = \btau ={\bf 0}$. Hence, it follows
+from the above equation that
+\begin{equation}
+\btau' = {\bf 0}.
+\end{equation}
+In other words, for a system in {\em equilibrium}, the determination that the net torque acting
+about a given point is zero necessarily implies that the net torque acting about
+any other point is also zero. Hence, we can choose the point about which we calculate the
+net torque at will---this choice is usually made so as to simplify the calculation.
+
+Another question which needs clarification is as follows. At which point should
+we assume that the weight of the system acts in order to calculate the contribution
+of the weight to the net torque acting about a given point? Actually, in Sect.~\ref{sroll},
+we effectively answered this question by assuming that the weight 
+acts at the centre of mass of the system. Let
+us now justify this assumption. The external force acting on the $i$th component
+of the system due to its weight is
+\begin{equation}
+{\bf F}_i = m_i\,{\bf g},
+\end{equation}
+where ${\bf g}$ is the acceleration due to gravity (which is assumed to be uniform
+throughout the system). Hence, the net gravitational torque acting on the system about the
+origin of our coordinate scheme is
+\begin{equation}
+\btau = \sum_{i=1,N} {\bf r}_i\times m_i\,{\bf g} =
+\left(\sum_{i=1,N} m_i\,{\bf r}_i\right)\times {\bf g} = {\bf r}_{cm}\times M\,{\bf g},
+\end{equation}
+where $M=\sum_{i=1,N}m_i$ is the total mass of the system, and
+${\bf r}_{cm} = \sum_{i=1,N} m_i\,{\bf r}_i/M$ is the position vector of its centre of mass.
+It follows, from the above equation, that the net gravitational torque acting on the system
+about a given point can be calculated by assuming that the total mass of the system is
+concentrated at its centre of mass.
+
+\subsection{Equilibrium of a Laminar Object}\label{s103}
+Consider a general laminar object which is free to pivot about a fixed perpendicular axis.
+ Assuming that the object is placed in a uniform
+gravitational field (such as that on the surface of the Earth), what is the object's equilibrium
+configuration  in this field? 
+
+Let $O$ represent  the pivot point, and let $C$ be the centre of mass of the object. See Fig.~\ref{f91}.
+Suppose that $r$ represents the distance between points $O$ and $C$, whereas $\theta$ is
+the angle subtended between the line $OC$ and the
+downward vertical. There are two external forces acting on the object. First, there is the
+downward force, $M\,g$, due to gravity, which acts at the centre of mass. Second, there is
+the reaction, $R$, due to the pivot, which acts at the pivot point. Here, $M$ is the mass of the object, and $g$ is the
+acceleration due to gravity. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter10/fig091.eps}}
+\caption{\em A laminar object pivoting about a fixed point in a gravitational field.}\label{f91}  
+\end{figure}
+
+Two conditions must be satisfied in order for a given configuration of the
+object shown in Fig.~\ref{f91} to represent
+ an equilibrium configuration. First, there must be zero net external
+force acting on the object. This implies that the reaction, $R$, is equal and
+opposite to the gravitational force, $M\,g$. In other words, the reaction is of
+magnitude $M\,g$ and is directed vertically upwards. The second condition
+ is that there must be zero net torque acting about the pivot point. Now,
+the reaction, $R$, does not generate a torque, since it acts at the pivot point.
+Moreover, the torque associated with the gravitational force, $M\,g$, is simply the magnitude
+of this force times the length of the lever arm, $d$ (see Fig.~\ref{f91}). Hence, the net torque
+acting on the system about the pivot point is
+\begin{equation}
+\tau = M\,g\, d = M\,g\,r\,\sin\theta.
+\end{equation}
+Setting this torque to zero, we obtain $\sin\theta =0$, which implies that
+$\theta = 0^\circ$. In other words, the equilibrium configuration of a general laminar
+object (which is free to rotate about a fixed perpendicular axis in a uniform
+gravitational field) is that in which  the centre of mass of the object is aligned {\em vertically
+below} the pivot point.
+
+Incidentally, we can use the above result to experimentally determine the centre of mass of a given
+laminar object. We would need to suspend the object from two different pivot points,
+successively. In each equilibrium configuration, we would  mark a line running vertically
+downward from the pivot point, using a plumb-line. The crossing point of these
+two lines would  indicate the position of the centre of mass.
+
+Our discussion of the equilibrium configuration of the laminar object
+shown in Fig.~\ref{f91} is not quite complete. We have determined that the
+condition which must be satisfied by an equilibrium state is $\sin\theta =0$. 
+However, there are, in fact, {\em two}
+physical roots
+of this equation. The first, $\theta = 0^\circ$, corresponds to the case
+where the centre of mass of the object is aligned vertically {\em below} the
+pivot point. The second, $\theta =180^\circ$, corresponds to the 
+case where the centre of mass  is aligned vertically {\em above} the
+pivot point. Of course, the former root is far more important than the latter, since the
+former root corresponds to a {\em stable equilibrium}, whereas the latter 
+corresponds to an {\em unstable equilibrium}. We recall, from Sect.~\ref{gpotn}, that
+when a system is slightly disturbed from a stable equilibrium  then the
+forces and torques which act upon it tend to return it to this equilibrium, and
+{\em vice versa} for an unstable equilibrium. The easiest way to distinguish between
+stable and unstable equilibria, in the present case, is to evaluate the gravitational
+potential energy of the system. The potential energy of the object shown
+in Fig.~\ref{f91}, calculated using the height of the pivot as the reference height,
+is simply
+\begin{equation}
+U = - M\,g\,h = -M\,g\,r\,\cos\theta.
+\end{equation}
+(Note that the gravitational potential energy of an extended object
+can be calculated by imagining that all of the mass of the object is
+concentrated at its centre of mass.)
+It can be seen that $\theta=0^\circ$ corresponds to a minimum of this potential, 
+whereas $\theta =180^\circ$ corresponds to a maximum. This is in accordance with 
+ Sect.~\ref{gpotn}, where it was demonstrated that whenever an object moves
+in a conservative force-field (such as a gravitational field),  the stable equilibrium
+points correspond to {\em minima} of the potential energy associated with this field, whereas the
+unstable equilibrium points correspond to {\em maxima}.
+
+\subsection{Rods and Cables}
+Consider a uniform rod of mass $M$ and length $l$ which is suspended horizontally
+via two vertical cables. Let the points of attachment of the two cables be located
+distances $x_1$ and $x_2$ from one of the ends of the rod, labeled $A$. It is assumed that $x_2>x_1$.
+See Fig.~\ref{f92}.
+What are the tensions, $T_1$ and $T_2$, in the cables?
+
+Let us first locate the centre of mass of the rod, which is situated at the rod's mid-point,
+ a distance $l/2$ from  reference point $A$ (see Fig.~\ref{f92}). There are
+three forces acting on the rod: the gravitational force, $M\,g$, and the two tension forces,
+$T_1$ and $T_2$. Each of these forces is directed vertically. Thus, the condition that zero net force
+acts on the system reduces to the condition that the net vertical force is zero, which yields
+\begin{equation}
+T_1 + T_2 - M\,g = 0.
+\end{equation}
+
+Consider the torques exerted by the three above-mentioned forces about point $A$. Each of these
+torques attempts to twist the rod about an axis perpendicular to the plane of the  diagram.
+Hence, the condition that zero net torque acts on the system reduces to the condition that
+the net torque at point $A$, about an axis perpendicular to the plane of the diagram, is zero. The contribution
+of each force to this torque is simply the product of the magnitude of the force and the
+length of the associated lever arm. In each case, the length of the lever arm is equivalent to
+the distance of the point of action of the force from $A$, measured along the length of the rod. 
+Hence, setting the net torque to zero, we obtain
+\begin{equation}
+x_1\,T_1 + x_2\,T_2 - \frac{l}{2}\,M\,g = 0.
+\end{equation}
+Note that the torque associated with the gravitational force, $M\,g$, has a minus sign in front, because
+this torque obviously attempts to twist the rod in the opposite direction to the torques
+associated with the tensions in the cables.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter10/fig092.eps}}
+\caption{\em A horizontal rod suspended by two vertical cables.}\label{f92}  
+\end{figure}
+
+The previous two equations can be solved to give
+\begin{eqnarray}
+T_1 &=& \left(\frac{x_2-l/2}{x_2-x_1}\right)M\,g,\\[0.5ex]
+T_2 &=& \left(\frac{l/2-x_1}{x_2-x_1}\right)M\,g.
+\end{eqnarray}
+Recall that tensions in flexible cables can never be negative, since this would imply that
+the cables in question were being compressed. Of course, when cables are compressed they simply
+collapse.
+It is clear, from the above expressions, that 
+in order for the tensions $T_1$ and $T_2$ to remain positive (given that $x_2>x_1$), the following
+conditions must be satisfied:
+\begin{eqnarray}
+x_1 &<& \frac{l}{2},\\[0.5ex]
+x_2 &>& \frac{l}{2}.
+\end{eqnarray}
+In other words, the attachment points of the two cables must {\em straddle} the centre of
+mass of the rod.
+
+Consider a uniform rod of mass $M$ and length $l$ which is free to rotate in the vertical
+plane about a fixed pivot attached to one of its ends. The other end of the rod is
+attached to a fixed cable. We can imagine that both the pivot and the cable are anchored
+in the same vertical wall. See Fig.~\ref{f93}.
+Suppose that the rod is level, and that the cable subtends an angle $\theta$
+with the horizontal.
+Assuming that the rod is in equilibrium, what is the magnitude
+of the tension, $T$, in the cable, and what is the direction and magnitude of the
+reaction, $R$, at the pivot? 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter10/fig093.eps}}
+\caption{\em A rod suspended by a fixed pivot and a cable.}\label{f93}  
+\end{figure}
+
+As usual, the centre of mass of the rod lies at  its mid-point.
+There are three forces acting on the rod: the reaction, $R$; the weight, $M\,g$; and the tension,
+$T$. The reaction acts at the pivot.  Let $\phi$ be
+the angle subtended by the reaction with the horizontal, as shown in Fig.~\ref{f93}. 
+The weight acts at the centre of mass of the rod, and is directed
+vertically downwards. Finally, the tension acts at the  end of the rod, and is directed along
+the cable.
+
+Resolving horizontally, and setting the net horizontal force acting on the rod to zero,
+we obtain
+\begin{equation}
+R\,\cos\phi - T\,\cos\theta = 0.\label{e1099}
+\end{equation}
+Likewise, resolving vertically, and setting  the net vertical force acting on the rod to zero,
+we obtain
+\begin{equation}\label{e1088}
+R\,\sin\phi + T\,\sin\theta - M\,g = 0.
+\end{equation}
+The above constraints are sufficient to ensure that zero net force acts on the rod. 
+
+Let us evaluate the net torque acting
+at the pivot point (about an axis perpendicular to the plane of the diagram).
+The reaction, $R$, does not contribute to this torque, since it acts at the pivot point. 
+The length of the lever arm associated with the weight, $M\,g$,
+is  $l/2$. 
+Simple trigonometry reveals that the length of the  lever
+arm associated with the tension, $T$, is $l\,\sin\theta$. Hence, setting the net
+torque about the pivot point to zero, we obtain
+\begin{equation}
+M\,g\,\frac{l}{2} - T\,l\,\sin\theta = 0.\label{e1066}
+\end{equation}
+Note that there is a minus sign in front of the second torque, since this torque
+clearly attempts to twist the rod in the opposite sense to the first.
+
+Equations~(\ref{e1099}) and (\ref{e1088}) can be solved to give
+\begin{eqnarray}
+T &=& \frac{\cos\phi}{\sin(\theta+\phi)}\,M\,g,\label{e1077}\\[0.5ex]
+R &=&  \frac{\cos\theta}{\sin(\theta+\phi)}\,M\,g.\label{e1075}
+\end{eqnarray}
+Substituting Eq.~(\ref{e1077}) into Eq.~(\ref{e1066}), we obtain
+\begin{equation}
+\sin(\theta+\phi) = 2\,\sin\theta\,\cos\phi.
+\end{equation}
+The physical solution of this equation is $\phi =\theta$ (recall that $\sin 2\,\theta
+= 2\,\sin\theta\,\cos\theta$), which determines the direction of the reaction at
+the pivot. Finally,  Eqs.~(\ref{e1077}) and (\ref{e1075}) yield
+\begin{equation}
+T = R = \frac{M\,g}{2\,\sin\theta},
+\end{equation}
+which determines both the magnitude of the tension in the cable and that of the reaction at the pivot.
+
+One important point to note about the above solution is that if $\phi=\theta$
+then the lines of action of the three forces---$R$, $M\,g$, and $T$---intersect at
+the same point, as shown in Fig.~\ref{f93}. This is an illustration of a general
+rule. Namely, whenever a rigid body is in equilibrium under the action of {\em three}
+forces, then these forces are either {\em mutually parallel}, as shown in Fig.~\ref{f92},
+or their lines of action pass through the {\em same point}, as shown in Fig.~\ref{f93}.
+
+\subsection{Ladders and Walls}
+Suppose that a ladder of length $l$ and negligible mass is leaning against a
+vertical wall, making  an angle $\theta$ with the horizontal.
+ A workman of mass $M$ climbs a distance $x$ along the ladder,
+measured  from
+the bottom. See Fig.~\ref{f94}.
+ Suppose that the wall is completely frictionless, but  that the ground
+possesses a coefficient of static friction $\mu$. How far up the ladder can the
+workman climb before it slips along the ground? Is it possible for the workman to climb to
+the top of the ladder without any slippage occurring?
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter10/fig094.eps}}
+\caption{\em A ladder leaning against a vertical wall.}\label{f94}  
+\end{figure}
+
+There are four forces acting on the ladder: the weight, $M\,g$, of the workman; the
+reaction, $S$, at the wall; the reaction, $R$, at the ground; and the frictional force,
+$f$, due to the ground. The weight acts at the position of the workman, and is directed
+vertically downwards. The reaction, $S$, acts at the top of the ladder, and is directed
+horizontally ({\em i.e.}, normal to the surface of the wall). The reaction, $R$, acts at
+the bottom of the ladder, and is directed vertically upwards  ({\em i.e.}, normal to the ground).
+Finally, the frictional force, $f$, also acts at the bottom of the ladder, and is directed
+horizontally.
+
+Resolving horizontally, and setting the net horizontal force acting on the ladder to
+zero, we obtain
+\begin{equation}
+S - f = 0.
+\end{equation}
+Resolving vertically, and setting the net vertically force acting on the ladder to
+zero, we obtain
+\begin{equation}
+R - M\,g = 0.
+\end{equation}
+Evaluating the torque acting about the point where the ladder touches the ground, we
+note that only the forces $M\,g$ and $S$ contribute. The lever arm associated with the
+force $M\,g$ is $x\,\cos\theta$. The lever arm associated with the force $S$ is $l\,\sin\theta$.
+Furthermore, the torques associated with these two forces act in opposite directions.
+Hence, setting the net torque about the bottom of the ladder to zero, we obtain
+\begin{equation}
+M\,g\,x\,\cos\theta - S\,l\,\sin\theta = 0.
+\end{equation}
+The above three equations can be solved to give
+\begin{equation}
+R = M\,g,
+\end{equation}
+and 
+\begin{equation}
+f = S = \frac{x}{l\,\tan\theta} \,M\,g.
+\end{equation}
+
+Now, the condition for the ladder not to slip with respect to the ground is
+\begin{equation}
+f < \mu\,R.
+\end{equation}
+This condition reduces to
+\begin{equation}
+x<l\, \mu\,\tan\theta.
+\end{equation}
+Thus, the furthest distance that the workman can climb along the ladder before it
+slips is
+\begin{equation}
+x_{\rm max} = l\,\mu\,\tan\theta.
+\end{equation}
+Note that if $\tan\theta > 1/\mu$ then the workman can climb all the way along the
+ladder without any slippage occurring. This result suggests that ladders leaning against
+walls are less likely to slip when they
+are almost vertical ({\em i.e.}, when $\theta\rightarrow 90^\circ$).
+
+\subsection{Jointed Rods}
+Suppose that three identical uniform rods of mass $M$ and length $l$ are joined together to form
+an equilateral triangle, and are then suspended from a cable, as shown in
+Fig.~\ref{f95}. What is the tension in the cable, and what 
+are the reactions at the joints?
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter10/fig095.eps}}
+\caption{\em Three identical jointed rods.}\label{f95}  
+\end{figure}
+
+Let $X_1$, $X_2$, and $X_3$ be the horizontal reactions at the three joints, and
+let $Y_1$, $Y_2$, and $Y_3$ be the corresponding vertical reactions, as shown in Fig.~\ref{f95}.
+In drawing this diagram, we have made use of the fact that the rods exert equal and
+opposite reactions on one another, in accordance with Newton's third law. Let $T$
+be the tension in the cable.
+
+Setting the horizontal and vertical forces acting on rod $AB$ to zero, we obtain
+\begin{eqnarray}
+X_1 - X_3 &=& 0,\\[0.5ex]
+T + Y_1 + Y_3 - M\,g  &=& 0,
+\end{eqnarray}
+respectively.
+Setting the horizontal and vertical forces acting on rod $AC$ to zero, we obtain
+\begin{eqnarray}
+ X_2 - X_1 &=& 0,\\[0.5ex]
+ Y_2 - Y_1 - M\,g  &=& 0,
+\end{eqnarray}
+respectively.
+Finally, setting the horizontal and vertical forces acting on rod $BC$ to zero, we obtain
+\begin{eqnarray}
+ X_3 - X_2 &=& 0,\\[0.5ex]
+ -Y_2 - Y_3 - M\,g  &=& 0,
+\end{eqnarray}
+respectively.
+Incidentally, it is clear, from symmetry, that $X_1 = X_3$ and $Y_1=Y_3$. Thus, the above equations can
+be solved to give
+\begin{eqnarray}
+T &=& 3\,M\,g,\\[0.5ex]
+Y_2 &=& 0,\\[0.5ex]
+X_1=X_2=X_3 &=& X,\\[0.5ex]
+Y_1=Y_3 &=& -M\,g.
+\end{eqnarray}
+There now remains only one unknown, $X$.
+
+Now, it is clear, from symmetry, that there is zero net torque acting on rod $AB$. Let us evaluate
+the torque acting on rod $AC$ about point $A$. (By symmetry, this
+is the same as the torque acting on rod $BC$ about point $B$). The two forces which contribute to
+this torque are the weight, $M\,g$, and the reaction $X_2=X$. (Recall that the reaction $Y_2$
+is zero). The lever arms associated with these two torques (which act in the same direction)
+are $(l/2)\,\cos\theta$ and $l\,\sin\theta$, respectively. Thus, setting the net torque
+to zero, we obtain
+\begin{equation}
+M\,g\,(l/2)\,\cos\theta + X\,l\,\sin\theta = 0,
+\end{equation}
+which yields
+\begin{equation}
+X = -\frac{M\,g}{2\,\tan\theta} = -\frac{M\,g}{2\,\sqrt{3}},
+\end{equation}
+since $\theta = 60^\circ$, and $\tan 60^\circ = \sqrt{3}$. We have now fully determined the
+tension in the cable, and all the  reactions
+at the joints.
+
+\subsection*{\em Worked Example 10.1: Equilibrium  of Two Rods}
+\noindent{\em Question:} Suppose that two uniform rods (of negligible thickness)
+ are welded together at right-angles, as shown in the
+diagram below. Let the first rod be of mass $m_1=5.2\,{\rm kg}$ and length $l_1=1.3\,{\rm m}$.
+Let the second rod be of mass $m_2=3.4\,{\rm kg}$ and length $l_2=0.7\,{\rm m}$. Suppose that
+the system is suspended from a pivot point located at the free end of the first rod, and then allowed to
+reach a stable equilibrium state. What angle $\theta$ does the first rod subtend with the
+downward vertical in this state?
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter10/fig095a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let us adopt a coordinate system in which the $x$-axis runs
+parallel to the second rod, whereas the $y$-axis runs parallel to the first. Let the origin
+of our coordinate system correspond to the pivot point. The centre of mass
+of the first rod is situated at its mid-point, whose coordinates are
+$$
+(x_1, y_1) = (0, l_1/2).
+$$
+Likewise, the centre of mass of the second rod is situated at its mid-point, whose
+coordinates are 
+$$
+(x_2, y_2) = (l_2/2, l_1).
+$$
+It follows that the coordinates of the centre of mass of the whole system are
+given by
+$$
+x_{cm} = \frac{m_1\,x_1+ m_2\,x_2}{m_1+m_2} = \frac{1}{2} \frac{m_2\,l_2}{m_1+m_2}=
+\frac{3.4\times 0.7}{2\times 8.6} = 0.138\,{\rm m},
+$$
+and 
+$$
+y_{cm} = \frac{m_1\,y_1+ m_2\,y_2}{m_1+m_2} = \frac{m_1\,l_1/2+m_2\,l_1}{m_1+m_2}
+= \frac{5.2\times 1.3/2+3.4\times 1.3}{8.6} = 0.907\,{\rm m}.
+$$
+The angle $\theta$  subtended between the line joining the pivot point and the overall centre of mass,
+and the first rod is simply
+$$
+\theta = \tan^{-1}\left(\frac{x_{cm}}{y_{cm}}\right) = \tan^{-1}0.152= 8.65^\circ.
+$$
+When the system reaches a stable equilibrium state then its centre of mass is aligned
+directly below the pivot point. This implies that the first rod
+subtends an angle $\theta=8.65^\circ$ with the downward vertical.
+
+\subsection*{\em Worked Example 10.2: Rod Supported by a Cable}
+\noindent{\em Question:} A uniform rod of mass $m=\,15\,{\rm kg}$ and
+length $l=3\,{\rm m}$ is supported in a horizontal position by a
+pin and a cable, as shown in the figure below. Masses $m_1=36\,{\rm kg}$
+and $m_2=24\,{\rm kg}$ are suspended from the rod at positions
+$l_1=0.5\,{\rm m}$ and $l_2=2.3\,{\rm m}$. The angle $\theta$ is $40^\circ$.
+What is the tension $T$ in the cable?
+
+\begin{figure*}[h]
+\epsfysize=2.2in
+\centerline{\epsffile{Chapter10/fig095b.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Consider the torque acting on the rod about the pin. Note that the
+reaction at the pin makes no contribution to this torque (since the
+length of the associated lever arm is zero). 
+The torque due to the
+weight of the rod is $m\,g\,l/2$ ({\em i.e.}, the weight times the length of the lever arm).
+Note that the weight of the rod acts at its centre of mass, which is located at the
+rod's mid-point.
+ The torque due to the weight of the first mass is
+$m_1\,g\,l_1$.
+ The torque due to the weight of the second mass is $m_2\,g\,l_2$. 
+Finally, the torque due to the tension in the cable is $-T\,l\,\sin\theta$ (this
+torque is negative since it  twists the rod in the opposite sense to the
+other three torques).
+Hence, setting the net torque to zero, we obtain
+$$
+m\,g\,\frac{l}{2} + m_1\,g\,l_1 + m_2\,g\,l_2 -T\,l\,\sin\theta = 0,
+$$
+or
+\begin{eqnarray}
+T &=& \frac{ [m/2 + m_1\,(l_1/l) + m_2\,(l_2/l)]\,g }{\sin\theta} \nonumber\\[0.5ex]
+&=& \frac{[0.5\times 15 + 36\times(0.5/3)+24\times(2.3/3)]\times 9.81}{\sin 40^\circ}\nonumber\\[0.5ex]
+ &=&
+ 486.84\,{\rm N}.\nonumber
+\end{eqnarray}
+
+\subsection*{\em Worked Example 10.3: Leaning Ladder}
+\noindent{\em Question:} A uniform ladder of mass $m = 40\,{\rm kg}$ and length
+$l=10\,{\rm m}$ is leaned against a smooth vertical wall. A person
+of mass $M=80\,{\rm kg}$ stands on the ladder a distance  $x=7\,{\rm m}$
+from the bottom, as measured along the ladder. The foot of the ladder
+is $d=1.2\,{\rm m}$ from the bottom of the wall. What is the force exerted by the
+wall on the ladder? What is the normal force exerted by the floor on the ladder?
+
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter10/fig095c.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} The angle $\theta$ subtended by the ladder with the ground 
+satisfies
+$$
+\theta = \cos^{-1}(d/l)= \cos^{-1}(1.2/10) = 83.11^\circ.
+$$
+Let $S$ be the normal reaction at the wall, let $R$ be the normal reaction at the ground,
+and let $f$ be the frictional force exerted by the ground on the ladder, as shown
+in the diagram. Consider the torque acting on the ladder about the point where
+it meets the ground. Only three forces contribute to this torque: the weight, $m\,g$, of
+the ladder, which acts half-way along the ladder; the weight, $M\,g$, of the person,
+which acts a distance $x$ along the ladder; and the reaction, $S$, at the wall, which acts
+at the top of the ladder. The lever arms associated with these three forces are
+$(l/2)\,\cos\theta$, $x\,\cos\theta$, and $l\,\sin\theta$, respectively. 
+Note that the reaction force acts to twist the ladder in the opposite sense to
+the two weights. Hence, setting the net torque to zero, we obtain
+$$
+m\,g\,\frac{l}{2}\,\cos\theta + M\,g\,x\,\cos\theta - S\,l\,\sin\theta = 0,
+$$
+which yields
+$$
+S = \frac{(m\,g/2 + M\,g\,x/l)}{\tan\theta} = \frac{(0.5\times 40\times 9.81+
+80\times 9.81\times 7/10)}{\tan 83.11^\circ} = 90.09\,{\rm N}.
+$$
+
+The condition that zero net vertical force acts on the ladder yields
+$$
+R - m\,g - M\,g = 0.
+$$
+Hence,
+$$
+R = (m+M)\,g = (40+80)\times 9.81 = 1177.2\,{\rm N}.
+$$
+
+\subsection*{\em Worked Example 10.4: Truck Crossing a Bridge}
+\noindent{\em Question:} A truck of mass $M=5000\,{\rm kg}$ is crossing
+a uniform horizontal bridge of mass $m=1000\,{\rm kg}$ and length $l=100\,{\rm m}$.
+The bridge is supported at its two end-points. What are the reactions
+at these supports when the truck is one third of the way across the bridge?
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter10/fig095d.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let $R$ and $S$ be the reactions at the bridge supports.
+Here, $R$ is the reaction at the support closest to the truck. Setting the net vertical
+force acting on the bridge to zero, we obtain
+$$
+R+S-M\,g - m\,g = 0.
+$$
+Setting the torque acting on the bridge about the left-most support to zero,
+we get
+$$
+M\,g\,l/3 + m\,g\,l/2 - S\,l = 0.
+$$
+Here, we have made use of the fact that centre of mass of the bridge lies at its
+mid-point. It follows from the above two equations that
+$$
+S = M\,g/3 + m\,g/2 = 5000\times 9.81/3 + 1000\times 9.81 /2 = 2.13\times 10^4\,{\rm N},
+$$
+and
+$$
+R = M\,g + m\,g - S = (5000+1000)\times 9.81- 2.13\times 10^4 = 3.76\times 10^4\,{\rm N}.
+$$
+
+\subsection*{\em Worked Example 10.5: Rod Supported by a Strut}
+
+\noindent{\em Question:} A uniform horizontal rod of mass $m=15\,{\rm kg}$ is
+attached to a vertical wall at one end, and is supported, from below, by a
+light rigid strut at the other. The strut is attached to the rod at one end,
+and the wall at the other, and subtends an angle of $\theta =30^\circ$ with the
+rod. Find the horizontal and vertical reactions at the point where the strut is
+attached to the rod, and the points where the rod and the strut are attached to
+the wall.
+
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter10/fig095e.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let us call the vertical reactions at the joints $X_1$, $X_2$, and $X_3$.
+Let the corresponding horizontal reactions be $Y_1$, $Y_2$, and $Y_3$. See the diagram.
+Here, we have made use of the fact that the strut and the rod exert equal and opposite
+reactions on one another, in accordance with Newton's third law.
+Setting the net vertical force on the rod to zero yields
+$$
+X_1 + X_3 - m\,g = 0.
+$$
+Setting the net horizontal force on the rod to zero gives
+$$
+Y_1+Y_3 = 0.
+$$
+Setting the net vertical force on the strut to zero yields
+$$
+X_2-X_3=0.
+$$
+Finally, setting the net horizontal force on the strut to zero yields
+$$
+Y_2-Y_3 = 0.
+$$
+The above equations can be solved to give
+$$
+-Y_1 = Y_2= Y_3 = Y,
+$$
+and
+$$
+X_2 = X_3 = X,
+$$
+with 
+$$
+X_1 = m\,g -X.
+$$
+There now remain only two unknowns, $X$ and $Y$.
+
+Setting the net torque acting on the rod about the point where it
+is connected to the wall to zero, we obtain
+$$
+m\,g\,l/2 - X_3\,l =0,
+$$
+where $l$ is the length of the rod. Here, we have used the fact that the
+centre of gravity of the rod lies at its mid-point. The above equation implies that
+$$
+X_3 = X = m\,g/2= 15\times 9.81/2 = 73.58\,{\rm N}.
+$$
+We also have $X_1=m\,g-X = 73.58\,{\rm N}$.
+Setting the net torque acting on the strut about the point where it is
+connected to the wall to zero, we find
+$$
+Y_3\,h\,\sin\theta - X_3\,h\,\cos\theta = 0,
+$$
+where $h$ is the length of the strut. Thus,
+$$
+Y_3 = Y = \frac{X}{\tan \theta} = \frac{73.58}{\tan 30^\circ}
+=127.44\,{\rm N}.
+$$
+
+In summary, the vertical reactions are $X_1=X_2=X_3=
+73.58\,{\rm N}$, and the horizontal reactions are $-Y_1=Y_2=Y_3=127.44\,
+{\rm N}.$

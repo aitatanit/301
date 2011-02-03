@@ -1,0 +1,987 @@
+\section{Conservation of Momentum}
+\subsection{Introduction}
+Up to now, we have  only analyzed the behaviour of dynamical systems
+which consist of {\em single} point masses ({\em i.e.}, objects whose spatial extent is either
+negligible or plays no role in their motion) or arrangements of point masses which are constrained to
+move {\em together} because they are connected via inextensible cables. Let us now
+broaden our approach somewhat  in order to take into account systems of point masses which exert forces on
+one another, but are not necessarily constrained to move together. The classic example of
+such a multi-component point mass
+system is one in which two (or more) freely moving  masses {\em collide} with one another.
+The physical concept which plays the central role in the  dynamics
+of multi-component point mass systems is the {\em conservation of momentum}. 
+
+\subsection{Two-Component Systems}
+The simplest imaginable multi-component dynamical system consists of two point mass objects
+which are both constrained to move along the same straight-line. See Fig.~\ref{f45}.
+Let $x_1$ be the displacement of the first object, whose mass is $m_1$. Likewise, let
+$x_2$ be the displacement of the second object, whose mass is $m_2$. Suppose that the
+first object exerts a force $f_{21}$ on the second object, whereas the second
+object exerts a force $f_{12}$ on the first. From Newton's third law of motion, we
+have
+\begin{equation}\label{e61}
+f_{12} = - f_{21}.
+\end{equation}
+Suppose, finally, that the first object is subject to an external force  ({\em i.e.}, a force
+which originates {\em outside} the system) $F_1$, whilst the second object is subject to an
+external force $F_2$.
+
+\begin{figure}[b]
+\epsfysize=1in
+\centerline{\epsffile{Chapter06/fig045.eps}}
+\caption{\em A one-dimensional dynamical system consisting of two point mass objects}\label{f45}  
+\end{figure}
+
+Applying Newton's second law of motion to each object in turn, we obtain
+\begin{eqnarray}
+m_1\,\ddot{x}_1 &=& f_{12} + F_1,\label{e62}\\[0.5ex]
+m_2\,\ddot{x}_2 &=& f_{21} + F_2.\label{e63}
+\end{eqnarray}
+Here, $\dot{~}$ is a convenient shorthand for $d/dt$. Likewise,
+$\ddot{~}$ means $d^2/dt^2$.
+
+At this point, it is helpful to introduce the concept of the {\em centre of mass}.
+The centre of mass is an imaginary point whose displacement $x_{cm}$ is defined to be
+the {\em mass weighted average}
+of the displacements of the two objects which constitute the system. In
+other words,
+\begin{equation}
+x_{cm} = \frac{m_1\,x_1 + m_2\,x_2}{m_1 + m_2}.\label{e64}
+\end{equation}
+Thus, if the two masses are equal then the centre of mass lies half way between them;
+if the second mass is three times larger than the first then the centre
+of mass lies three-quarters of the way along the line linking the first and second
+masses, respectively; if the
+second mass is much larger than the first then the centre of mass is almost
+coincident with the second mass; and so on.
+
+Summing Eqs.~(\ref{e62}) and (\ref{e63}), and then making use of Eqs.~(\ref{e61}) and (\ref{e64}),
+we obtain
+\begin{equation}
+m_1\,\ddot{x}_1+m_2\,\ddot{x}_2 = (m_1+m_2)\,\ddot{x}_{cm} = F_1 + F_2.
+\end{equation}
+Note that the {\em internal forces}, $f_{12}$ and $f_{21}$, have canceled out.
+The physical significance of this equation becomes clearer if we write it in the following
+form:
+\begin{equation}\label{e66}
+M\,\ddot{x}_{cm} = F,
+\end{equation}
+where $M=m_1+m_2$ is the total mass of the system, and $F=F_1+F_2$ is the net
+{\em external} force acting on the system. Thus, the motion of the centre of mass
+is equivalent to that which would occur if all the mass contained in the system were collected
+at the centre of mass, and this conglomerate mass were then acted upon by the
+net external force. In general, this suggests that the motion of the centre
+of mass is {\em  simpler} than the motions of the component masses, $m_1$ and
+$m_2$. This is particularly the case if the internal forces, $f_{12}$ and $f_{21}$,
+are complicated in nature.
+
+Suppose that there are {\em no} external forces acting on the system ({\em i.e.}, $F_1=F_2=0$), or, 
+equivalently, suppose
+that the sum of all the external forces is {\em zero} ({\em i.e.}, $F=F_1+F_2=0$). 
+In this case, according to Eq.~(\ref{e66}), the motion of the centre of mass is governed by
+Newton's first law of motion: {\em i.e.}, it consists of uniform motion in a straight-line.
+Hence, in the absence of a net external force, the motion of the centre of mass is
+almost certainly {\em far simpler} than that of the component masses. 
+
+Now, the velocity
+of the centre of mass is written
+\begin{equation}
+v_{cm} = \dot{x}_{cm} = \frac{m_1\,\dot{x}_1+m_2\,\dot{x}_2}{m_1+m_2}.
+\end{equation}
+We have seen that in the absence of external forces $v_{cm}$ is a constant of the motion
+({\em i.e.}, the centre of mass does not accelerate). It follows that, in this case,
+ \begin{equation}
+m_1\,\dot{x}_1+m_2\,\dot{x}_2
+\end{equation}
+is also a constant of the motion. Recall, however, from Sect.~\ref{moment}, that
+{\em momentum}  is defined as the product of mass and velocity. Hence, the momentum
+of the first mass is written $p_1=m_1\,\dot{x}_1$, whereas the momentum of the
+second mass takes the form $p_2=m_2\,\dot{x}_2$. It follows that the above expression
+corresponds to the {\em total momentum} of the system:
+ \begin{equation}
+P = p_1 + p_2.
+\end{equation}
+Thus, the total momentum is a conserved quantity---provided there is no net external force acting on the system.
+This is true {\em irrespective} of the nature of the internal forces. 
+More generally, Eq.~(\ref{e66}) can be written
+\begin{equation}
+\frac{dP}{dt} = F.
+\end{equation}
+In other words, the time derivative of the total momentum is equal to
+the net external force acting on the system---this is just Newton's second law of
+motion applied to the system as a whole.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter06/fig046.eps}}
+\caption{\em An example two-component system}\label{f46}  
+\end{figure}
+
+Let us now try to apply some of the concepts discussed above.
+Consider the simple two-component system shown in Fig.~\ref{f46}. A
+gondola of mass $m_g$ hangs from a hot-air balloon whose mass
+is negligible compared to that of the gondola. A sandbag of mass $m_w$ is
+suspended from the gondola by means of a light inextensible cable. The system
+is in equilibrium. 
+Suppose, for the sake of consistency with our other examples, that the
+$x$-axis runs vertically upwards. 
+Let $x_g$ be the height of the gondola, and $x_w$  the height of the
+sandbag. Suppose that the upper end of the cable is attached to a winch inside the gondola, and
+that this winch is used to {\em slowly} shorten the cable, so that the sandbag is lifted upwards
+ a distance ${\mit\Delta}x_w$. The question is this: does the height of the gondola
+also change as the cable is reeled in? If so, by how much?
+
+Let us identify all of the forces acting on the system shown in Fig.~\ref{f46}. The internal forces are
+the upward force exerted by the gondola on the sandbag, and the downward force exerted by the
+sandbag on the gondola. These forces are transmitted via the cable, and
+are equal and opposite (by Newton's third law of motion). The external forces are the
+net downward force due to the combined weight of the gondola and the sandbag, and the
+upward force due to the buoyancy of the balloon. Since the system is
+in equilibrium, these forces are equal and opposite (it is assumed that the cable is reeled in
+sufficiently slowly that the equilibrium is not upset). Hence, there is {\em zero}
+ net external force acting on the system. It follows, from the previous discussion, that the
+centre of mass of the system is subject to Newton's first law. In particular, since the
+centre of mass is clearly {\em stationary} before the winch is turned on, it must {\em remain
+stationary} both during and after the period in which the
+ winch is operated. Hence, the height of the centre of mass,
+\begin{equation}
+x_{cm} = \frac{m_g\,x_g + m_w\,x_w}{m_g+m_w},
+\end{equation}
+is a conserved quantity. 
+
+Suppose that the operation of the winch causes the height of the sandbag to change
+by ${\mit\Delta}x_w$, and that of the gondola to simultaneously change by ${\mit\Delta}x_g$. If
+$x_{cm}$ is a conserved quantity, then we must have
+\begin{equation}
+0 = m_g\,{\mit\Delta}x_g+m_w\,{\mit\Delta}x_w,
+\end{equation}
+or
+\begin{equation}
+{\mit\Delta}x_g =- \frac{m_w}{m_g} \,{\mit\Delta}x_w.
+\end{equation}
+Thus, if the winch is used to {\em raise} the sandbag a distance ${\mit\Delta}x_w$ then the gondola
+is simultaneously pulled {\em downwards}  a distance  $(m_w/m_g) \,{\mit\Delta}x_w$.
+It is clear that we could use a suspended sandbag as a mechanism for
+adjusting a hot-air  balloon's altitude: the balloon descends as the sandbag is raised, and ascends
+as it is lowered. 
+
+\begin{figure}
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter06/fig047.eps}}
+\caption{\em Another example two-component system}\label{f47}  
+\end{figure}
+
+Our next example is pictured in Fig.~\ref{f47}. Suppose that a cannon of mass $M$ propels a cannonball
+of mass $m$
+horizontally with velocity $v_b$. What is the recoil velocity $v_r$ of the cannon? Let us
+first identify all of the forces acting on the system. The internal forces are
+the force exerted by the cannon on the cannonball, as the cannon is fired, and the
+equal and opposite force exerted by the cannonball on the cannon. These forces are
+extremely large, but only last for a short instance in time: in physics, we call these
+ {\em impulsive} forces.
+There are no external forces acting
+in the horizontal direction (which is the only direction that we are considering in this
+example).
+ It follows that the total (horizontal) momentum $P$ of the system is a
+conserved quantity. Prior to the firing of the cannon, the total momentum is {\em zero} (since
+momentum is mass times velocity, and nothing is initially moving). After the cannon is
+fired, the total momentum of the system takes the form
+\begin{equation}
+P = m\,v_b + M\,v_r.
+\end{equation}
+Since $P$ is a conserved quantity, we can set $P=0$. Hence,
+\begin{equation}
+v_r = - \frac{m}{M}\,v_b.
+\end{equation}
+Thus, the recoil velocity of the cannon is in the {\em opposite} direction to
+the velocity of the cannonball (hence, the minus sign in the above equation), and
+is of magnitude $(m/M)\,v_b$. Of course, if the cannon is far more massive that
+the cannonball ({\em i.e.}, $M\gg m$), which is  usually the case, then the recoil velocity of the cannon
+is far smaller in magnitude than the velocity of the cannonball. Note, however,
+that the {\em momentum} of the cannon is equal in magnitude to that of the cannonball.
+It follows that it takes the same effort ({\em i.e.}, force applied for a certain period
+of time) to slow down and stop the cannon as it
+does to slow down and stop the cannonball.
+
+\subsection{Multi-Component Systems}\label{scm}
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter06/fig048.eps}}
+\caption{\em A three-dimensional dynamical system consisting of many point mass objects.}\label{f49}  
+\end{figure}
+
+Consider a system of $N$ mutually interacting point mass objects which move in 3-dimensions.
+See Fig.~\ref{f49}.
+Let the $i$th object, whose mass is $m_i$, be located at vector displacement ${\bf r}_i$.
+Suppose that this object exerts a force ${\bf f}_{ji}$ on the $j$th object. By Newton's third
+law of motion, the force ${\bf f}_{ij}$ exerted  by the $j$th object on the $i$th  is
+given by
+\begin{equation}
+{\bf f}_{ij} = - {\bf f}_{ji}.
+\end{equation}
+Finally, suppose that the $i$th object is subject to an external force ${\bf F}_i$. 
+
+Newton's second law of motion applied to the $i$th object yields
+\begin{equation}
+m_i\,\ddot{\bf r}_i = \sum_{j=1,N}^{j\neq i}\! {\bf f}_{ij} + {\bf F}_i.
+\end{equation}
+Note that the summation on the right-hand side of the above equation excludes the case
+$j=i$, since the $i$th object cannot exert a force on itself. Let us now take the above
+equation and sum it over all objects. We obtain
+\begin{equation}
+\sum_{i=1,N} \!m_i\,\ddot{\bf r}_i =\sum_{i,j=1,N}^{j\neq i}\! {\bf f}_{ij} + \sum_{i=1,N}\!
+{\bf F}_i.
+\end{equation}
+Consider the sum  over all internal forces: {\em i.e.}, the first term on the right-hand side.
+Each element of this sum---${\bf f}_{ij}$, say---can be paired with another element---${\bf f}_{ji}$,
+in this case---which is equal and opposite. In other words,
+ the elements of the sum all cancel out in pairs. Thus, the net value of the sum is {\em zero}.  
+It follows that the above equation can be written
+\begin{equation}\label{e6yy}
+M\,\ddot{\bf r}_{cm}= {\bf F},
+\end{equation}
+where $M = \sum_{i=1}^N m_i$ is the total mass, and ${\bf F} = \sum_{i=1}^N {\bf F}_i$ is the
+net external force. The quantity ${\bf r}_{cm}$ is the vector displacement of the centre of mass.
+As before, the centre of mass is an imaginary point whose coordinates are the mass weighted
+averages of the coordinates of the objects which constitute  the system. Thus,
+\begin{equation}
+{\bf r}_{cm} = \frac{\sum_{i=1}^N m_i\,{\bf r}_i}{\sum_{i=1}^N m_i}.
+\end{equation}
+According to Eq.~(\ref{e6yy}), the motion of the centre of mass is equivalent to that which
+would be obtained if all the mass contained in the system were collected at the centre of mass, and
+this conglomerate mass were then acted upon by the net external force. As before, the motion
+of the centre of mass is likely to be far simpler than the motions of the component masses. 
+
+Suppose that there is zero net external force acting on the system, so that ${\bf F} = {\bf 0}$. 
+In this case, Eq.~(\ref{e6yy}) implies that the centre of mass moves with  uniform
+velocity in a straight-line. In other words, the velocity of the centre of mass,
+\begin{equation}\label{e6xy}
+\dot{\bf r}_{cm} = \frac{\sum_{i=1}^N m_i\,\dot{\bf r}_i}{\sum_{i=1}^N m_i},
+\end{equation}
+is a constant of the motion. Now, the momentum of the $i$th object takes the
+form ${\bf p}_i = m_i\,\dot{\bf r}_i$. Hence, the total momentum of the
+system is written
+\begin{equation}\label{e6yx}
+{\bf P} = \sum_{i=1}^N m_i\,\dot{\bf r}_i.
+\end{equation}
+A comparison of Eqs.~(\ref{e6xy}) and (\ref{e6yx}) suggests that ${\bf P}$ is also
+a constant of the motion when zero net external force acts on the system. Finally, 
+Eq.~(\ref{e6yy}) can be rewritten
+\begin{equation}
+\frac{d{\bf P}}{dt} = {\bf F}.
+\end{equation}
+In other words, the time derivative of the total momentum
+is equal to the net external force acting on the system.
+
+It is clear, from the above discussion, that most of the important results obtained in the
+previous section, for the case of a two-component system moving
+in 1-dimension, also apply to a multi-component system moving in 3-dimensions.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter06/fig049.eps}}
+\caption{\em The unfortunate history of the planet Krypton.}\label{f50}  
+\end{figure}
+
+As an illustration of the points raised in the above discussion, let us consider the unfortunate
+history of the planet Krypton. As you probably all know, Krypton---Superman's home planet---eventually
+ exploded. 
+Note, however, that before, during, and after this explosion the net external force acting
+on Krypton, or the fragments of Krypton---namely, the gravitational attraction to Krypton's sun---remained
+the same. In other words, the forces responsible for the explosion can be thought of as
+large, transitory, {\em internal} forces. We conclude that  the motion of the centre of mass of
+Krypton, or the fragments of Krypton, was {\em unaffected} by the explosion. This follows, from
+Eq.~(\ref{e6yy}), since the motion of the centre of mass is independent of internal forces. 
+Before the explosion, the planet Krypton presumably executed a standard elliptical orbit
+around Krypton's sun. We conclude that,
+ after the explosion, the fragments of Krypton (or, to be more exact, the
+centre of mass of these fragments) continued to execute {\em exactly the same} orbit. See
+Fig.~\ref{f50}.
+
+\subsection{Rocket Science}
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter06/fig050.eps}}
+\caption{\em A rocket.}\label{f51}  
+\end{figure}
+A rocket engine is the only type of propulsion device that operates
+effectively in outer space. As shown in Fig.~\ref{f51}, a rocket works by ejecting a propellant at
+high velocity from its rear end. The rocket exerts a backward force on the
+propellant, in order to eject it, and, by Newton's third law, the propellant
+exerts an equal and opposite force on the rocket, which propels it forward.
+
+Let us attempt to find the equation of motion of a rocket. Let $M$ be the fixed mass of the
+rocket engine and the payload, and  $m(t)$  the total mass of the propellant contained
+in the rocket's fuel tanks at time $t$. Suppose that the rocket engine ejects the propellant
+at some fixed velocity $u$ {\em relative to the rocket}. Let us examine the rocket at two
+closely spaced instances in time. Suppose that at time $t$ the rocket and propellant, whose
+total mass is $M+m$, are traveling with instantaneous velocity $v$. Suppose, further, that
+between times $t$ and $t+dt$ the rocket  ejects a quantity of propellant of mass $-dm$ ({\em n.b.}, $dm$ 
+is understood to be negative,
+so this represents a positive mass) which travels with velocity $v-u$ ({\em i.e.}, velocity
+$-u$ in the instantaneous rest frame of the rocket). As a result of the fuel
+ejection, the velocity of the rocket
+at time $t+dt$ is boosted to $v+dv$, and its total
+mass becomes $M+m+dm$. See Fig.~\ref{f52}.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter06/fig051.eps}}
+\caption{\em Derivation of the rocket equation.}\label{f52}  
+\end{figure}
+
+Now, there is zero external force acting on the system, since the rocket is assumed to be in outer space.
+It follows that the total momentum of the system is a constant of the motion. Hence, we
+can equate the momenta evaluated at times $t$ and $t+dt$:
+\begin{equation}
+(M+m)\,v = (M+m+dm)\,(v+dv) + (-dm)\,(v-u).
+\end{equation}
+Neglecting second order quantities ({\em i.e.}, $dm\,dv$), the above expression
+yields
+\begin{equation}
+0 = (M+m)\,dv + u\,dm.
+\end{equation}
+Rearranging, we obtain
+\begin{equation}
+\frac{dv}{u} =- \frac{dm}{M+m}.
+\end{equation}
+Let us integrate the above equation between an initial time at which the rocket is
+fully fueled---{\em i.e.}, $m=m_p$, where $m_p$ is the maximum mass of propellant that the
+rocket can carry---but stationary, and a final time at which the mass of the fuel is $m$
+and the velocity of the rocket is $v$. Hence,
+\begin{equation}
+\int_0^v\frac{dv}{u}= -\int_{m_p}^m\frac{dm}{M+m}.
+\end{equation}
+It follows that
+\begin{equation}
+\left[\frac{v}{u}\right]_{v=0}^{v=v}= -\left[\ln(M+m)\right]_{m=m_p}^{m=m},
+\end{equation} 
+which yields
+\begin{equation}
+v = u\,\ln\left(\frac{M+m_p}{M+m}\right).
+\end{equation}
+The final velocity of the rocket ({\em i.e.}, the velocity attained by the time
+the rocket has exhausted its fuel, so that  $m=0$) is
+\begin{equation}
+v_f = u\, \ln\left(1+\frac{m_p}{M}\right).
+\end{equation}
+Note that, unless the initial mass of the fuel  exceeds the fixed mass of the
+rocket by many orders of magnitude
+(which is highly unlikely), the final velocity $v_f$ of the rocket is similar to
+the velocity $u$ with which  fuel is ejected from the rear of the rocket in 
+its instantaneous rest frame. This follows because $\ln x \sim O(1)$, unless $x$ becomes
+extremely large.
+
+Let us now consider the factors which might influence the design of a rocket for use in interplanetary or
+interstellar travel. Since the distances involved in such travel are vast, it is 
+important that the rocket's final velocity be made as large as possible, otherwise the journey
+is going to take an unacceptably long time. However, as we have just seen, the factor which
+essentially determines the final velocity $v_f$ of a rocket is the speed of ejection $u$ of
+the propellant relative to the rocket. Broadly speaking, $v_f$ can never significantly
+exceed $u$. It follows that a rocket suitable for interplanetary or
+interstellar travel should have as high an ejection speed as practically possible.
+Now, ordinary chemical rockets (the kind which powered the Apollo moon program)
+can develop enormous thrusts, but are limited to ejection velocities below
+about $5000\,{\rm m/s}$. Such rockets are ideal for lifting payloads out of the Earth's
+gravitational field, but their relatively low ejection velocities render them unsuitable for
+long distance space travel. A new type of rocket engine, called an {\em ion thruster}, is currently
+under development: ion thrusters operate by accelerating ions electrostatically to great
+velocities, and then ejecting them. Although ion thrusters only generate very small thrusts, compared to
+chemical rockets, their much larger ejection velocities (up to 100 times those
+of chemical rockets) makes them far more suitable for interplanetary or interstellar space travel.
+The first spacecraft to employ an ion thruster was the
+Deep Space 1 probe, which was launched from Cape Canaveral on October 24, 1998: this
+probe  successfully encountered the  asteroid 9969 Braille   in July, 1999. 
+
+\subsection{Impulses}\label{s65}
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter06/fig052.eps}}
+\caption{\em A ball bouncing off a wall.}\label{f53}  
+\end{figure}
+
+Suppose that a ball of mass $m$ and {\em speed} $u_i$ strikes an immovable wall normally and
+rebounds with {\em speed} $u_f$. See Fig.~\ref{f53}. Clearly, the momentum of the ball is changed
+by the collision with the wall, since the direction of the ball's velocity is reversed.
+It follows that the wall must exert a force on the ball, since force is the rate of change
+of momentum. This force is generally very large, but is only exerted for the short instance in time
+during which the ball is in physical contact with the wall. As we have already mentioned, physicists
+generally refer to such a force as an {\em impulsive} force. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter06/fig053.eps}}
+\caption{\em An impulsive force.}\label{f54}  
+\end{figure}
+
+Figure~\ref{f54} shows the typical time history of an impulsive force, $f(t)$. It can be seen that
+the force is only non-zero in the short time interval $t_1$ to $t_2$. It is helpful
+to define a quantity known as the net {\em impulse}, $I$, associated with $f(t)$:
+\begin{equation}\label{e6uu}
+I = \int_{t_1}^{t_2} f(t)\,dt.
+\end{equation}
+In other words, $I$ is the total area under the $f(t)$ curve shown in Fig.~\ref{f54}. 
+
+Consider a object subject to the impulsive force pictured in Fig.~\ref{f54}. Newton's
+second law of motion yields
+\begin{equation}
+\frac{dp}{dt} = f,
+\end{equation}
+where $p$ is the momentum of the object. Integrating the above equation, making use of
+the definition (\ref{e6uu}), we obtain
+\begin{equation}
+{\mit\Delta}p = I.
+\end{equation}
+Here, ${\mit\Delta} p = p_f-p_i$, where $p_i$ is the momentum before the impulse, and
+$p_f$ is the momentum after the impulse. We conclude that the net change in momentum of
+an object subject to an impulsive force is equal to the  total impulse associated with that
+force. For instance, the net change in momentum of the ball bouncing off the wall in
+Fig.~\ref{f53} is ${\mit\Delta} p = m\,u_f -m\,(-u_i)=
+m\,(u_f+u_i)$. [Note: The initial {\em velocity} is $-u_i$, since the ball is initially
+moving in the negative direction.]
+It follows that the net impulse imparted
+to the ball by the wall is $I = m\,(u_f+u_i)$. Suppose that we know the ball was only in physical
+contact with the wall for the short time interval ${\mit\Delta} t$. We conclude that the
+{\em average force} $\bar{f}$ exerted on the ball during this time interval
+was
+\begin{equation}
+\bar{f} = \frac{I}{{\mit\Delta} t}.
+\end{equation}
+
+The above discussion is only relevant to 1-dimensional motion. However, the generalization
+to 3-dimensional motion is fairly straightforward. Consider an impulsive force
+${\bf f}(t)$, which is only non-zero in the short time interval $t_1$ to $t_2$.
+The vector impulse associated with this force is simply
+\begin{equation}
+{\bf I} = \int_{t_1}^{t_2} {\bf f}(t)\,dt.
+\end{equation}
+The net change in momentum of an object subject to  ${\bf f}(t)$ is
+\begin{equation}
+{\mit\Delta} {\bf p} = {\bf I}.
+\end{equation}
+Finally, if $t_2-t_1={\mit\Delta} t$, then the average force experienced by the
+object in the time interval $t_1$ to $t_2$ is 
+\begin{equation}
+\bar{\bf f} = \frac{{\bf I}}{{\mit\Delta}t}.
+\end{equation}
+
+\subsection{Collisions in One-Dimension}
+\begin{figure}
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter06/fig054.eps}}
+\caption{\em A collision in one-dimension.}\label{f55}  
+\end{figure}
+Consider two objects of mass $m_1$ and $m_2$, respectively, which are free
+to move in 1-dimension. Suppose that these two objects collide.
+Suppose, further, that both objects are subject to zero net force when they are
+not in contact with one another. This situation is illustrated in Fig.~\ref{f55}.
+
+Both before and after the collision, the two objects move with {\em constant velocity}.
+Let $v_{i1}$ and $v_{i2}$ be the velocities of the first and second objects, respectively,
+before the collision. Likewise, let  $v_{f1}$ and $v_{f2}$ be the velocities of 
+the first and second objects, respectively,
+after the collision. During the collision itself, the first object exerts a large
+transitory force $f_{21}$ on the second, whereas the second object exerts an
+equal and opposite force $f_{12}=-f_{21}$ on the first. In fact, we can model the collision
+as equal and opposite {\em impulses} given to the two objects at the instant in time
+when they come together.
+
+We are clearly considering a system in which there is zero net external force (the forces
+associated with the collision are internal in nature). Hence, the total momentum of the
+system is a conserved quantity. Equating the total momenta before and after the
+collision, we obtain
+\begin{equation}\label{e6tty}
+m_1\,v_{i1} + m_2\,v_{i2} = m_1\,v_{f1} + m_2\,v_{f2}.
+\end{equation}
+This equation is valid for {\em any} 1-dimensional
+collision, irrespective its nature. Note that, assuming
+we know the masses of the colliding objects, the above equation only fully describes the
+collision if we are given the initial velocities of both objects, and the final velocity of
+at least  one of the objects. (Alternatively, we could be given both final velocities and only
+one of the initial velocities.)
+
+There are many different types of collision. An {\em elastic} collision is one in which
+the total kinetic energy of the two colliding objects is the same
+before and after the collision. Thus, for an elastic collision we can write
+\begin{equation}\label{e6ttt}
+\frac{1}{2}\,m_1\,v_{i1}^{\,2} +\frac{1}{2}\,m_2\,v_{i2}^{\,2}=
+\frac{1}{2}\,m_1\,v_{f1}^{\,2} +\frac{1}{2}\,m_2\,v_{f2}^{\,2},
+\end{equation}
+in addition to Eq.~(\ref{e6tty}). Hence, in this case, the collision is fully specified
+once we are given the two initial velocities of the colliding objects. (Alternatively,
+we could be given the two final velocities.)
+
+The majority of collisions occurring in real life are not elastic in nature.
+ Some fraction of the initial kinetic
+energy of the colliding objects is usually converted into some other form of energy---generally
+heat energy, or energy associated with the mechanical deformation of the objects---during the
+collision. Such collisions are termed {\em inelastic}. For instance, a large fraction of
+the initial kinetic energy of a typical automobile accident is converted into mechanical
+energy of deformation of the two vehicles. Inelastic collisions also occur during squash/racquetball/handball
+games: in each case,  the ball becomes warm to the touch after a long game, because some
+fraction  of the
+ball's kinetic energy of collision  with the walls of the court has been converted into
+heat energy. Equation~(\ref{e6tty}) remains valid for inelastic collisions---however, Eq.~(\ref{e6ttt})
+is invalid. Thus, generally speaking, an inelastic collision is only fully characterized
+when we are given the initial velocities of both objects, and the final velocity of
+at least  one of the objects.
+There is, however,
+ a special case of an inelastic collision---called a {\em totally inelastic} collision---which
+is fully characterized once we are given the  initial velocities of the colliding objects.
+In a totally inelastic collision, the two objects {\em stick together} after the collision, so
+that $v_{f1}=v_{f2}$. 
+
+Let us, now, consider elastic collisions in more detail. Suppose that we transform to a frame of
+reference which co-moves with the centre of mass of the system. The motion of a multi-component system 
+often looks particularly simple when viewed
+in such a frame. Since the system is subject to zero net external force, the velocity of the
+centre of mass is {\em invariant}, and is given by
+\begin{equation}
+v_{cm} = \frac{m_1\,v_{i1} + m_2\,v_{i2}}{m_1+m_2}=  \frac{m_1\,v_{f1} + m_2\,v_{f2}}{m_1+m_2}.
+\end{equation}
+An object which possesses a velocity $v$ in our original frame of reference---hence\-forth, termed
+the {\em laboratory frame}---possesses a velocity $v'=v-v_{cm}$ in the centre of mass
+frame. It is easily demonstrated that
+\begin{eqnarray}
+v_{i1}' &=& - \frac{m_2}{m_1+m_2}\,(v_{i2}-v_{i1}),\\[0.5ex]
+v_{i2}' &=& + \frac{m_1}{m_1+m_2}\,(v_{i2}-v_{i1}),\\[0.5ex]
+v_{f1}' &=& - \frac{m_2}{m_1+m_2}\,(v_{f2}-v_{f1}),\\[0.5ex]
+v_{f2}' &=& + \frac{m_1}{m_1+m_2}\,(v_{f2}-v_{f1}).
+\end{eqnarray}
+
+The above equations yield
+\begin{eqnarray}
+-p_{i1}' = p_{i2}' = \mu\,(v_{i2}-v_{i1}),\label{e6qqq}\\[0.5ex]
+-p_{f1}' = p_{f2}' = \mu\,(v_{f2}-v_{f1}),\label{e6qq}
+\end{eqnarray}
+where $\mu = m_1\,m_2/(m_1+m_2)$ is the
+so-called {\em reduced mass}, and $p_{i1}' = m_1\,v_{i1}'$ is the initial momentum of the first object in the
+centre of mass frame, {\em etc}. In other words, when viewed in the centre of mass frame, the 
+two objects approach one another with {\em equal and opposite momenta} before the collision,
+and diverge from one another with equal and opposite momenta after the collision.
+Thus, the centre of mass momentum conservation equation,
+\begin{equation}
+p_{i1}' + p_{i2}' = p_{f1}' + p_{f2}',
+\end{equation}
+is trivially satisfied, because both the left- and right-hand sides are zero. Incidentally,
+this result is valid for both elastic {\em and} inelastic collisions.
+
+The centre of mass kinetic energy conservation equation takes the form
+\begin{equation}
+\frac{p_{i1}'^{~2}}{2\,m_1} +  \frac{p_{i2}'^{~2}}{2\,m_2} = 
+\frac{p_{f1}'^{~2}}{2\,m_1} +  \frac{p_{f2}'^{~2}}{2\,m_2}.\label{e6q}
+\end{equation}
+Note, incidentally, that if energy and momentum are conserved in the laboratory frame then
+they must also be conserved in the centre of mass frame. A comparison
+of Eqs.~(\ref{e6qqq}), (\ref{e6qq}), and (\ref{e6q}) yields
+\begin{equation}
+(v_{i2}-v_{i1}) = - (v_{f2}-v_{f1}).\label{e6p}
+\end{equation}
+In other words, the {\em relative velocities} of the colliding objects are {\em equal and
+opposite} before and after the collision. This is true in {\em all} frames of
+reference, since relative velocities are frame invariant. Note, however, that this
+result {\em only} applies to fully elastic collisions. 
+
+Equations~(\ref{e6tty}) and (\ref{e6p}) can be combined to give the following
+pair of equations which fully specify the final velocities (in the laboratory frame) of two objects
+which collide elastically, given their initial velocities:
+\begin{eqnarray}
+v_{f1} &=&  \frac{(m_1-m_2)}{m_1+m_2}\,v_{i1} + \frac{2\,m_2}{m_1+m_2}\,v_{i2},\label{e6hh}\\[0.5ex]
+v_{f2} &=& \frac{2\,m_1}{m_1+m_2}\,v_{i1} -  \frac{(m_1-m_2)}{m_1+m_2}\,v_{i2}.\label{e6hhh}
+\end{eqnarray}
+
+Let us, now, consider some special cases. Suppose that two {\em equal mass} objects collide elastically.
+If $m_1=m_2$ then Eqs.~(\ref{e6hh}) and (\ref{e6hhh}) yield
+\begin{eqnarray}
+v_{f1} = v_{i2},\\[0.5ex]
+v_{f2} = v_{i1}.
+\end{eqnarray}
+In other words, the two objects simply {\em exchange velocities} when they collide. 
+For instance, if the second object is stationary and the first object strikes it head-on
+with velocity $v$ then the first object is brought to a halt whereas the second object
+moves off with velocity $v$. It is possible to reproduce this effect in pool
+by striking the cue ball with great force in such a manner that it {\em slides}, rather
+that rolls, over the table---in this case, when the cue ball strikes another ball head-on
+it comes to a {\em complete halt}, and the other ball is propelled forward very rapidly.
+Incidentally, it is necessary to prevent the cue ball from rolling, because rolling motion
+is not taken into account in our analysis, and actually changes the answer.
+
+Suppose that the second object is much more massive than the first ({\em i.e.}, $m_2\gg m_1$)
+and is initially at rest ({\em i.e.}, $v_{i2} =0$). In this case, Eqs.~(\ref{e6hh}) and (\ref{e6hhh}) yield
+\begin{eqnarray}
+v_{f1} &\simeq & - v_{i1},\\[0.5ex]
+v_{f2} &\simeq & 0.
+\end{eqnarray}
+In other words, the velocity of the light object is effectively {\em reversed} during the collision, whereas
+the massive object remains approximately at rest. Indeed, this is the sort of behaviour we
+expect when an object collides elastically with an immovable obstacle: {\em e.g.}, when an
+elastic ball bounces off a brick wall.
+
+Suppose, finally, that the second object is much lighter than the first ({\em i.e.}, $m_2\ll m_1$)
+and is initially at rest ({\em i.e.}, $v_{i2} =0$). In this case, Eqs.~(\ref{e6hh}) and (\ref{e6hhh}) yield
+\begin{eqnarray}
+v_{f1} &\simeq &  v_{i1},\\[0.5ex]
+v_{f2} &\simeq & 2\,v_{i1}.
+\end{eqnarray}
+In other words, the motion of the massive object is essentially unaffected by the collision,
+whereas the light object ends up going {\em twice} as fast as the massive one.
+
+Let us, now, consider totally inelastic collisions in more detail. In a totally inelastic
+collision the two objects stick together after colliding, so they
+ end up moving with the same final velocity 
+$v_f= v_{f1}=v_{f2}$. In this case, Eq.~(\ref{e6tty}) reduces to
+\begin{equation}
+v_f = \frac{m_1\,v_{i1} + m_2\,v_{i2}}{m_1+m_2}= v_{cm}.
+\end{equation}
+In other words, the common final velocity of the two objects is equal to the
+centre of mass velocity of the system. This is hardly a surprising result. We have already seen
+that in the centre of mass frame the two objects must diverge with {\em equal and opposite momenta} after
+the collision. However, in a totally inelastic collision these two momenta must
+also be {\em equal} (since the two objects stick together). The only way in which this is possible
+is if the two objects remain {\em stationary} in the centre of mass frame after the collision.
+Hence, the two objects move with the centre of mass velocity in the laboratory frame.
+
+Suppose that the second object is initially at rest ({\em i.e.}, $v_{i2}=0$). In this
+special case, the common final velocity of the two objects is
+\begin{equation}
+v_f =  \frac{m_1}{m_1+m_2}\,v_{i1}.
+\end{equation}
+Note that the first object is slowed down by the collision.
+The fractional loss in kinetic energy of the system due to the collision is given
+by
+\begin{equation}
+f = \frac{K_i-K_f}{K_i} = \frac{m_1\,v_{i1}^{\,2} - (m_1+m_2)\,v_f^{\,2}}{m_1\,v_{i1}^{\,2}}
+= \frac{m_2}{m_1+m_2}.
+\end{equation}
+The loss in kinetic energy is small if the (initially) stationary object
+is much lighter than the  moving object ({\em i.e.}, if $m_2\ll m_1$), and almost $100\%$ if the moving
+object is much lighter than the stationary one ({\em i.e.}, if $m_2\gg m_1$). 
+Of course, the lost kinetic energy of the
+system is converted into some other form of energy: {\em e.g.}, heat energy. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter06/fig055.eps}}
+\caption{\em A collision in two-dimensions.}\label{f56}  
+\end{figure}
+
+\subsection{Collisions in Two-Dimensions}
+Suppose that an object of mass $m_1$, moving with initial speed $v_{i1}$, strikes a
+second object, of mass $m_2$, which is initially at rest. Suppose, further, that the collision
+is not head-on, so that after the collision the first object moves off at an angle $\theta_1$ to
+its initial direction of motion, whereas the second object moves off at an angle $\theta_2$ to
+this direction. Let the final speeds of the two objects be
+$v_{f1}$ and $v_{f2}$, respectively. See Fig.~\ref{f56}. 
+
+We are again considering a system in which there is zero net external force (the forces associated
+with the collision are internal in nature). It follows that the total momentum of
+the system is a conserved quantity. However, unlike before, we must now treat the total
+momentum as a {\em vector} quantity, since we are no longer dealing with 1-dimensional
+motion. Note that if the collision takes place wholly within the $x$-$y$ plane, as indicated in Fig.~\ref{f56},
+then it is sufficient to equate the $x$- and $y$- components of the total momentum before and after the collision. 
+
+Consider the $x$-component of the system's total momentum. Before the collision, the
+total $x$-momentum is simply $m_1\,v_{i1}$, since the second object is initially
+stationary, and the first object is initially moving along the $x$-axis with
+speed $v_{i1}$. After the collision, the $x$-momentum of the first object is
+$m_1\,v_{f1}\,\cos\theta_1$: {\em i.e.}, $m_1$ times the $x$-component of the
+first object's final velocity. Likewise, the final $x$-momentum of the second
+object is $m_2\,v_{f2}\,\cos\theta_2$. Hence, momentum conservation in the $x$-direction
+yields
+\begin{equation}\label{epx}
+m_1\,v_{i1} = m_1\,v_{f1}\,\cos\theta_1+ m_2\,v_{f2}\,\cos\theta_2.
+\end{equation}
+
+Consider the $y$-component of the system's total momentum. Before the collision, the
+total $y$-momentum is zero, since there is initially no  motion along the $y$-axis.
+After the collision, the $y$-momentum of the first object is
+$-m_1\,v_{f1}\,\sin\theta_1$: {\em i.e.}, $m_1$ times the $y$-component of the
+first object's final velocity. Likewise, the final $y$-momentum of the second
+object is $m_2\,v_{f2}\,\sin\theta_2$. Hence, momentum conservation in the $y$-direction
+yields
+\begin{equation}\label{epy}
+  m_1\,v_{f1}\,\sin\theta_1= m_2\,v_{f2}\,\sin\theta_2.
+\end{equation}
+
+For the special case of an {\em elastic} collision, we can equate the
+total kinetic energies of the two objects before and after the collision. Hence,
+we obtain
+\begin{equation}\label{eke}
+ \frac{1}{2}\,m_1\,v_{i1}^{\,2} =\frac{1}{2}\,m_1\,v_{f1}^{\,2}+\frac{1}{2}\,m_2\,v_{f2}^{\,2}. 
+\end{equation}
+Given the initial conditions ({\em i.e.}, $m_1$, $m_2$, and $v_{i1}$), we have a system
+of {\em  three} equations [{\em i.e.}, Eqs.~(\ref{epx}), (\ref{epy}), and (\ref{eke})] and
+{\em four} unknowns ({\em i.e.}, $\theta_1$, $\theta_2$, $v_{f1}$, and $v_{f2}$). Clearly,
+we cannot uniquely  solve such a system without being given additional information:
+{\em e.g.}, the direction of motion or speed of one of the objects after the collision.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter06/fig056.eps}}
+\caption{\em A totally inelastic collision in two-dimensions.}\label{f57}  
+\end{figure}
+
+Figure~\ref{f57} shows a 2-dimensional totally inelastic collision. In this
+case, the first object, mass $m_1$, initially moves along the $x$-axis
+with speed $v_{i1}$. On the other hand, the second object, mass $m_2$, initially moves at an
+angle $\theta_i$ to the $x$-axis with speed $v_{i2}$. After the collision, the two
+objects stick together and move off at an angle $\theta_f$ to the $x$-axis with
+speed $v_f$. Momentum conservation along the $x$-axis yields
+\begin{equation}\label{tin1}
+m_1\,v_{i1} + m_2\,v_{i2}\,\cos\theta_i = (m_1+m_2)\,v_f\,\cos\theta_f.
+\end{equation}
+Likewise, momentum conservation along the $y$-axis gives
+\begin{equation}\label{tin2}
+ m_2\,v_{i2}\,\sin\theta_i = (m_1+m_2)\,v_f\,\sin\theta_f.
+\end{equation}
+Given the initial conditions ({\em i.e.}, $m_1$, $m_2$, $v_{i1}$, $v_{i2}$, and
+$\theta_i$), we have a system of {\em two} equations [{\em i.e.}, Eqs.~(\ref{tin1}) and
+(\ref{tin2})]  and {\em two} unknowns ({\em i.e.}, $v_f$ and $\theta_f$). 
+Clearly, we should be able to find a unique solution for such a system. 
+
+\subsection*{\em Worked Example 6.1: Cannon in a Railway Carriage}
+\noindent{\em Question:} A cannon is bolted to the floor of a railway carriage, which is
+free to move without friction along a straight track. The combined mass of the cannon and
+the carriage is $M=1200\,{\rm kg}$. The cannon fires a cannonball, of mass $m=1.2\,{\rm kg}$,
+horizontally with velocity $v=115\,{\rm m/s}$. The cannonball travels the length of the
+carriage, a distance $L=85\,{\rm m}$,  and then becomes embedded in the carriage's end wall. What is the recoil
+speed of the carriage right after the cannon is fired? What is the velocity of the
+carriage after the cannonball strikes the far wall? What net distance, and in what
+direction, does the carriage move as a result of the firing of the cannon?
+
+\begin{figure*}[h]
+\epsfysize=1in
+\centerline{\epsffile{Chapter06/fig057.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Conservation of momentum implies that the net horizontal momentum
+of the system is the same before and after the cannon is fired. The momentum before
+the cannon is fired is zero, since nothing is initially moving. Hence, we can also set the momentum after
+the cannon is fired to zero, giving
+$$
+0 = M\,u + m\,v,
+$$
+where $u$ is the recoil velocity of the carriage. It follows that
+$$
+u = - \frac{m}{M}\,v = -\frac{1.2\times 115}{1200} = -0.115\,{\rm m/s}.
+$$
+The minus sign indicates that the recoil velocity of the carriage is in the
+opposite direction to the direction of motion of the cannonball. Hence, the
+recoil {\em speed} of the carriage is $|u|= 0.115\,{\rm m/s}$.
+
+Suppose that, after the cannonball strikes the far wall of the carriage, both
+the cannonball and the carriage move with common velocity $w$. Conservation
+of momentum implies that the net horizontal momentum of the system is the same
+before and after the collision. Hence, we can write
+$$
+M\,u + m\,v= (M+m)\,w.
+$$
+However, we have already seen that $M\,u + m\,v=0$. It follows that $w=0$: in other
+words, the carriage is brought to a complete halt when the cannonball strikes its far wall.
+
+In the frame of reference of the carriage, the cannonball moves with velocity
+$v-u$ after the cannon is fired. Hence, the time of flight of the cannonball is
+$$
+t = \frac{L}{v-u} = \frac{85}{115+0.115} = 0.738\,s.
+$$
+The distance moved by the carriage in this time interval is
+$$
+d = u\,t = -0.115\times 0.738 = -0.0849\,{\rm m}.
+$$
+Thus, the carriage moves $8.49\,{\rm cm}$ in the opposite direction to
+the direction of motion of the cannonball.
+
+\subsection*{\em Worked Example 6.2: Hitting a Softball}
+\noindent{\em Question:} A softball of mass $m=0.35\,{\rm kg}$  is pitched
+at a speed of $u=12\,{\rm m/s}$. The batter hits the ball directly back to
+the pitcher at a speed of $v=21\,{\rm m/s}$. The bat acts on the ball
+for $t=0.01\,{\rm s}$. What  impulse is imparted by the bat to the ball?
+What  average force is exerted by the bat on the ball?
+
+\noindent{\em Answer:} The initial momentum of the softball is $-m\,u$, whereas its
+final momentum is $m\,v$. Here, the final direction of motion of the softball
+is taken to be positive. Thus, the net change in momentum of the softball due to
+its collision with the bat is
+$$
+{\mit\Delta} p = m\,v - (-)\,m\,u = 0.35\times(21+12) = 11.55\,{\rm N\,s}.
+$$
+By definition, the net momentum change is equal to the impulse imparted
+by the bat, so
+$$
+I = {\mit\Delta} p = 11.55\,{\rm N\,s}.
+$$
+
+The average force exerted by the bat on the ball is simply the net impulse divided by the
+time interval over which the ball is in contact with the bat. Hence,
+$$
+\bar{f} = \frac{I}{t}= \frac{11.55}{0.01} = 1155.0\,{\rm N}.
+$$
+
+\subsection*{\em Worked Example 6.3: Skater and Medicine Ball}
+\noindent{\em Question:} A skater of  mass $M=120\,{\rm kg}$ is skating across a pond
+with uniform velocity $v=8\,{\rm m/s}$. One of the skater's friends, who is
+standing at the edge of the pond, throws a
+medicine ball of mass $m=20\,{\rm kg}$ with velocity $u=3\,{\rm m/s}$ to the skater, who catches
+it. The direction of motion of the ball is perpendicular to the initial direction of motion
+of the skater. 
+What is the final speed of the skater? What is the final direction
+of motion of the skater relative to his/her initial direction of motion? Assume that the
+skater moves without friction. 
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter06/fig057a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Suppose that the skater is initially moving along the $x$-axis, whereas
+the initial direction of motion of the medicine ball is along the $y$-axis. The skater's
+initial momentum is
+$$
+{\bf p}_1 = (M\,v,\,0) = (120\times 8,\,0 ) = (960,\, 0)\,{\rm N\,s}.
+$$
+Likewise, the initial momentum of the medicine ball is
+$$
+{\bf p}_2 = (0,\,m\,u) = (0,\,20\times 3) = (0, \,60) \,{\rm N\,s}.
+$$
+After the skater catches the ball, the combined momentum of the skater
+and the ball is
+$$
+{\bf p}_3 = {\bf p}_1 + {\bf p}_2 = (960, \,60) \,{\rm N\,s}.
+$$
+This follows from momentum conservation. The final speed of the skater (and the ball)
+is
+$$
+v' = \frac{|{\bf p}_3|}{M+m} = \frac{\sqrt{960^2+60^2}}{120+20} = 6.87\,{\rm m/s}.
+$$
+The final direction of motion of the skater is parameterized by the angle $\theta$
+(see the above diagram), where
+$$
+\theta = \tan^{-1}\!\left(\frac{|{\bf p}_2|}{|{\bf p}_1|}
+\right) =\tan^{-1}\!\left(\frac{60}{960}\right)= 3.58^\circ.
+$$
+
+\subsection*{\em Worked Example 6.4: Bullet and Block}
+\noindent{\em Question:} A bullet of mass $m=12\,{\rm g}$ strikes a stationary wooden block
+of mass $M=5.2\,{\rm kg}$ standing on a frictionless surface. The block, with
+the bullet embedded in it, acquires a velocity of $v=1.7\,{\rm m/s}$. What
+was the velocity of the bullet before it struck the block? What fraction of the
+bullet's initial kinetic energy is lost ({\em i.e.}, dissipated) due to
+the collision with the block?
+
+
+\noindent{\em Answer:} Let $u$ be the initial velocity of the bullet.
+Momentum conservation requires the total horizontal momentum of the
+system to be the same before and after the bullet strikes the block.
+The initial momentum of the system is simply $m\,u$, since the
+block is initially at rest. The final momentum is $(M+m)\,v$, since
+both the block and the bullet end up moving with velocity $v$. Hence,
+$$
+m\,u = (M+m)\,v,
+$$
+giving
+$$
+u = \frac{M+m}{m}\,v = \frac{(0.012+5.2)\times 1.7}{0.012} = 738.4\,{\rm m/s}.
+$$
+
+The initial kinetic energy of the bullet is
+$$
+K_i = \frac{1}{2}\,m\,u^2 = 0.5\times 0.012 \times 738.4^2 = 3.2714\,{\rm kJ}.
+$$
+The final kinetic energy of the system is
+$$
+K_f = \frac{1}{2}\,(M+m)\,v^2 = 0.5\times(0.012+5.2)\times 1.7^2 = 7.53\,{\rm J}.
+$$
+Hence, the fraction of the initial kinetic energy which is dissipated is
+$$
+f = \frac{K_i-K_f}{K_i} = \frac{3.2714\times 10^3-7.53}{3.2714\times 10^3} = 0.9977.
+$$
+
+\subsection*{\em Worked Example 6.5: Elastic Collision}
+\noindent{\em Question:} An object of mass $m_1=2\,{\rm kg}$, moving
+with velocity $v_{i1}= 12\,{\rm m/s}$,  collides head-on with
+a stationary object whose mass is $m_2=6\,{\rm kg}$. Given that the collision
+is elastic, what are the final velocities of the two objects. Neglect friction.
+
+\noindent{\em Answer:} Momentum conservation yields
+$$
+m_1\,v_{i1} = m_1\,v_{f1} + m_2\,v_{f2},
+$$
+where $v_{f1}$ and $v_{f2}$ are the final velocities of the first and second
+objects, respectively. Since the collision is elastic, the total kinetic
+energy must be the same before and after the collision. Hence,
+$$
+\frac{1}{2}\,m_1\,v_{i1}^2 = \frac{1}{2}\,m_1\,v_{f1}^{\,2} + \frac{1}{2}\,m_2 \,v_{f2}^{\,2}.
+$$
+
+Let $x=v_{f1}/v_{i1}$ and $y=v_{f2}/v_{i1}$. Noting that $m_2/m_1=3$, the above two
+equations reduce to
+$$
+1 = x + 3\,y,
+$$
+and
+$$
+1 = x^2 + 3\,y^2.
+$$
+Eliminating $x$ between the previous two expressions, we obtain
+$$
+1 = (1-3\,y)^2 + 3\,y^2,
+$$
+or
+$$
+6\,y\,(2\,y-1)=0,
+$$
+which has the non-trivial solution $y=1/2$. The corresponding solution for $x$ is $x=
+(1-3\,y)=-1/2$.
+
+It follows that the final velocity of the first object is
+$$
+v_{f1} = x\,v_{i1} = -0.5\times12 = -6\,{\rm m/s}.
+$$
+The minus sign indicates that this object reverses direction as a
+result of the collision. Likewise, the final velocity of the second object is
+$$
+v_{f2} = y\,v_{i1} = 0.5 \times 12 = 6\,{\rm m/s}.
+$$ 
+
+\subsection*{\em Worked Example 6.6: Two-Dimensional Collision}
+\noindent{\em Question:} Two objects slide over a frictionless
+horizontal surface. The first object, mass $m_1=5\,{\rm kg}$, is propelled with
+speed $v_{i1}  = 4.5\,{\rm m/s}$ toward the second object, mass
+$m_2 =2.5\,{\rm kg}$, which is initially at rest. After the collision, both
+objects have velocities which are directed $\theta=30^\circ$ on either side of the
+original line of motion of the first object. What are the
+final speeds of the two objects? Is the collision elastic or  inelastic?
+
+\begin{figure*}[ht]
+\epsfysize=2in
+\centerline{\epsffile{Chapter06/fig057b.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let us adopt the coordinate system shown in the diagram. Conservation
+of momentum along the $x$-axis yields
+$$
+m_1\,v_{i1}  = m_1\,v_{f1}\,\cos\theta + m_2\,v_{f2}\,\cos\theta.
+$$
+Likewise, conservation of momentum along the $y$-axis yields
+$$
+m_1\,v_{f1}\,\sin\theta = m_2\,v_{f2}\,\sin\theta.
+$$
+The above pair of equations can be combined to give
+$$
+v_{f1} = \frac{v_{i1}}{2\,\cos\theta} = \frac{4.5}{2\times\cos 30^\circ} = 2.5981\,{\rm m/s},
+$$
+and
+$$
+v_{f2} = \frac{m_1}{m_2}\,v_{f1} = \frac{5\times 2.5981}{2.5} = 5.1962\,{\rm m/s}.
+$$
+
+The initial kinetic energy of the system is
+$$
+K_i = \frac{1}{2}\,m_1\,v_{i1}^{\,2} = 0.5\times 5\times 4.5^2 = 50.63\,{\rm J}.
+$$
+The final kinetic energy of the system is
+$$
+K_f= \frac{1}{2}\,m_1\,v_{f1}^{\,2}+ \frac{1}{2}\,m_2\,v_{f2}^{\,2}=
+0.5\times 5\times 2.5981^2 + 0.5\times 2.5\times 5.1962^2 = 50.63\,{\rm J}.
+$$
+Since $K_i=K_f$, the collision is {\em elastic}.

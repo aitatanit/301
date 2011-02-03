@@ -1,0 +1,696 @@
+\section{Motion in Three Dimensions}
+
+\subsection{Introduction}
+The purpose of this section is to generalize the previously introduced concepts of {\em displacement},
+{\em velocity}, and {\em acceleration} in order to deal with motion in 3
+dimensions.
+
+\subsection{Cartesian Coordinates}
+Our first task, when dealing with 3-dimensional motion, is to set up a suitable
+coordinate system. The most straight-forward type of coordinate system is called a {\em Cartesian
+system}, after Ren\'{e} 
+Descartes. A Cartesian coordinate system consists of three mutually perpendicular axes,
+the $x$-, $y$-, and $z$-axes (say). By convention, the orientation of these
+axes is such that when the index finger, the middle finger, and the thumb of the
+right-hand are configured so as to be mutually perpendicular,  the index finger, the
+middle finger, and the thumb can be aligned along the $x$-, $y$-, and $z$-axes, respectively.
+Such a coordinate system is termed {\em right-handed}. See Fig.~\ref{f10}. The
+point of intersection of the three coordinate axes is termed the {\em origin}
+of the coordinate system.
+
+\begin{figure}[b]
+\epsfysize=1.4in
+\centerline{\epsffile{Chapter03/fig010.eps}}
+\caption{\em A right-handed Cartesian coordinate system}\label{f10}   
+\end{figure}
+
+\subsection{Vector Displacement}
+Consider the motion of a body moving in 3 dimensions. The 
+body's instantaneous
+position is most conveniently specified by giving its displacement from the origin of our
+coordinate system. Note, however, that in 3 dimensions such a displacement possesses both
+ {\em magnitude} and  {\em direction}. In other words, we not only have to
+ specify how far the body is situated from the origin, we also
+have to specify in which direction it lies. A quantity which possesses both
+magnitude and direction is termed a {\em vector}. By contrast, a quantity
+which possesses only magnitude is termed a {\em scalar}. Mass and time are scalar
+quantities. However, in general, displacement is a vector. 
+
+The vector displacement ${\bf r}$ of some point $R$ from the origin $O$
+can be visualized as an arrow running from point $O$ to point $R$. See Fig.~\ref{f11}.
+Note that in typeset documents vector quantities are conventionally written in a {\em bold-faced} font
+({\em e.g.}, ${\bf r}$) to
+distinguish them from scalar quantities. In free-hand notation, vectors are usually
+{\em under-lined} ({\em e.g.}, $\underline{r}$). 
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig011.eps}}
+\caption{\em A vector displacement}\label{f11}   
+\end{figure}
+
+The vector displacement ${\bf r}$ can also be specified in terms of its {\em coordinates}:
+\begin{equation}
+{\bf r} = (x, y, z).
+\end{equation}
+The above expression is interpreted as follows: in order to get from point $O$ to
+point $R$, first move $x$ meters along the $x$-axis (perpendicular to both the $y$- and $z$-axes),
+then move $y$ meters along the $y$-axis (perpendicular to both the $x$- and $z$-axes),
+finally move $z$ meters along the $z$-axis (perpendicular to both the $x$- and $y$-axes).
+Note that a {\em positive}  $x$ value is interpreted as an instruction to move $x$ meters
+along the $x$-axis in the direction of {\em increasing} $x$, whereas
+ a {\em negative} $x$ value is interpreted as an 
+instruction to move $|x|$ meters
+ along the $x$-axis in the opposite direction, and so on.
+
+\subsection{Vector Addition}
+Suppose that the vector displacement 
+ ${\bf r}$ of some point $R$ from the origin $O$ is specified as follows:
+\begin{equation}
+{\bf r} = {\bf r}_1 + {\bf r}_2.
+\end{equation}
+Figure~\ref{f12} illustrates how this expression is interpreted diagrammatically: in order to
+get from point $O$ to point $R$, we first move from point $O$ to point $S$ along vector
+${\bf r}_1$, and we then move from point $S$ to point $R$ along vector ${\bf r}_2$. The
+net result is the same as if we had moved from point $O$ directly to point $R$ along
+vector ${\bf r}$. Vector ${\bf r}$ is termed the {\em resultant} of adding vectors
+${\bf r}_1$ and ${\bf r}_2$. 
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig012.eps}}
+\caption{\em Vector addition}\label{f12}   
+\end{figure}
+
+Note that we have two ways of specifying the vector displacement of point $S$ from
+the origin: we can either write ${\bf r}_1$ or ${\bf r} - {\bf r}_2$. The
+expression ${\bf r} - {\bf r}_2$ is interpreted as follows: starting at the origin,
+move along vector ${\bf r}$ in the direction of the arrow, then move along
+vector ${\bf r}_2$ in the {\em opposite} direction to the arrow. In other words,
+a {\em minus} sign in front of a vector indicates that we should move along that vector in
+the {\em opposite} direction to its arrow. 
+
+Suppose that the components of vectors ${\bf r}_1$ and ${\bf r}_2$ are
+$(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$, respectively. As is easily demonstrated,
+the components $(x,y,z)$ of the
+resultant vector ${\bf r}= {\bf r}_1 + {\bf r}_2$ are 
+\begin{eqnarray}
+x &=& x_1+x_2,\\
+y&=& y_1 + y_2,\\
+z &=& z_1 + z_2.
+\end{eqnarray}
+In other words, the components of the sum of two vectors are simply the algebraic
+sums of the components of the individual vectors. 
+
+\subsection{Vector Magnitude}
+If ${\bf r}=(x,y,z)$ represents  the vector displacement of point $R$ from the origin,
+what is the distance between these two points? In other words, what is the length,
+or {\em magnitude}, $r=|{\bf r}|$,
+of vector ${\bf r}$. It follows from a 3-dimensional generalization  of
+Pythagoras' theorem that
+\begin{equation}\label{e36}
+r = \sqrt{x^2+ y^2 + z^2}.
+\end{equation}
+
+Note that if ${\bf r} = {\bf r}_1 + {\bf r}_2$ then
+\begin{equation}\label{teq}
+|{\bf r}| \leq |{\bf r}_1| + 
+|{\bf r}_2|.
+\end{equation}
+In other words, the magnitudes of  vectors cannot, in general, be added
+algebraically. The only exception to this rule (represented by the equality sign in the
+above expression) occurs when  the vectors in question all point in the same direction. 
+According to inequality (\ref{teq}), if we move 1\,m to the North (say) and next move
+1\,m to the West (say) then, although we have moved a total distance of 2\,m, our net distance
+from the starting point is less than 2\,m---of course, this is just common sense.
+
+\subsection{Scalar Multiplication}
+Suppose that ${\bf s} = \lambda\,{\bf r}$. This expression is interpreted as
+follows: vector ${\bf s}$ points in the {\em same} direction as vector ${\bf r}$, but
+the length of the former vector is $\lambda$ times that of the latter. Note
+that if $\lambda$ is negative then vector ${\bf s}$ points in the {\em opposite} direction to
+ vector ${\bf r}$, and
+the length of the former vector is $|\lambda|$ times that of the latter. In terms
+of components:
+\begin{equation}
+{\bf s} = \lambda\,(x,y,z) = (\lambda\,x, \lambda\,y, \lambda\,z).
+\end{equation}
+In other words, when we multiply a vector by a scalar then  the components of the resultant
+vector are obtained 
+by multiplying {\em all} the components of the original vector by the scalar.
+
+\subsection{Diagonals of a Parallelogram}
+The use of vectors is very well illustrated by the following rather famous proof
+that the diagonals of a parallelogram mutually bisect one another.
+
+\begin{figure}
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter03/fig013.eps}}
+\caption{\em A parallelogram}\label{f13}   
+\end{figure}
+
+Suppose that the quadrilateral  ABCD in Fig.~\ref{f13} is a parallelogram. It follows that
+the opposite sides of ABCD can be represented by the
+{\em same} vectors, ${\bf a}$ and ${\bf b}$: this merely indicates that these sides are of
+equal length and are parallel ({\em i.e.}, they point in the same direction). Note that
+Fig.~\ref{f13} illustrates an important point regarding vectors. Although vectors possess
+both a magnitude (length) and a direction, they possess no intrinsic position information. 
+Thus, since sides $AB$ and $DC$ are parallel  and of equal length, they can be represented
+by the {\em same} vector ${\bf a}$, despite the fact that they are in different places on the
+diagram.
+
+The diagonal $BD$ in Fig.~\ref{f13} can be represented vectorially as ${\bf d} = {\bf b} - {\bf a}$.
+Likewise, the diagonal $AC$ can be written ${\bf c} = {\bf a} + {\bf b}$. 
+The displacement ${\bf x}$ (say) of the centroid $X$ from point $A$ can be written in one
+of two different ways:
+\begin{eqnarray}
+{\bf x} &=& {\bf a} + \lambda\,{\bf d},\label{rh1}\\
+{\bf x} &=& {\bf b} + {\bf a} - \mu \,{\bf c}.\label{rh2}
+\end{eqnarray}
+Equation~(\ref{rh1}) is interpreted as follows: in order to get from point $A$ to point $X$,
+first move to point $B$ (along vector ${\bf a}$), then move along diagonal $BD$ (along
+vector ${\bf d}$) for an unknown fraction $\lambda$ of its length. 
+Equation~(\ref{rh2}) is interpreted as follows: in order to get from point $A$ to point
+$X$, first move to point $D$ (along vector ${\bf b}$), then move to point $C$
+(along vector ${\bf a}$), finally move along diagonal $CA$ (along vector
+$-{\bf c}$) for an unknown fraction $\mu$ of its length. Since $X$ represents the
+{\em same} point in Eqs.~(\ref{rh1}) and (\ref{rh2}), we can equate these two
+expressions to give
+\begin{equation}
+{\bf a} + \lambda\,({\bf b} - {\bf a}) =  {\bf b} + {\bf a} - \mu \,({\bf a} + {\bf b}).
+\end{equation}
+Now vectors ${\bf a}$ and ${\bf b}$ point in {\em different} directions, so the only way
+in which the above expression can be satisfied, in general,  is if the coefficients of
+${\bf a}$ and ${\bf b}$ match on either side of the equality sign. Thus,
+equating coefficients of ${\bf a}$ and ${\bf b}$, we obtain
+\begin{eqnarray}
+1 - \lambda &=& 1 - \mu,\\
+\lambda &=& 1 -\mu.
+\end{eqnarray}
+It follows that $\lambda=\mu =1/2$. In other words, the centroid $X$ is located at
+the halfway points of diagonals $BD$ and $AC$: {\em i.e.}, the diagonals
+mutually bisect one another.
+
+\subsection{Vector Velocity and Vector Acceleration}
+Consider a body moving in 3 dimensions. Suppose that we know the Cartesian
+coordinates, $x$, $y$, and $z$, of this body as  time, $t$, progresses. 
+Let us consider how we can use this information to determine the body's instantaneous
+velocity and acceleration as functions of time.
+
+The vector displacement of the body is given by
+\begin{equation}
+{\bf r}(t) = [x(t), y(t), z(t)].
+\end{equation}
+By analogy with the 1-dimensional equation (\ref{e23}), the body's
+vector velocity ${\bf v}=(v_x,v_y,v_z)$ is simply the {\em derivative} of ${\bf r}$ with respect to
+$t$. In other words,
+\begin{equation}
+{\bf v}(t) = \lim_{{\mit\Delta} t\rightarrow 0}\frac{{\bf r}(t+{\mit\Delta} t)-{\bf r}(t)}{
+{\mit\Delta} t} = \frac{d{\bf r}}{dt}.
+\end{equation} 
+When written in component form, the above definition yields
+\begin{eqnarray}
+v_x &=& \frac{dx}{dt},\\
+v_y &=& \frac{dy}{dt},\\
+v_z &=& \frac{dz}{dt}.
+\end{eqnarray}
+Thus, the $x$-component of velocity is simply the time derivative of the $x$-coordinate,
+and so on.
+
+By analogy with the 1-dimensional equation (\ref{e26}), the body's
+vector acceleration ${\bf a}=(a_x,a_y,a_z)$ is simply the {\em derivative} of ${\bf v}$ with respect to
+$t$. In other words,
+\begin{equation}
+{\bf a}(t) = \lim_{{\mit\Delta} t\rightarrow 0}\frac{{\bf v}(t+{\mit\Delta} t)-{\bf v}(t)}{
+{\mit\Delta} t} = \frac{d{\bf v}}{dt}=\frac{d^2{\bf r}}{dt^2}.
+\end{equation} 
+When written in component form, the above definition yields
+\begin{eqnarray}
+a_x &=& \frac{dv_x}{dt}=\frac{d^2 x}{dt^2},\\
+a_y &=& \frac{dv_y}{dt}=\frac{d^2 y}{dt^2},\\
+a_z &=& \frac{dv_z}{dt}=\frac{d^2 z}{dt^2}.
+\end{eqnarray}
+Thus, the $x$-component of acceleration is simply the time derivative
+of the $x$-component of velocity, and so on.
+
+As an example, suppose that the coordinates of the body are given by
+\begin{eqnarray}
+x &=& \sin t,\\
+y &=& \cos t,\\
+z &=& 3\,t.
+\end{eqnarray}
+The corresponding components of the body's velocity are then simply
+ \begin{eqnarray}
+v_x &=& \frac{dx}{dt}=\cos t,\\
+v_y &=&\frac{dy}{dt}= - \sin t,\\
+v_z &=& \frac{dz}{dt}=3,
+\end{eqnarray}
+whilst the components of the body's acceleration are given by 
+\begin{eqnarray}
+a_x &=& \frac{dv_x}{dt}=-\sin t,\\
+a_y &=& \frac{dv_y}{dt}=- \cos t,\\
+a_z &=& \frac{dv_z}{dt}=0.
+\end{eqnarray}
+
+
+\subsection{Motion with Constant Velocity}
+An object moving in 3 dimensions with constant velocity ${\bf v}$ possesses
+a vector displacement of the form
+\begin{equation}
+{\bf r}(t) = {\bf r}_0 + {\bf v}\,t,
+\end{equation}
+where the constant vector ${\bf r}_0$ is the displacement at time $t=0$. Note
+that $d{\bf r}/dt = {\bf v}$ and $d^2{\bf r}/dt^2={\bf 0}$, as expected.
+As illustrated in Fig.~\ref{f14}, the object's trajectory  is a {\em straight-line}
+which passes through point ${\bf r}_0$ at time $t=0$ and runs parallel to vector
+${\bf v}$. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter03/fig014.eps}}
+\caption{\em Motion with constant velocity}\label{f14}   
+\end{figure}
+
+\subsection{Motion with Constant Acceleration}\label{s2ed}
+An object moving in 3 dimensions with constant acceleration ${\bf a}$
+possesses a vector displacement of the form
+\begin{equation}
+{\bf r}(t) = {\bf r}_0 + {\bf v}_0\,t + \frac{1}{2}\,{\bf a}\,t^2.
+\end{equation}
+Hence, the object's velocity is given by
+\begin{equation}
+{\bf v}(t) = \frac{d{\bf r}}{dt}= {\bf v}_0 + {\bf a}\,t.
+\end{equation}
+Note that $d{\bf v}/dt ={\bf a}$, as expected. In the above,
+the constant vectors ${\bf r}_0$ and ${\bf v}_0$ are the object's displacement and velocity at time
+$t=0$, respectively.
+
+As is easily demonstrated, the vector equivalents of Eqs.~(\ref{e211})--(\ref{e214}) are:
+\begin{eqnarray}
+{\bf s} &=& {\bf v}_0\,t + \frac{1}{2}\,{\bf a}\,t^2,\label{e335}\\
+{\bf v} &=& {\bf v}_0 + {\bf a}\,t,\label{e337}\\
+v^2 &=& v_0^{\,2} + 2\,{\bf a}\!\cdot\!{\bf s}.\label{e338}
+\end{eqnarray}
+These equation fully characterize 3-dimensional motion with constant acceleration.
+Here, ${\bf s} = {\bf r}-{\bf r}_0$ is the net displacement of the object
+between times $t=0$ and $t$.
+
+The quantity ${\bf a}\!\cdot\!{\bf s}$, appearing in Eq.~(\ref{e338}), is termed
+the {\em scalar product} of vectors ${\bf a}$ and ${\bf s}$, and is defined
+\begin{equation}
+{\bf a}\!\cdot\!{\bf s} = a_x\,s_x+ a_y\,s_y+a_z\,s_z.\label{e339}
+\end{equation}
+The above formula has a simple geometric interpretation, which is illustrated
+in Fig.~\ref{f15}. If $|{\bf a}|$ is the magnitude (or length) of vector ${\bf a}$,
+$|{\bf s}|$ is the magnitude of vector ${\bf s}$, and $\theta$ is the angle
+subtended between these two vectors, then
+\begin{equation}
+{\bf a} \! \cdot \! {\bf s} = |{\bf a}| \,|{\bf s}|\, \cos\theta.
+\end{equation}
+In other words, the scalar product of vectors ${\bf a}$ and ${\bf s}$ equals
+the product of the length of vector ${\bf a}$ times the length of that component of
+vector ${\bf s}$ which lies in the {\em same direction} as vector ${\bf a}$. 
+It immediately follows that if two vectors are mutually perpendicular
+({\em i.e.}, $\theta =90^\circ$) then their scalar product is zero. Furthermore, the
+scalar product of a vector with itself is simply the magnitude squared of that vector [this
+is immediately apparent from Eq.~(\ref{e339})]:
+\begin{equation}
+{\bf a} \!\cdot \!{\bf a} = |{\bf a}|^2 = a^2.
+\end{equation}
+It is also apparent from Eq.~(\ref{e339}) that ${\bf a}\!\cdot{\bf s}= {\bf s}\!\cdot{\bf a}$,
+and ${\bf a}\!\cdot\!({\bf b} +{\bf c}) = {\bf a}\!\cdot\!{\bf b}+{\bf a}\!\cdot\!{\bf c}$,
+and ${\bf a}\!\cdot\!(\lambda {\bf s}) = \lambda({\bf a}\!\cdot{\bf s})$.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig015.eps}}
+\caption{\em The scalar product}\label{f15}   
+\end{figure}
+
+Incidentally, Eq.~(\ref{e338}) is obtained by taking the scalar product of Eq.~(\ref{e337}) with itself,
+taking the scalar product of Eq.~(\ref{e335}) with ${\bf a}$, and then eliminating $t$.
+
+\subsection{Projectile Motion}
+As a simple illustration of the concepts introduced in the previous subsections,
+let us examine
+the following problem. Suppose that a projectile is launched upward
+from ground level, with speed $v_0$, making an angle $\theta$
+with the horizontal. {\em Neglecting the effect of air resistance}, what
+is the subsequent trajectory of the projectile?
+
+Our first task is to set up a suitable  Cartesian coordinate system.
+A convenient system is illustrated in Fig.~\ref{f16}. The $z$-axis points vertically
+upwards (this is a standard convention), whereas the $x$-axis points along the
+projectile's
+initial direction of horizontal motion. Furthermore, the origin of our
+coordinate system  corresponds to the launch point. Thus, $z=0$ corresponds
+to ground level.
+
+Neglecting air resistance,
+the projectile is subject to a constant acceleration $g=9.81\,{\rm m}\,{\rm s}^{-1}$,
+due to gravity, which is directed {\em vertically downwards}. Thus, the projectile's
+vector acceleration is written
+\begin{equation}
+{\bf a} = (0,0,-g).\label{e342}
+\end{equation}
+Here, the minus sign indicates that the acceleration is in the minus $z$-direction
+({\em i.e.}, downwards), as opposed to the plus $z$-direction ({\em i.e.}, upwards).
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig016.eps}}
+\caption{\em Coordinates for the projectile problem}\label{f16}   
+\end{figure}
+
+What is the initial vector velocity ${\bf v}_0$ with which the projectile is launched
+into the air at (say) $t=0$? As illustrated in Fig.~\ref{f16}, 
+given that the magnitude of this velocity is $v_0$, its horizontal component
+ is directed along the $x$-axis, and  its direction subtends an angle $\theta$
+with this axis, the components of ${\bf v}_0$ take the form
+\begin{equation}
+{\bf v}_0 = (v_0\,\cos\theta,\,0,\,v_0\,\sin\theta).\label{e343}
+\end{equation}
+Note that ${\bf v}_0$ has zero component along the $y$-axis, which points
+{\em into} the paper in Fig.~\ref{f16}.
+
+Since the projectile moves with constant acceleration, its vector
+displacement ${\bf s}=(x,y,z)$ from its launch point
+satisfies [see Eq.~(\ref{e335})]
+\begin{equation}
+{\bf s} = {\bf v}_0\,t + \frac{1}{2}\,{\bf a}\,t^2.
+\end{equation}
+Making use of Eqs.~(\ref{e342}) and (\ref{e343}), the $x$-, $y$-, and $z$-components
+of the above equation are written
+\begin{eqnarray}
+x &=& v_0\,\cos\theta\,\,t,\label{e345}\\[0.5ex]
+y&=& 0,\\
+z &=& v_0\,\sin\theta\,\,t - \frac{1}{2}\,g\,t^2,\label{e346}
+\end{eqnarray}
+respectively.
+Note that the projectile moves with {\em constant velocity}, $v_x =dx/dt = v_0\,\cos\theta$,
+in the $x$-direction ({\em i.e.}, horizontally). This is hardly surprising, since there
+is zero component of the projectile's acceleration along the $x$-axis. Note, further,
+that
+since there is zero component of the projectile's acceleration along the $y$-axis, and
+ the projectile's initial velocity also has zero component along this axis, 
+the projectile never moves in the $y$-direction. In other words, the projectile's
+trajectory is {\em 2-dimensional}, lying entirely within the $x$-$z$ plane. Note,
+finally, that the projectile's vertical motion is entirely decoupled
+from its horizontal motion. In other words, the projectile's vertical motion is
+identical to that of a second projectile launched vertically upwards, at $t=0$,
+with the initial velocity $v_0\,\sin\theta$ ({\em i.e.}, the
+initial {\em vertical} velocity component of the first projectile)---both projectiles will reach the
+same maximum altitude at the same time, and will subsequently  strike the ground simultaneously. 
+
+Equations~(\ref{e345}) and (\ref{e346}) can be rearranged to give
+\begin{equation}
+z =x\, \tan\theta -\frac{1}{2}\frac{g\,x^2}{v_0^{\,2}}\,\sec^2\theta.
+\end{equation}
+As was first pointed out by Galileo, and is illustrated in Fig.~\ref{f17}, this is
+the equation of a {\em parabola}. The horizontal range
+$R$ of the projectile corresponds to its $x$-coordinate when it strikes the
+ground ({\em i.e.}, when $z=0$). It follows from the above
+expression (neglecting the trivial result $x=0$) that
+\begin{equation}\label{range}
+R = \frac{2\,v_0^{\,2}}{g}\,\sin\theta\,\cos\theta = 
+\frac{v_0^{\,2}}{g}\,\sin 2\theta.
+\end{equation}
+Note that the range attains its maximum value,
+\begin{equation}
+R_{\rm max} =  \frac{v_0^{\,2}}{g},
+\end{equation}
+when $\theta=45^\circ$. In other words, neglecting air resistance, a projectile
+travels furthest when it is launched into the air at $45^\circ$ to the horizontal. 
+
+The maximum altitude $h$ of the projectile is attained when
+$v_z=dz/dt=0$ ({\em i.e.}, when the projectile has just stopped rising and
+is about to start falling). It follows from Eq.~(\ref{e346}) that the maximum altitude
+occurs at time $t_0=v_0\,\sin\theta/g$. Hence,
+\begin{equation}
+h = z(t_0)= \frac{v_0^{\,2}}{2\,g}\,\sin^2\theta.
+\end{equation}
+Obviously, the largest value of $h$,
+\begin{equation}
+h_{\rm max} = \frac{v_0^{\,2}}{2\,g},
+\end{equation}
+is obtained when the projectile is launched vertically upwards
+({\em i.e.}, $\theta =90^\circ$).
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig017.eps}}
+\caption{\em The parabolic trajectory of a projectile}\label{f17}   
+\end{figure}
+
+\subsection{Relative Velocity}
+Suppose that, on a windy day, an airplane moves with constant velocity ${\bf v}_a$ with respect to the
+air, and that the air moves with constant velocity ${\bf u}$ with
+respect to the ground. What is the vector velocity ${\bf v}_g$ of the plane
+with respect to the ground? In principle, the answer to this question is
+very simple: 
+\begin{equation}
+{\bf v}_g = {\bf v}_a + {\bf u}.\label{e353}
+\end{equation}
+In other words, the velocity of the plane with respect to the ground is
+the vector sum of the plane's velocity relative to the air and the air's
+velocity relative to the ground. See Fig.~\ref{f18}. Note that, in general, ${\bf v}_g$ 
+is parallel to neither  ${\bf v}_a$ nor ${\bf u}$. Let us now consider how we might
+implement Eq.~(\ref{e353}) in practice.
+
+\begin{figure}
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter03/fig018.eps}}
+\caption{\em Relative velocity}\label{f18}   
+\end{figure}
+
+As always, our first task is to set up a suitable Cartesian coordinate system.
+A convenient system for dealing with  2-dimensional motion parallel to the Earth's surface
+is illustrated in Fig.~\ref{f19}. The $x$-axis points northward, whereas the $y$-axis points
+eastward. In this coordinate system, it is conventional to specify a vector ${\bf r}$ in
+term of its magnitude, $r$, and its {\em compass bearing}, $\phi$. As illustrated in Fig.~\ref{f20},
+a compass bearing is the angle subtended between the direction of a vector and the direction to
+the North  pole: {\em i.e.}, the $x$-direction. By convention, compass bearings
+run from $0^\circ$ to $360^\circ$. Furthermore, the compass bearings of North, East, South, and West
+are $0^\circ$, $90^\circ$, $180^\circ$, and $270^\circ$, respectively.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig019.eps}}
+\caption{\em Coordinates for relative velocity problem}\label{f19}   
+\end{figure}
+
+According to Fig.~\ref{f20}, the components of
+a general vector ${\bf r}$, whose magnitude is $r$ and whose compass bearing is $\phi$, are simply
+\begin{equation}\label{e354}
+{\bf r} = (x,\,y) = (r\,\cos\phi, \,r\,\sin\phi).
+\end{equation}
+Note that we have suppressed the $z$-component of ${\bf r}$ (which is zero), for ease of
+notation. Although, strictly speaking,  Fig.~\ref{f20} only justifies the above expression for
+$\phi$ in the range $0^\circ$ to $90^\circ$, it turns out that this expression
+is generally valid: {\em i.e.}, it is valid for $\phi$ in the full range $0^\circ$ to
+$360^\circ$. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter03/fig020.eps}}
+\caption{\em A compass bearing}\label{f20}   
+\end{figure}
+
+As an illustration, suppose that the plane's velocity relative to the air
+is $300\,{\rm km/h}$, at a compass bearing of $120^\circ$, and
+ the air's velocity relative to the ground is $85\,{\rm km/h}$, at a compass
+bearing of $225^\circ$. It follows that the components of ${\bf v}_a$ and
+${\bf u}$ (measured in units of km/h) are 
+\begin{eqnarray}
+{\bf v}_a& =& (300\,\cos 120^\circ,\,300\,\sin 120^\circ) = (-1.500\times 10^2,\, 2.598\times 10^2),\\
+{\bf u} &=& (85\,\cos 225^\circ,\,85\,\sin 225^\circ) =(-6.010\times 10^1,\,-6.010\times 10^1).
+\end{eqnarray}
+According to Eq.~(\ref{e353}), the components of the plane's velocity ${\bf v}_g$ relative to
+the ground are simply the algebraic sums of the corresponding components
+of ${\bf v}_a$ and ${\bf u}$. Hence,
+\begin{eqnarray}
+{\bf v}_g& =& (-1.500\times 10^2\,-\,6.010\times 10^1,\,2.598\times 10^2\,-\,6.010\times 10^1)\nonumber\\
+&=& (-2.101\times 10^2, \, 1.997\times 10^2).
+\end{eqnarray}
+
+Our final task is to reconstruct the magnitude and compass bearing of vector ${\bf v}_g$,
+given its components $(v_{g\,x}, v_{g\,y})$. The magnitude of ${\bf v}_g$ follows
+from Pythagoras' theorem [see Eq.~(\ref{e36})]:
+\begin{eqnarray}
+v_g &=& \sqrt{(v_{g\,x})^2 + (v_{g\,y})^2}\nonumber \\
+&=& \sqrt{(-2.101\times 10^2)^2 + (1.997\times 10^2)^2} = 289.9\,{\rm km/h}.
+\end{eqnarray}
+In principle, the compass bearing of ${\bf v}_g$ is given
+by the following formula:
+\begin{equation}
+\phi = \tan^{-1} \left(\frac{v_{g\,y}}{v_{g\,x}}\right).
+\end{equation}
+This follows because $v_{g\,x}=v_g\,\cos\phi$ and $v_{g\,y}=v_g\,\sin\phi$ [see
+Eq.~(\ref{e354})].
+Unfortunately, the above expression becomes a little difficult to interpret
+if $v_{g\,x}$ is negative. An unambiguous
+pair of expressions for $\phi$ is given below:
+\begin{equation}
+\phi = \tan^{-1} \left(\frac{v_{g\,y}}{v_{g\,x}}\right),
+\end{equation}
+if $v_{g\,x}\geq 0$; or
+\begin{equation}\label{pres}
+\phi = 180^\circ - \tan^{-1} \left(\frac{v_{g\,y}}{|v_{g\,x}|}\right),
+\end{equation}
+if $v_{g\,x}< 0$.
+These expressions can  be derived from simple
+trigonometry.
+ For the case in hand, Eq.~(\ref{pres}) is the
+relevant expression, hence
+\begin{equation}
+\phi = 180^\circ - \tan^{-1} \left(\frac{1.997\times 10^2}{2.101\times 10^2}\right)
+= 136.5^\circ.
+\end{equation}
+Thus, the plane's velocity relative to the ground is $289.9\,{\rm km/h}$ at a compass
+bearing of $136.5^\circ$.
+
+\subsection*{\em Worked Example 3.1: Broken Play}
+{\em Question:} Major Applewhite receives the snap at the line
+of scrimmage, takes a seven step drop ({\em i.e.}, runs backwards
+9 yards), but is then flushed out of the pocket by a blitzing
+linebacker. Major subsequently runs parallel to the line of scrimmage
+for 12 yards and then gets off a forward pass, 36 yards straight downfield, to
+Roy Williams, just prior to being creamed by the linebacker. What is the magnitude
+of the football's resultant displacement (in yards)?\\
+~\\
+{\em Answer:} As illustrated in the diagram, the resultant displacement ${\bf r}$ of the
+football is the  sum of vectors ${\bf a}$, ${\bf b}$, and ${\bf c}$, which
+correspond to the seven step drop, the run parallel to the line of
+scrimmage, and the forward pass, respectively.
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig020a.eps}}
+\end{figure*}
+Using the coordinate system indicated in the diagram, the components of
+vectors ${\bf a}$, ${\bf b}$, and ${\bf c}$ (measured in yards) are
+\begin{eqnarray}
+{\bf a} = (-9,0),\nonumber\\
+{\bf b} = (0,12),\nonumber\\
+{\bf c} = (36, 0),\nonumber
+\end{eqnarray}
+respectively. Hence the components of ${\bf r}$ are given by
+$$
+{\bf r} = (x,y)= (-9+0+36,\,0+12+0) = (27, 12).
+$$
+It follows that the magnitude of the football's resultant displacement is
+$$
+r = \sqrt{x^2+y^2} = \sqrt{27^2+12^2} = 29.55\,{\rm yd}.
+$$
+
+\subsection*{\em Worked Example 3.2: Gallileo's Experiment}
+{\em Question:} Legend has it that Gallileo tested out his newly developed
+theory of projectile motion by throwing weights from the top of the
+Leaning Tower of
+Pisa. (No wonder he eventually got into trouble with the authorities!)
+Suppose that, one day, Gallileo simultaneously threw two equal weights off the tower from
+a height of $100\,{\rm m}$ above the ground. Suppose, further, that he
+dropped the  first weight straight down,
+whereas he threw the second weight horizontally with a velocity of $5\,{\rm m/s}$. 
+Which weight  struck the ground first? How long, after it was thrown, did it take
+to do this? Finally, what horizontal distance was traveled by the
+second weight before it hit the ground? Neglect the effect of air
+resistance.\\
+~\\
+{\em Answer:} Since both weights start off traveling with the same initial velocities in the
+vertical direction ({\em i.e.}, zero), and both accelerate vertically downwards
+at the same rate, it follows that both weights strike the ground simultaneously. 
+The time of flight of each weight is simply the time taken to fall
+$h=100\,{\rm m}$, starting from rest, under the influence of gravity. From
+Eq.~(\ref{e2.19}), this time is given by
+$$
+t = \sqrt{\frac{2\,h}{g}} = \sqrt{\frac{2\times 100}{9.81}} = 4.515\,{\rm s}.
+$$
+The horizontal distance $R$ traveled by the second weight is simply the
+distance traveled by a body moving at a constant velocity $u=5\,{\rm m/s}$
+(recall that gravitational acceleration does not affect horizontal motion)
+during the time taken by the weight to drop 100\,m. Thus,
+$$
+R = u\,t = 5\times 4.515 = 22.58\,{\rm m}.
+$$
+\subsection*{\em Worked Example 3.3: Cannon Shot}
+{\em Question:} A cannon placed on a 50\,{\rm m} high cliff 
+fires a cannonball over the edge of the cliff at $v=200\,{\rm m}/{\rm s}$ making an angle
+of $\theta = 30^\circ$ to the horizontal. How long is the cannonball in the air? Neglect
+air resistance.\\
+~\\
+{\em Answer:} In order to answer this question we need only consider the cannonball's
+vertical motion. At $t=0$ ({\em i.e.}, the time of firing) the cannonball's height off the
+ground is $z_0=50$\,m and its velocity component in the vertical direction is
+$v_0 = v\,\sin\theta = 200\times\sin 30^\circ = 100\,{\rm m}/{\rm s}$. Moreover,
+the cannonball is accelerating vertically downwards at $g=9.91\,{\rm m}/{\rm s}^2$.
+The equation of vertical motion of the cannonball is written
+$$
+z = z_0 + v_0\,t - \frac{1}{2}\,g\,t^2,
+$$
+where $z$ is the cannonball's height off the ground at time $t$. The time of flight
+of the cannonball corresponds to the time $t$ at which $z=0$. In other words,
+the time of flight is the solution of the quadratic equation
+$$
+0 = z_0 + v_0\,t -  \frac{1}{2}\,g\,t^2.
+$$
+Hence,
+$$
+t = \frac{v_0 +\sqrt{v_0^{\,2}+2\,g\,z_0}}{g} = 20.88\,{\rm s}.
+$$
+Here, we have neglected the unphysical negative root of our quadratic equation.
+
+\subsection*{\em Worked Example 3.4: Hail Mary Pass}
+{\em Question:} The Longhorns are down by 4 points with 5\,s left in the
+fourth quarter. Chris Simms launches a Hail Mary pass into the end-zone,
+60 yards away, where B.J.~Johnson is waiting to make the catch. Suppose
+that Chris throws the ball at 55 miles per hour. At what angle to the horizontal
+must the ball be launched in order for it to hit the receiver? Neglect the effect of air resistance.\\
+~\\
+{\em Answer:} The formula for the horizontal range $R$ of a projectile thrown
+with initial velocity $v_0$ at an angle $\theta$ to the horizontal is [see
+Eq.~(\ref{range})]:
+$$
+R= \frac{v_0^{\,2}}{g}\,\sin 2\theta.
+$$
+In this case, $R= 60\times 3\times 0.3048 = 54.86\,{\rm m}$ and 
+$v_0 = 55\times 5280\times 0.3048/3600 = 24.59\,{\rm m/s}$. Hence,
+$$
+\theta = \frac{1}{2}\,\sin^{-1}\left(\frac{R\,g}{v_0^{\,2}}\right)
+= \frac{1}{2} \,\sin^{-1}\left(\frac{54.86\times 9.81}{(24.59)^2}\right) =
+31.45^\circ.
+$$
+Thus, the ball must be launched at $31.45^\circ$ to the horizontal. (Actually,
+$58.56^\circ$ would  work just as well. Why is this?)
+
+\subsection*{\em Worked Example 3.5: Flight UA\,589}
+{\em Question:}~United Airlines flight UA\,589 from Chicago is 20\,miles due
+North of Austin's Bergstrom airport. Suppose that the plane is flying
+at $200\,{\rm mi/h}$ relative to the air. Suppose, further, that there
+is a wind blowing due East at $60\,{\rm mi/h}$. Towards which compass bearing must
+the plane steer in order to land at the airport?\\
+~\\
+{\em Answer:} The problem in hand is illustrated in the diagram.
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter03/fig020b.eps}}
+\end{figure*}
+The plane's velocity ${\bf v}_g$ relative to the ground is the
+vector sum of its velocity ${\bf v}_a$ relative to the air, and the
+velocity ${\bf u}$ of the wind relative to the ground. We know that
+${\bf u}$ is directed due East, and we require ${\bf v}_g$ to be directed
+due South. We also know that $|{\bf v}_a|=200\,{\rm mi/h}$ and $|{\bf u}|  = 60\,{\rm mi/h}$.
+Now, from simple trigonometry, 
+$$
+\cos\alpha = \frac{|{\bf u}|}{|{\bf v}_a|} = \frac{60}{200} =0.3.
+$$
+Hence,
+$$
+\alpha = 72.54^\circ.
+$$
+However, it is clear from the diagram that the compass bearing $\phi$ of the
+plane is given by
+$$
+\phi = 270^\circ -\alpha = 270^\circ -  72.54^\circ = 197.46^\circ.
+$$
+Thus, in order to land at Bergstrom airport the plane must fly towards compass
+bearing $197.46^\circ$.

@@ -1,0 +1,818 @@
+\section{Newton's Laws of Motion}
+\subsection{Introduction}
+In his {\em Principia}, Newton reduced the basic principles of
+mechanics to three laws:
+\begin{enumerate}{\sf
+\item Every body continues in its state of rest, or uniform motion in a straight line, unless
+compelled to change that state by forces impressed upon it.
+\item The change of motion of an object is proportional to the force impressed upon
+it, and is made in the direction of the straight line in which the force is impressed.
+\item To every action there is always opposed an equal reaction; or, the mutual actions
+of two bodies upon each other are always equal and directed to contrary parts.  }
+\end{enumerate}
+These laws are known as Newton's first law of motion, Newton's second law of motion,
+and Newton's third law of motion, respectively. In this section, we shall examine each of
+these laws in detail, and then give some simple illustrations of their use.
+
+\subsection{Newton's First Law of Motion}
+Newton's first law was actually discovered by Galileo and perfected by
+Descartes (who added the crucial proviso ``in a straight line''). This law
+states that if the motion of a given body is not disturbed by external influences
+then
+that body moves with {\em constant} velocity. In other words, the displacement ${\bf r}$
+of the body as a function of time $t$ can be written
+\begin{equation}
+{\bf r} = {\bf r}_0 + {\bf v}\,t,
+\end{equation}
+where ${\bf r}_0$ and ${\bf v}$ are {\em constant} vectors. As illustrated in
+Fig.~\ref{f14}, the body's trajectory is a {\em straight-line} which
+passes through point ${\bf r}_0$ at time $t=0$ and runs parallel to ${\bf v}$.
+In the special case in which ${\bf v}={\bf 0}$  the body simply remains at rest.  
+
+Nowadays, Newton's first law strikes us as almost a statement of the obvious. However,
+in Galileo's time this was far from being the case. From the time of the ancient
+Greeks, philosophers---observing that objects set into motion on the Earth's
+surface eventually come to rest---had concluded that the natural state of motion
+of objects was that they should remain at rest. Hence, they reasoned, any object which moves
+does so under the influence of an external influence, or {\em force}, exerted on it by some other object.
+It took the genius of Galileo to realize that an object set into motion
+on the Earth's surface eventually comes to rest under the influence of frictional forces, and that if these
+forces could somehow be abstracted from the motion then it would continue forever. 
+
+\subsection{Newton's Second Law of Motion}\label{moment}
+Newton used the word ``motion'' to mean what we nowadays call {\em momentum}. The
+momentum ${\bf p}$ of a body is simply defined as the product of its mass $m$ and its
+velocity ${\bf v}$: {\em i.e.}, 
+\begin{equation}
+{\bf p} = m\,{\bf v}.
+\end{equation}
+Newton's second law of motion is summed up in the equation
+\begin{equation}
+\frac{d{\bf p}}{dt} = {\bf f},
+\end{equation}
+where the vector ${\bf f}$ represents the net influence, or force, exerted on the object, whose
+motion is under investigation,
+by other objects.
+For the case of a object with {\em constant} mass, the above law reduces to its more conventional
+form
+\begin{equation}\label{en2}
+{\bf f} = m\,{\bf a}.
+\end{equation}
+In other words, the net force exerted on a given object  by other objects equals the product of that object's
+mass and its acceleration. Of course, this law is entirely devoid of content unless we have
+some independent means of quantifying the forces exerted between different objects. 
+
+\subsection{Hooke's Law}
+One method of quantifying the force exerted on an object is via {\em Hooke's law}. 
+This law---discovered by the English scientist Robert Hooke in 1660---states that the
+force $f$ exerted by a coiled spring is directly proportional to its {\em extension}  
+${\mit\Delta}x$. The extension of the spring is the difference between its actual
+length and its natural length ({\em i.e.}, its length when it is exerting no force).
+The force acts parallel to the axis of the spring. Obviously, Hooke's law
+only holds if the extension of the spring is sufficiently small. If the extension
+becomes too large then the spring  deforms permanently, or even breaks. Such behaviour
+lies beyond the scope of Hooke's law. 
+
+\begin{figure}
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter04/fig021.eps}}
+\caption{\em Hooke's law}\label{f21}   
+\end{figure}
+
+Figure~\ref{f21} illustrates how we might use Hooke's law to quantify the force we exert
+on a body of mass $m$ when we pull on the handle of
+a spring attached to it. The magnitude $f$ of the force is proportional to the extension
+of the spring: twice the extension means twice the force. As shown, the direction of the force
+is towards the spring, parallel to its axis (assuming that the extension is positive). 
+The magnitude of the force can be quantified in terms of the critical extension required to
+impart  a unit acceleration
+({\em i.e.}, $1\,{\rm m/s^2}$) to a body of unit mass ({\em i.e.}, $1\,{\rm kg}$).
+ According to Eq.~(\ref{en2}), the force corresponding
+to this extension is  1 {\em newton}. Here, a newton (symbol N) is
+equivalent to a kilogram-meter per second-squared, and is the mks unit of force. Thus,
+if the critical extension corresponds to a force of $1\,{\rm N}$ then half the critical
+extension corresponds to a force of $0.5\,{\rm N}$, and so on. In this manner, we
+can quantify both the direction and magnitude of the force we exert, by means of a spring,
+on a given body.
+
+Suppose that we apply two forces, ${\bf f}_1$ and ${\bf f}_2$ (say), acting in different directions,
+to a body of mass $m$ by means of two springs. As illustrated in Fig.~\ref{f22}, the body accelerates
+as if it were subject to a single force ${\bf f}$ which is the {\em vector sum} of the individual
+forces ${\bf f}_1$ and ${\bf f}_2$. It follows that the force ${\bf f}$ appearing in
+Newton's second law of motion, Eq.~(\ref{en2}), is the {\em resultant} of all the external forces to which
+the body whose motion is under investigation is subject.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter04/fig022.eps}}
+\caption{\em Addition of forces}\label{f22}   
+\end{figure}
+
+Suppose that the resultant of all the forces acting on a given body is {\em zero}. In other words,
+suppose that the forces acting on the body exactly balance one another. According to Newton's second law of motion,
+Eq.~(\ref{en2}), the body does not accelerate: {\em i.e.}, it either remains at rest or
+moves with uniform velocity in a straight line. It follows that Newton's first law
+of motion applies not only to bodies which have no forces acting upon them but also to
+bodies acted upon by exactly balanced forces.
+
+\subsection{Newton's Third Law of Motion}
+Suppose, for the sake of argument, that there are only two bodies in the Universe. Let
+us label these bodies $a$ and $b$. Suppose that body $b$ exerts a force ${\bf f}_{ab}$ on body $a$.
+According to to Newton's third law of motion,  body $a$ must exert an
+{\em equal and opposite} force ${\bf f}_{ba}=-{\bf f}_{ab}$ on body $b$. See Fig.~\ref{f22}. 
+Thus, if we label ${\bf f}_{ab}$ the ``action'' then, in Newton's language, ${\bf f}_{ba}$
+is the equal and opposed ``reaction''.
+
+Suppose, now, that there are many objects in the Universe (as is, indeed, the case). According
+to Newton's third law, if object $j$ exerts a force ${\bf f}_{ij}$ on object $i$ then
+object $i$ must exert an equal and opposite force ${\bf f}_{ji}=-{\bf f}_{ij}$ on object $j$.
+It follows that all of the forces acting in the Universe can ultimately be grouped into equal and opposite
+action-reaction pairs. Note, incidentally, that an action and its associated reaction
+always act on {\em different} bodies.
+
+\begin{figure}
+\epsfysize=1in
+\centerline{\epsffile{Chapter04/fig023.eps}}
+\caption{\em Newton's third law}\label{f23}   
+\end{figure}
+
+Why do we need Newton's third law? Actually, it is almost a matter of common sense. 
+Suppose that  bodies $a$ and $b$ constitute an {\em isolated} system. If
+${\bf f}_{ba}\neq -{\bf f}_{ab}$ then this system  exerts a {\em non-zero net force}
+${\bf f} = {\bf f}_{ab}+{\bf f}_{ba}$ on itself,
+without the aid of any external agency. It will, therefore, accelerate forever under its
+own steam. We know, from experience, that this sort of behaviour does not occur in real
+life. For instance, I cannot grab hold of my shoelaces and, thereby, pick myself up off the ground.
+In other words, I cannot self-generate a force which will spontaneously lift me into the air:
+I need to exert forces on other objects around me in order to achieve this. Thus,
+Newton's third law essentially acts as a guarantee against the absurdity of self-generated forces. 
+
+\subsection{Mass and Weight}
+The terms {\em mass} and {\em weight} are often confused with one another. However, in physics
+their meanings are quite distinct. 
+
+A body's mass is a measure of its
+{\em inertia}: {\em i.e.}, its reluctance to deviate from uniform straight-line
+motion under the influence of external forces. According to Newton's second law, Eq.~(\ref{en2}),
+if two objects of differing masses are acted upon by forces of the same magnitude
+then the resulting acceleration of the larger mass is less than that of the smaller
+mass. In other words, it is more difficult to force the larger mass to deviate from
+its preferred state of uniform motion in a straight line. Incidentally, the mass of
+a body is an intrinsic property of that body, and, therefore, does not change if the
+body is moved to a different place.
+
+\begin{figure}
+\epsfysize=1.6in
+\centerline{\epsffile{Chapter04/fig024.eps}}
+\caption{\em Weight}\label{f24}   
+\end{figure}
+
+Imagine a block of granite resting on the surface of the Earth. 
+See Fig.~\ref{f24}. The block experiences
+a downward force ${\bf f}_g$ due to the gravitational attraction of the Earth. This
+force is of magnitude $m\,g$, where $m$ is the mass of the block and $g$ is the acceleration
+due to gravity at the surface of the Earth. The block transmits this force to the
+ground below it, which is supporting it, and, thereby, preventing it from accelerating 
+downwards.  In other words, the block exerts a downward force ${\bf f}_W$, of magnitude $m\,g$,
+on the ground immediately beneath it. We usually refer to this force (or the
+magnitude of this force) as the {\em weight} of the block. According to Newton's third
+law, the ground below the block exerts an upward reaction force ${\bf f}_R$ on the block.
+This force is also of magnitude $m\,g$. Thus, the net force acting on the block
+is ${\bf f}_g + {\bf f}_R = {\bf 0}$, which accounts for the fact that the block
+remains stationary.
+
+Where, you might ask, is the equal and opposite reaction to the force of gravitational
+attraction
+${\bf f}_g$ exerted by the Earth on the block of granite? It turns out that
+this reaction is exerted at the centre of the Earth. In other words, the Earth attracts the
+block of granite, and the block of granite attracts the Earth by an equal amount. However,
+since the Earth is far more massive than the block, the force
+exerted  by the granite block at the centre of the Earth has no observable consequence.
+
+So far, we have established that the weight $W$ of a body is the magnitude of the downward
+force it exerts on any object which supports it.  Thus, $W=m\,g$, where $m$ is the
+mass of the body and $g$ is the local acceleration due to gravity. Since weight is a force,
+it is measured in newtons. A body's weight is location dependent, and is not, therefore, 
+an intrinsic property of that body. For instance, a body weighing 10\,N on the surface of
+the Earth will only weigh about $3.8\,{\rm N}$ on the surface of Mars, due to the
+weaker surface gravity of Mars relative to the Earth.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter04/fig025.eps}}
+\caption{\em Weight in an elevator}\label{f25}   
+\end{figure}
+
+Consider a block of mass $m$ resting on the floor of an elevator, as shown in Fig.~\ref{f25}. 
+Suppose that the elevator is accelerating upwards with acceleration $a$. How does this
+acceleration affect the weight of the block?
+Of course, the block
+experiences a downward force $m\,g$ due to gravity. Let $W$ be the weight of the block:
+by definition, this is the size of the downward force exerted by the block on the
+floor of the elevator. From Newton's third law, the floor of the elevator exerts an upward
+reaction force of magnitude $W$ on the block. Let us apply Newton's
+second law, Eq.~(\ref{en2}), to the motion of the block. The mass of the block is $m$,
+and its upward acceleration is $a$. Furthermore, the block is subject to two forces:
+a downward force $m\,g$ due to gravity, and an upward reaction force $W$. Hence,
+\begin{equation}
+W -m\,g = m\,a.
+\end{equation}
+This equation
+can be rearranged to give
+\begin{equation}
+W = m\,(g+a).
+\end{equation}
+Clearly, the upward acceleration of the elevator has the effect of increasing the
+weight $W$ of the block: for instance, if the elevator accelerates upwards at $g=9.81\,{\rm m/s^2}$
+then the weight of the block is doubled. Conversely, if the elevator accelerates
+downward ({\em i.e.}, if $a$ becomes negative) then the weight of the block
+is reduced: for instance, if the elevator accelerates downward at $g/2$ then the
+weight of the block is halved. Incidentally, these weight changes could easily be measured
+by placing some scales between the block and the floor of the elevator.
+
+Suppose that the downward acceleration of the elevator matches the acceleration
+due to gravity: {\em i.e.}, $a=-g$. In this case, $W=0$. In other words, the
+block becomes weightless! This is the principle behind the so-called
+``Vomit Comet'' used by NASA's Johnson Space Centre to train prospective astronauts in
+the effects of weightlessness. The ``Vomit Comet'' is actually a KC-135 (a predecessor
+of the Boeing 707 which is typically used for refueling military aircraft). The plane
+typically ascends to 30,000\,ft and then accelerates downwards at $g$ ({\em i.e.},
+drops like a stone) for about 20\,s, allowing its passengers to feel the effects
+of weightlessness during this period. All of the weightless scenes
+in the film {\em Apollo~11} were shot in this manner.
+
+Suppose, finally, that the downward acceleration of the elevator exceeds
+the acceleration due to gravity: {\em i.e.}, $a<-g$. In this case, the block acquires
+a negative weight! What actually happens is that the block flies off the
+floor of the elevator and slams into the ceiling: when things have settled down, the
+block exerts an upward force (negative weight) $|W|$ on the ceiling of the elevator.
+
+\subsection{Strings, Pulleys, and Inclines}\label{sspi}
+Consider a block of mass $m$ which is suspended from a fixed beam by means
+of a string, as shown in Fig.~\ref{f26}. The string is assumed to be
+light ({\em i.e.}, its mass is negligible compared to that of the block) and
+inextensible ({\em i.e.}, its length increases by a negligible amount because of the
+weight of the block). The string is clearly being stretched, since it is being pulled at
+both ends by the block and the beam. Furthermore, the string must be being pulled
+by oppositely directed forces of the same magnitude, otherwise it would 
+accelerate greatly (given that it has negligible inertia).
+By Newton's third law, the string
+exerts  oppositely directed
+forces of equal magnitude, $T$ (say),  on both the block and the beam.
+These forces act so as to 
+oppose the stretching of the string:
+{\em i.e.}, the beam experiences a downward force of magnitude $T$, whereas the
+block experiences an upward force of magnitude $T$. Here, $T$ is termed the
+{\em tension} of the string. Since $T$ is a force, it is measured in newtons. 
+Note that, unlike a coiled spring, a string can never possess a negative tension, since
+this would imply that the string is trying to push its supports apart, rather
+than pull them together.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig026.eps}}
+\caption{\em Block suspended by a string}\label{f26}   
+\end{figure}
+
+Let us apply Newton's second law to the block. The mass of the block is $m$, and
+its acceleration is zero, since the block is assumed to be in equilibrium.
+The block is subject to two forces, a downward force $m\,g$ due to gravity, and
+an upward force $T$ due to the tension of the string. It follows that
+\begin{equation}
+T - m\,g = 0.
+\end{equation}
+In other words, in equilibrium, the tension $T$ of the string equals the weight
+$m\,g$ of the block.
+
+Figure~\ref{f27} shows a slightly more complicated example in which a block of mass $m$ is
+suspended by three strings. The question is what are the tensions, $T$, $T_1$, and $T_2$, in these
+strings, assuming that the block is in equilibrium? Using analogous arguments to
+the previous case, we can easily  demonstrate that the tension $T$ in the lowermost string is
+$m\,g$. The tensions in the two uppermost strings are obtained by applying Newton's
+second law of motion to the knot where all three strings meet. See Fig.~\ref{f28}.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig027.eps}}
+\caption{\em Block suspended by three strings}\label{f27}   
+\end{figure}
+
+There are three forces acting on the knot: the downward force $T$ due to the
+tension in the lower string, and the forces $T_1$ and $T_2$ due to the tensions
+in the upper strings. The latter two forces act along their respective strings,
+as indicate in the diagram.
+Since the knot is in equilibrium, the vector sum of all the forces acting
+on it must be zero. 
+
+Consider the horizontal components of the
+forces acting on the knot. Let components acting to the right be positive, and
+{\em vice versa}. 
+The horizontal component of tension $T$ is
+zero, since this tension acts straight down. The horizontal
+component of tension $T_1$ is $T_1\,\cos 60^\circ = T_1/2$, since this
+force  subtends an angle of $60^\circ$ with respect to the horizontal (see Fig.~\ref{f16}). 
+Likewise, the
+horizontal component of tension $T_2$ is $-T_2\,\cos 30^\circ = -\sqrt{3}\,T_2/2$. 
+Since the knot does not accelerate in the horizontal direction, we can equate
+the sum of these components to zero:
+\begin{equation}\label{eaa}
+\frac{T_1}{2} -\frac{\sqrt{3}\,T_2}{2} = 0.
+\end{equation}
+
+Consider the vertical components of the forces acting on the knot. Let
+components acting upward be positive, and
+{\em vice versa}. The vertical component of tension $T$ is
+$-T=-m\,g$, since this tension acts straight down. The vertical
+component of tension $T_1$ is $T_1\,\sin 60^\circ = \sqrt{3}\,T_1/2$, since this
+force  subtends an angle of $60^\circ$ with respect to the horizontal (see Fig.~\ref{f16}). 
+Likewise, the
+vertical component of tension $T_2$ is $T_2\,\sin 30^\circ = T_2/2$. 
+Since the knot does not accelerate in the vertical direction, we can equate
+the sum of these components to zero:
+\begin{equation}\label{ebb}
+-m\,g+\frac{\sqrt{3}\,T_1}{2} + \frac{T_2}{2} = 0.
+\end{equation}
+
+Finally, Eqs.~(\ref{eaa}) and (\ref{ebb}) yield
+\begin{eqnarray}
+T_1 &=& \frac{\sqrt{3}\,m\,g}{2},\\[0.5ex]
+T_2 &=& \frac{m\,g}{2}.
+\end{eqnarray}
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig028.eps}}
+\caption{\em Detail of Fig.~\ref{f27}}\label{f28}   
+\end{figure}
+
+Consider a block of mass $m$ sliding down a smooth frictionless incline
+which subtends an angle $\theta$ to the horizontal, as shown in Fig~\ref{f29}.
+The weight $m\,g$ of the block is directed vertically downwards. However,
+this force can be resolved into components $m\,g\,\cos\theta$, acting
+perpendicular (or normal) to the incline, and  $m\,g\,\sin\theta$,
+acting parallel to the incline. Note that the reaction of the incline
+to the weight of the block acts {\em normal}\/ to the incline, and only
+matches the {\em normal component}\/ of the weight: {\em i.e.}, it is
+of magnitude $m\,g\,\cos\theta$. This is a general result: the reaction
+of any unyielding surface is always locally
+normal to that surface, directed outwards (away from the surface),
+and matches the normal component of any inward force applied to the surface. 
+The block is clearly in equilibrium in the direction normal to
+the incline, since the normal component of the block's weight is balanced by
+the reaction of the incline. However, the block is subject
+to the unbalanced force $m\,g\,\sin\theta$ in the direction parallel
+to the incline, and, therefore, accelerates down the slope.
+Applying Newton's second law to this problem (with the coordinates shown
+in the figure), we obtain
+\begin{equation}
+m\,\frac{d^2 x}{dt^2} = m\,g\,\sin\theta,
+\end{equation}
+which can be solved to give
+\begin{equation}
+x = x_0 + v_0\,t + \frac{1}{2}\,g\,\sin\theta\,t^2.
+\end{equation}
+In other words, the block accelerates down the slope with
+acceleration $g\,\sin\theta$. Note that this acceleration
+is {\em less} than the full acceleration due to gravity, $g$. In fact,
+if the incline is fairly gentle ({\em i.e.}, if $\theta$ is small) then
+the acceleration of the block can be made {\em much less} than $g$. 
+This was the technique used by Galileo in his pioneering studies
+of motion under gravity---by diluting the acceleration due to gravity,
+using inclined planes, he was able to obtain motion sufficiently
+slow for him to make accurate measurements using the crude time-keeping
+devices available in the 17th Century.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig029.eps}}
+\caption{\em Block sliding down an incline}\label{f29}   
+\end{figure}
+
+Consider two masses, $m_1$ and $m_2$, connected by a light
+inextensible string. Suppose that the first mass slides
+over a smooth, frictionless, horizontal table, whilst the
+second is suspended over the edge of the table by means
+of a light frictionless pulley. See Fig.~\ref{f30}. Since the
+pulley is light, we can neglect its rotational inertia in our analysis.
+Moreover,  no force is required to turn a frictionless pulley, so we can
+assume that the  tension
+$T$ of the string is the same on either side of the pulley. Let us
+apply Newton's second law of motion to each mass in turn. The first mass
+is subject to a downward force $m_1\,g$, due to gravity. However, this force
+is completely canceled out by the upward reaction force due to the table.
+The mass $m_1$ is also subject to a horizontal force $T$, due to
+the tension in the string, which causes it to move {\em rightwards}
+with acceleration
+\begin{equation}
+a = \frac{T}{m_1}.
+\end{equation}
+The second mass is subject to a downward force $m_2\,g$, due to gravity,
+plus an upward force $T$ due to the tension in the string. These forces
+cause the mass to move {\em downwards} with acceleration
+\begin{equation}
+a =g - \frac{T}{m_2}.
+\end{equation}
+Now, the rightward acceleration of the first mass must match the downward
+acceleration of the second, since the string which connects them is
+inextensible. Thus, equating the previous two expressions, we obtain
+\begin{eqnarray}
+T&=& \frac{m_1\,m_2}{m_1+m_2}\,g,\\[0.5ex]
+a &=& \frac{m_2}{m_1+m_2}\,g.
+\end{eqnarray}
+Note that the acceleration of the two coupled masses is {\em less}
+than the full acceleration due to gravity, $g$, since the first mass
+contributes to the inertia of the system, but does not contribute
+to the downward gravitational force which sets the system in motion.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig030.eps}}
+\caption{\em Block sliding over a smooth table, pulled by a
+second block}\label{f30}   
+\end{figure}
+
+Consider two masses, $m_1$ and $m_2$, connected by a light
+inextensible string which is suspended from a light frictionless
+pulley, as shown in Fig.~\ref{f31}. Let us again apply Newton's
+second law to each mass in turn. Without being given the values
+of $m_1$ and $m_2$, we cannot determine beforehand which mass is going to
+move upwards. Let us  {\em assume} that mass $m_1$ is going to move upwards:
+if we are wrong in this assumption then we will simply obtain a negative
+acceleration for this mass. The first mass is subject to an
+upward force $T$, due to the tension in the string, and a downward
+force $m_1\,g$, due to gravity. These forces cause the mass to
+move {\em upwards} with acceleration
+\begin{equation}
+a = \frac{T}{m_1} - g.
+\end{equation}
+The second mass is subject to a downward force $m_2\,g$, due to gravity,
+and an upward force $T$, due to the tension in the string. These forces
+cause the mass to move {\em downward} with acceleration
+\begin{equation}
+a = g - \frac{T}{m_2}.
+\end{equation}
+Now, the upward acceleration of the first mass must match the downward
+acceleration of the second, since they are connected by an inextensible
+string. Hence, equating the previous two expressions, we obtain
+\begin{eqnarray}
+T&=& \frac{2\,m_1\,m_2}{m_1+m_2}\,g,\\[0.5ex]
+a &=& \frac{m_2-m_1}{m_1+m_2}\,g.
+\end{eqnarray}
+As expected, the first mass accelerates upward ({\em i.e.}, $a>0$) if $m_2>m_1$,
+and {\em vice versa}. Note that the acceleration of the system is
+{\em less} than the full acceleration due to gravity, $g$, since both masses
+contribute to the inertia of the system, but their weights partially
+cancel one another out. In particular, if the  two
+masses are almost equal then the acceleration of the system becomes
+very much less than $g$. 
+
+\begin{figure}
+\epsfysize=3.5in
+\centerline{\epsffile{Chapter04/fig031.eps}}
+\caption{\em An Atwood machine}\label{f31}   
+\end{figure}
+
+Incidentally, the device pictured in Fig.~\ref{f31} is called an {\em Atwood machine},
+after the eighteenth Century English scientist George Atwood, who used it
+to ``slow down'' free-fall sufficiently to make accurate observations of this
+phenomena using the primitive time-keeping devices available in his day.
+
+\subsection{Friction}
+When a body slides over a rough surface a frictional force generally develops which
+acts to impede the motion. Friction, when
+viewed at the microscopic level, is actually a very complicated phenomenon.
+Nevertheless, physicists and engineers have managed to develop
+a relatively simple empirical law of force which allows the effects
+of friction to be incorporated into their calculations. This law of force
+was first proposed by Leonardo da Vinci (1452--1519), and later extended
+by Charles Augustin de Coulomb (1736--1806) (who is more famous for discovering the
+law of electrostatic attraction). The frictional
+force exerted on a body sliding over a rough surface is proportional to
+the {\em normal reaction} $R_n$ at that surface, the constant of proportionality
+depending on the nature of the surface. In other words,
+\begin{equation}
+f = \mu\, R_n,
+\end{equation}
+where $\mu$ is termed the {\em coefficient of (dynamical) friction}. For ordinary
+surfaces, 
+$\mu$ is generally of order unity. 
+
+Consider a block of mass $m$ being dragged over a horizontal
+surface, whose coefficient of friction is $\mu$, by a horizontal
+force $F$. See Fig.~\ref{f32}. The weight $W=m\,g$ of the block
+acts vertically downwards, giving rise to a reaction $R=m\,g$ acting
+vertically upwards. The magnitude of the frictional force $f$, which
+impedes the motion of the block, is simply $\mu$ times the
+normal reaction $R=m\,g$. Hence, $f=\mu\,m\,g$. The acceleration of
+the block is, therefore,
+\begin{equation}
+a = \frac{F - f}{m} = \frac{F}{m}-\mu\,g,
+\end{equation}
+assuming that $F>f$. What happens if $F<f$: {\em i.e.}, if the applied
+force $F$ is less than the frictional force $f$? In this case, common
+sense suggests that the block
+simply remains at rest (it certainly does not
+accelerate backwards!). Hence, $f=\mu\,m\,g$ is actually the {\em maximum}
+force which friction can generate in order to impede the motion of the
+block. If the applied force $F$ is less than this maximum value then the 
+applied force is canceled out by an equal and opposite frictional force, and
+the block remains stationary. Only if the applied force exceeds the
+maximum frictional force does the block start to move.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig032.eps}}
+\caption{\em Friction}\label{f32}   
+\end{figure}
+
+Consider a block of mass $m$ sliding down a rough incline (coefficient of
+friction $\mu$)
+which subtends an angle $\theta$ to the horizontal, as shown in Fig~\ref{f33}.
+The weight $m\,g$ of the block can be resolved into components $m\,g\,\cos\theta$, acting
+ normal to the incline, and  $m\,g\,\sin\theta$,
+acting parallel to the incline. The reaction of the incline
+to the weight of the block acts {\em normally}\/ outwards from  the incline, and  is
+of magnitude $m\,g\,\cos\theta$.
+ Parallel to the incline, 
+the block is subject
+to the downward gravitational force $m\,g\,\sin\theta$,
+and the upward frictional force $f$ (which acts to prevent the block sliding down the
+incline). In order for the block to move, the magnitude of the former force must
+exceed the maximum value of the latter, which is $\mu$ time the magnitude
+of the normal reaction, or $\mu\,m\,g\,\cos\theta$. Hence, the condition
+for the weight of the block to overcome friction, and, thus, to cause the block
+to slide down the incline, is
+\begin{equation}
+m\,g\,\sin\theta > \mu\,m\,g\,\cos\theta,
+\end{equation}
+or 
+\begin{equation}
+\tan\theta > \mu.
+\end{equation}
+In other words, if the slope of the incline exceeds a certain critical value, which
+depends on $\mu$, then the block will start to slide. Incidentally, the above formula
+suggests a fairly simple way of determining the coefficient of friction for
+a given object sliding over a particular surface. Simply tilt the surface gradually
+until the object just starts to move: the coefficient of friction is simply the tangent of
+the critical tilt angle (measured with respect to the horizontal).
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig033.eps}}
+\caption{\em Block sliding down a rough slope}\label{f33}   
+\end{figure}
+
+Up to now, we have implicitly suggested that the coefficient of friction between an
+object and a surface is the same whether the object remains stationary or slides over the surface.
+In fact, this is generally not the case. Usually, the coefficient of friction
+when the object is stationary is slightly {\em larger} than the coefficient when the object is sliding. We call the former coefficient the
+{\em coefficient of static friction}, $\mu_s$, whereas the latter coefficient
+is usually termed the {\em coefficient of kinetic (or dynamical) friction}, $\mu_k$. 
+The fact that $\mu_s>\mu_k$ simply implies that objects have a
+tendency to ``stick'' to rough surfaces when placed upon them. The force required to
+unstick a given object, and, thereby, set it in motion, is $\mu_s$ times the
+normal reaction at the surface. Once the object has been set in motion,
+the frictional force acting to impede this motion falls somewhat to $\mu_k$ times
+the normal reaction.
+
+\subsection{Frames of Reference}\label{frames}
+As discussed in Sect.~\ref{s1}, the laws of physics are assumed to possess {\em objective reality}. 
+In other words, it is assumed that two independent observers, studying the same physical phenomenon,
+would eventually formulate {\em identical}\/ laws of physics in order to account for their
+observations. Now, two completely independent observers are likely to choose different systems of units
+with which to quantify physical measurements. However, as we have seen in Sect.~\ref{s1}, the
+dimensional consistency of valid laws of physics renders them {\em invariant} under transformation from
+one system of units to another. Independent observers are also likely to choose
+different coordinate systems. For instance, the origins of their separate coordinate systems might
+differ, as well as the orientation of the various coordinate axes. Are the laws of physics also
+{\em invariant} under transformation between coordinate systems possessing different origins,
+or a different orientation of the various coordinate axes?
+
+Consider the vector equation
+\begin{equation}\label{evec}
+{\bf r}  = {\bf r}_1 + {\bf r}_2,
+\end{equation}
+which is represented diagrammatically in Fig.~\ref{f12}. Suppose that we shift the origin
+of our coordinate system, or rotate the coordinate axes. Clearly, in general, the {\em components}
+of vectors ${\bf r}$, ${\bf r}_1$, and ${\bf r}_2$ are going to be modified by this change
+in our coordinate scheme.
+However, Fig.~\ref{f12} still remains valid. Hence, we conclude that the vector
+equation (\ref{evec}) also  remains valid. In other words, although the individual
+components of vectors  ${\bf r}$, ${\bf r}_1$, and ${\bf r}_2$ are modified by the change in
+coordinate scheme, the interrelation between these components expressed in Eq.~(\ref{evec}) remains
+invariant.
+This observation suggests that the independence of the laws of
+physics from the arbitrary choice of  the location of  the underlying coordinate system's origin,
+or the equally arbitrary choice of the orientation of the various coordinate axes, can be made
+manifest by simply writing these laws as interrelations between vectors. 
+In particular, Newton's second law of motion,
+\begin{equation}
+{\bf f} = m\,{\bf a},
+\end{equation}
+is clearly invariant under shifts in the origin of our coordinate system, or changes
+in the orientation of the various coordinate axes. Note that the quantity $m$
+({\em i.e.}, the mass of the body whose motion is under investigation),
+appearing in the above equation, is invariant under any changes in the coordinate
+system, since measurements
+of mass are completely independent of measurements of distance. We refer to
+such a quantity as a {\em scalar} (this is an improved definition). 
+We conclude that valid laws
+of physics must consist of combinations of scalars and vectors, otherwise
+they would retain an unphysical dependence on the details of the chosen coordinate system.
+
+Up to now, we have implicitly assumed that all of our observers are {\em stationary}
+({\em i.e.}, they are all standing still on the surface of the Earth). Let us, now,
+relax this assumption. Consider two observers, $O$ and $O'$, whose coordinate systems
+coincide momentarily at $t=0$. Suppose that observer $O$ is stationary (on the surface of the
+Earth), whereas observer $O'$ moves (with respect to observer $O$) with
+{\em uniform} velocity ${\bf v}_0$.   As illustrated in Fig.~\ref{f34}, if ${\bf r}$ represents
+the displacement of some body $P$ in the stationary observer's frame of reference, at time $t$, then
+the corresponding displacement in the moving observer's frame of reference is simply
+\begin{equation}
+{\bf r}' = {\bf r} - {\bf v}_0\,t.
+\end{equation}
+The velocity of body $P$ in the stationary observer's frame of reference is defined as
+\begin{equation}
+{\bf v} = \frac{d{\bf r}}{dt}.
+\end{equation}
+Hence, the corresponding velocity in the moving observer's frame of reference takes the form
+\begin{equation}
+{\bf v}' = \frac{ d{\bf r}'}{dt} = {\bf v} - {\bf v}_0.
+\end{equation}
+Finally, the acceleration of body $P$ in  stationary observer's frame of reference is
+defined as
+\begin{equation}
+{\bf a} = \frac{d{\bf v}}{dt},
+\end{equation}
+whereas the corresponding acceleration in the moving observer's frame of reference takes the form
+\begin{equation}
+{\bf a}' = \frac{ d{\bf v}'}{dt} = {\bf a}.
+\end{equation}
+Hence, the acceleration of body $P$ is {\em identical} in both frames of reference.
+
+ \begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter04/fig034.eps}}
+\caption{\em A moving observer}\label{f34}   
+\end{figure}
+
+It is clear that if observer $O$ concludes that body $P$ is moving with constant
+velocity, and, therefore, subject to zero net force, then observer $O'$ will agree
+with this conclusion. Furthermore, if observer $O$ concludes that body $P$
+is accelerating, and, therefore, subject to a force ${\bf a}/m$, then observer
+$O'$ will remain in agreement. It follows that Newton's laws of motion
+are equally valid in the frames of reference of the moving and the stationary observer. 
+Such frames are termed {\em inertial frames of reference}. There are infinitely many
+inertial frames of reference---within which Newton's laws of motion are equally valid---all
+moving with {\em constant} velocity with respect to one another. Consequently, there is no universal
+standard of rest in physics. Observer $O$ might claim to be at rest compared to observer $O'$,
+and {\em vice versa}: however, both points of view are equally valid. Moreover, there is 
+absolutely no physical
+experiment which observer $O$ could perform in order to demonstrate that he/she is at
+rest whilst observer $O'$ is moving. This, in essence, is the principle of {\em special
+relativity}, first formulated by Albert Einstein in 1905. 
+
+\subsection*{\em Worked Example 4.1: In Equilibrium}
+{\em Question:} Consider the diagram. If the system is in equilibrium, and the
+tension in string 2 is $50\,{\rm N}$, determine the mass $M$.
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter04/fig034a.eps}}
+\end{figure*}
+
+\noindent {\em Answer:} It follows from symmetry that the tensions in strings 1 and 3 are equal. 
+Let $T_1$ be the tension in string 1, and  $T_2$  the
+tension in string 2. Consider the equilibrium of the knot above the leftmost mass.
+As shown below, this knot is subject to three forces: the downward force $T_4=M\,g$
+due to the tension in the string which directly supports the leftmost mass, the rightward force
+$T_2$ due to the tension in string 2, and the upward and leftward force
+$T_1$ due to the tension in string 1. The resultant of all these forces must be zero, otherwise
+the system would not be in equilibrium. Resolving in the horizontal direction (with rightward
+forces positive), we obtain
+$$
+T_2 - T_1\,\sin 40^\circ = 0.
+$$
+Likewise, resolving in the vertical direction (with upward forces positive) yields
+$$
+T_1\,\cos 40^\circ - T_4 = 0.
+$$
+Combining the above two expressions, making use of the fact that
+$T_4 = M\,g$, gives
+$$
+M = \frac{T_2}{g\,\tan 40^\circ}.
+$$
+Finally, since $T_2 =50\,{\rm N}$ and $g=9.81\,{\rm m/s^2}$, 
+we obtain
+$$
+M = \frac{50}{9.81\times 0.8391} = 6.074\,{\rm kg}.
+$$
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter04/fig034b.eps}}
+\end{figure*}
+
+\subsection*{\em Worked Example 4.2: Block Accelerating up a Slope}
+{\em Question:} Consider the diagram. Suppose that the block, mass
+$m= 5\,{\rm kg}$, is subject to a horizontal force $F= 27\,{\rm N}$. 
+What is the acceleration of the block up the (frictionless) slope?
+
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter04/fig034c.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Only that component of the applied force which is
+parallel to the incline has any influence on the block's motion: the normal
+component of the applied force is canceled out by the normal reaction
+of the incline. The component of the applied force acting up the
+incline is $F\,\cos 25^\circ$. Likewise, the component of the block's
+weight acting down the incline is $m\,g\,\sin 25^\circ$. Hence, using
+Newton's second law to determine the acceleration $a$ of the block
+up the incline, we obtain
+$$
+a = \frac{F\,\cos 25^\circ - m\,g\,\sin 25^\circ}{m}.
+$$
+Since $m = 5\,{\rm kg}$ and $F= 27\,{\rm N}$, we have
+$$
+a = \frac{27\times 0.9063 - 5\times 9.81\times 0.4226}{5} = 0.7483\,{\rm m/s^2}.
+$$
+
+\subsection*{\em Worked Example 4.3: Raising a Platform}
+{\em Question:} Consider the diagram. The platform and the attached frictionless
+pulley weigh a total of 34\,N. With what force $F$ must the (light) rope be pulled
+in order to lift the platform at $3.2\,{\rm m/s^2}$? 
+
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter04/fig034d.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let $W$ be the weight of the platform, $m=W/g$ the mass
+of the platform, and $T$ the tension in the  rope. From Newton's third law, it is clear that $T=F$.
+ Let us apply Newton's second law to the upward motion
+of the platform. The platform is subject to two vertical forces: a downward
+force $W$ due to its  weight, and an upward force $2\,T$ due to
+the tension in the rope (the force is $2\,T$, rather than $T$, because both
+the leftmost and rightmost sections of the rope, emerging from the pulley,
+are in tension and exerting an upward force on the pulley). Thus, the
+upward acceleration $a$ of the platform is
+$$
+a = \frac{2\,T-W}{m}.
+$$
+Since $T=F$ and $m=W/g$, we obtain
+$$
+F = \frac{W\,(a/g+1)}{2}.
+$$
+Finally, given that $W=34\,{\rm N}$ and $a=3.2\,{\rm m/s^2}$, we have
+$$
+F = \frac{34\,(3.2/9.81+1)}{2} = 22.55\,{\rm N}.
+$$
+
+\subsection*{\em Worked Example 4.4: Suspended Block}
+{\em Question:} Consider the diagram. The mass of block $A$ is $75\,{\rm kg}$ and
+the mass of block $B$ is $15\,{\rm kg}$. The coefficient of static friction
+between the two blocks is $\mu = 0.45$. The horizontal surface is frictionless. What 
+minimum force
+$F$ must be exerted on block $A$ in order to prevent block $B$ from
+falling?
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter04/fig034e.eps}}
+\end{figure*}
+
+\noindent {\em Answer:} Suppose that block $A$ exerts a rightward force $R$
+on block $B$. By Newton's third law, block $B$ exerts an equal and opposite force
+on block $A$. Applying Newton's second law of motion to the rightward
+acceleration $a$ of block $B$, we obtain
+$$
+a = \frac{R}{m_B},
+$$
+where $m_B$ is the mass of block $B$. The normal reaction at the interface between
+the two blocks is $R$. Hence, the maximum frictional force that block $A$
+can exert on block $B$ is $\mu\,R$. In order to prevent block $B$ from falling,
+this maximum frictional force (which acts upwards) must exceed the downward acting weight, $m_B\, g$,
+of the block. Hence, we require
+$$
+\mu\,R > m_B\,g,
+$$
+or 
+$$
+a > \frac{g}{\mu}.
+$$
+Applying Newton's second law to the rightward acceleration $a$ of both blocks (remembering that the
+equal and opposite forces exerted between the blocks cancel one another out), we obtain
+$$
+a = \frac{F}{m_A+m_B},
+$$
+where $m_A$ is the mass of block $A$. It follows that
+$$
+F > \frac{(m_A+m_B)\,g}{\mu}.
+$$
+Since $m_A=75\,{\rm kg}$, $m_B = 15\,{\rm kg}$, and $\mu= 0.45$, we have
+$$
+F > \frac{(75+15)\times 9.81}{0.45} = 1.962\times 10^3\,{\rm N}.
+$$

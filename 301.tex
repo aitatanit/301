@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               Introduction to Classical Mechanics
+%                    A lecture course given by 
+%                    Prof Richard Fitzpatrick 
+%             at the University of Texas at Austin
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+
+% Required Tex Packages
+\usepackage{fancyhdr}
+\usepackage{epsf}
+\usepackage{charter}
+\usepackage{euler}
+
+% Configure spacing
+\parskip       		= .15truein
+\hfuzz          		= 5pt
+\textwidth    		= 7truein
+\topmargin   		= 0.0 in
+\headsep      		= 20pt
+\textheight   		= 8.5truein
+\oddsidemargin  -15pt
+\evensidemargin -10pt
+
+% Configure text size
+\let\regular	=\normalsize
+\let\smaller	=\footnotesize
+\let\larger	=\large
+
+% Configure equation numbering
+\makeatletter
+\@addtoreset{equation}{section}
+\makeatother
+\def\theequation{\arabic{section}.\arabic{equation}}
+
+% New Commands
+\newcommand {\ltapp} 		{\stackrel {_{\normalsize<}}{_{\normalsize \sim}}}
+\newcommand {\gtapp} 		{\stackrel {_{\normalsize>}}{_{\normalsize \sim}}}
+\newcommand {\btheta} 		{\mbox{\boldmath$\theta$}}
+\newcommand {\bomega}	 {\mbox{\boldmath$\omega$}}
+\newcommand {\btau} 		{\mbox{\boldmath$\tau$}}
+\newcommand {\balpha} 	{\mbox{\boldmath$\alpha$}}
+\newcommand {\bphi} 		{\mbox{\boldmath$\phi$}}
+\newcommand {\brho} 		{\mbox{\boldmath$\rho$}}
+
+% Content
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+{\Huge\bf Introduction to Classical Mechanics}\\[1ex]
+~\\
+~\\
+~\\
+~\\
+{\Large \sf Richard Fitzpatrick}\\[1.5ex]
+{\Large\sf  Professor  of Physics}\\[1.5ex]
+{\Large\sf  The University of Texas at Austin}
+\end{center}
+\tableofcontents
+\pagestyle{fancy}
+\cfoot{\thepage}
+
+\large{
+\include{Chapter01/Chapter1}
+\include{Chapter02/Chapter2}
+\include{Chapter03/Chapter3}
+\include{Chapter04/Chapter4}
+\include{Chapter05/Chapter5}
+\include{Chapter06/Chapter6}
+\include{Chapter07/Chapter7}
+\include{Chapter08/Chapter8}
+\include{Chapter09/Chapter9}
+\include{Chapter10/Chapter10}
+\include{Chapter11/Chapter11}
+\include{Chapter12/Chapter12}
+\include{Chapter13/Chapter13}
+}
+\end{document}

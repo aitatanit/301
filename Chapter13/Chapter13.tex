@@ -1,0 +1,599 @@
+\section{Wave Motion}
+\subsection{Introduction}
+Waves are small amplitude perturbations which propagate through continuous
+media: {\em e.g.}, gases, liquids, solids, or---in the special case
+of electromagnetic waves---a vacuum. Wave motion is a combination of
+oscillatory and translational motion. Waves are
+important because they are the means through which virtually all
+information regarding the outside world  is transmitted to us. For instance,
+we hear things via sound waves propagating through the air, and
+we see things via light waves. Now, the physical mechanisms which  underlie sound and
+light wave propagation are completely different. Nevertheless, sound and
+light waves possesses a number of common properties which are intrinsic to
+wave motion itself. In this section, we shall concentrate on the {\em common} properties of waves,
+rather than those properties which are peculiar to  particular wave types.
+
+\subsection{Waves on a Stretched String}
+Probably the simplest type of wave is that which propagates down a stretched string.
+Consider a straight string which is stretched such that it is under uniform tension $T$. Let
+the string run along the $x$-axis. Suppose that the string is subject to a {\em small
+amplitude} displacement, in the $y$-direction, which can {\em vary} along its length.
+ Let $y(x,t)$ be the string's displacement
+at position $x$ and time $t$. What is the equation of motion for $y(x,t)$?
+
+\begin{figure}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter13/fig108a.eps}}
+\caption{\em Forces acting on a segment of a stretched string.}\label{f108a}  
+\end{figure}
+
+Consider an infinitesimal segment of the string which extends from $x-\delta x/2$ to $x+\delta x/2$. 
+As shown in Fig.~\ref{f108a}, this segment is subject to opposing tension forces, $T$, at its two ends,
+which act along the local tangent line to the string. Here, we are assuming that the string
+displacement remains sufficiently small that the tension does not vary in magnitude along the string.
+Suppose that the local tangent line to the string subtends  angles $\delta\theta_1$ and
+$\delta\theta_2$ with the $x$-axis at $x-\delta x/2$ and $x+\delta x/2$, respectively---as shown
+in Fig.~\ref{f108a}.
+Note that these angles are written as infinitesimal quantities because the string
+displacement is assumed to be infinitesimally small, which implies that the
+string is everywhere almost parallel with the $x$-axis (the string displacement is greatly
+exaggerated in Fig.~\ref{f108a}, for the sake of clarity).
+
+Consider the $y$-component of the string segment's equation of motion. The net force
+acting on the segment in the $y$-direction takes the form
+\begin{equation}\label{e13x2}
+f_y(x,t) = T\,\sin\delta\theta_2 - T\,\sin\delta\theta_1 \simeq T\,(\delta\theta_2-\delta\theta_1),
+\end{equation}
+since $\sin\theta\simeq \theta$ when $\theta$ is small. Now, from calculus,
+\begin{eqnarray}\label{e13x3}
+\frac{\partial y(x-\delta x/2,t)}{\partial x}&=& \tan\delta\theta_1\simeq \delta\theta_1,\\[0.5ex]
+\frac{\partial y(x+\delta x/2,t)}{\partial x}&=& \tan\delta\theta_2\simeq \delta\theta_2,\label{e13x4}
+\end{eqnarray}
+since the gradient, $dy(x)/dx$, of the curve $y(x)$ is equal to
+the tangent of the angle subtended by this curve with the $x$-axis. Note that $\tan\theta\simeq \theta$
+when $\theta$ is small. The quantity $\partial y(x,t)/\partial x$ refers to the derivative of $y(x,t)$
+with respect to $x$, {\em keeping $t$  constant}---such a derivative is known as a {\em partial
+derivative}. Equations~(\ref{e13x2})--(\ref{e13x4}) can be combined to give
+\begin{equation}\label{e13x5}
+f_y(x,t) = T\left(\frac{\partial y(x+\delta x/2,t)}{\partial x}-\frac{\partial y(x-\delta x/2,t)}{\partial x}
+\right)= T\,\delta x\,\frac{\partial^2 y(x,t)}{\partial x^2}.
+\end{equation}
+Here, $\partial^2 y(x,t)/\partial x^2$ is the second derivative of $y(x,t)$ with respect to $x$,
+keeping $t$ constant.
+
+Suppose that the string has a mass {\em per unit length} $\mu$. It follows that the $y$ equation of
+motion of our string segment takes the form
+\begin{equation}\label{e13x6}
+\mu\,\delta x\,\frac{\partial^2 y(x,t)}{\partial t^2} = f_y (x,t),
+\end{equation}
+Here, $\partial^2 y(x,t)/\partial t^2$---the second derivative of $y(x,t)$ with respect to $t$,
+keeping $x$ constant---is the $y$-acceleration of the string segment at position $x$ and time $t$. 
+Equations~(\ref{e13x5}) and (\ref{e13x6}) yield the final expression for the string's equation of motion:
+\begin{equation}\label{e13x7}
+\frac{\partial^2 y}{\partial t^2}=\frac{T}{\mu}\,\frac{\partial^2 y}{\partial x^2}.
+\end{equation}
+
+Equation~(\ref{e13x7}) is an example of a {\em wave equation}. In fact,
+all small amplitude waves satisfy an equation of motion of this basic form. A particular solution of
+this type of equation has been known for centuries: {\em i.e.}, 
+\begin{equation}\label{e13x8}
+y(x,t) = y_0\,\cos\,(k\,x - \omega \,t),
+\end{equation}
+where $y_0$, $k$, and $\omega$ are constants. We can demonstrate that (\ref{e13x8}) satisfies
+(\ref{e13x7}) by direct substitution. Thus,
+\begin{eqnarray}
+\frac{\partial y}{\partial t} &=& y_0\,\omega\,\sin\,(k\,x - \omega \,t),\\[0.5ex]
+\frac{\partial^2 y}{\partial t^2} &=& -y_0\,\omega^2\,\cos\,(k\,x - \omega \,t),\label{e13x9}
+\end{eqnarray}
+and
+\begin{eqnarray}
+\frac{\partial y}{\partial x} &=& -y_0\,k\,\sin\,(k\,x - \omega \,t),\\[0.5ex]
+\frac{\partial^2 y}{\partial x^2} &=& -y_0\,k^2\,\cos\,(k\,x - \omega \,t).\label{e13x10}
+\end{eqnarray}
+Substituting Eqs.~(\ref{e13x9}) and (\ref{e13x10}) into Eq.~(\ref{e13x7}), we find that the
+latter equation is satisfied provided 
+\begin{equation}\label{e13xx}
+\frac{\omega^2}{k^2} = \frac{T}{\mu}.
+\end{equation}
+
+Equation~(\ref{e13x8}) describes a pattern of motion which is {\em periodic in both space and time}.
+This periodicity follows from the well-known periodicity property of the cosine function:
+namely,
+$\cos(\theta+2\,\pi)=\cos\theta$. Thus, the wave pattern is periodic in space,
+\begin{equation}
+y (x+\lambda,t) = y(x,t),
+\end{equation}
+with periodicity length 
+\begin{equation}\label{e13x11}
+\lambda = \frac{2\,\pi}{k}.
+\end{equation}
+Here, $\lambda$ is known as the {\em wavelength}, whereas $k$ is known as the {\em wavenumber}. 
+The wavelength is the distance between successive wave peaks.
+The wave pattern is periodic in time,
+\begin{equation}
+y (x,t+T) = y(x,t),
+\end{equation}
+with period 
+\begin{equation}
+T = \frac{2\,\pi}{\omega}.
+\end{equation}
+The wave period is the oscillation period of the wave disturbance at a given point in space.
+The wave {\em frequency} ({\em i.e.}, the number of cycles per second the wave pattern executes
+at a given point in space) is written
+\begin{equation}\label{e13x12}
+f = \frac{1}{T} = \frac{\omega}{2\,\pi}.
+\end{equation}
+The quantity $\omega$ is termed the {\em angular frequency}
+ of the wave. Finally, at any given point in space, the displacement $y$ oscillates
+between $+y_0$ and $-y_0$ (since the maximal values of $\cos\theta$ are $\pm 1$).
+Hence, $y_0$ corresponds to the wave {\em amplitude}.
+
+Equation~(\ref{e13x8}) also describes a sinusoidal pattern which {\em propagates} along the $x$-axis {\em without
+changing shape}. We can see this by examining the motion of the
+wave peaks, $y=+y_0$, which correspond to
+\begin{equation}
+k\,x-\omega\,t = n\,2\,\pi,
+\end{equation}
+where $n$ is an integer. Differentiating the above expression with respect to time,
+we obtain
+\begin{equation}
+\frac{d x}{dt} = \frac{\omega}{k}.
+\end{equation}
+In other words, the wave peaks all propagate along the $x$-axis with uniform speed
+\begin{equation}
+v=\frac{\omega}{k}. \label{e13x13}
+\end{equation}
+It is easily demonstrated that the wave troughs, $y = -y_0$,   propagate
+with the same speed. Thus, it is fairly clear that the whole wave pattern
+moves with speed $v$---see Fig.~\ref{f109}. Equations~(\ref{e13x11}), (\ref{e13x12}), and
+(\ref{e13x13}) yield
+\begin{equation}
+v = f\,\lambda:\label{e13xy}
+\end{equation}
+{\em i.e.}, a wave's speed is the product of its frequency and its wavelength.
+This is true for all types of (sinusoidal) wave.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter13/fig109.eps}}
+\caption{\em A sinusoidal wave propagating down the $x$-axis. The solid, dotted, dashed,
+and dot-dashed curves show the wave displacement at four successive and equally spaced
+times.}\label{f109}  
+\end{figure}
+
+Equations (\ref{e13xx}) and (\ref{e13x13}) imply that
+\begin{equation}
+v = \sqrt{\frac{T}{\mu}}.\label{e13yy}
+\end{equation}
+In other words, all waves that propagate down a stretched string do so with the
+{\em same speed}. This common speed is determined by the properties of the
+string: {\em i.e.}, its tension and  mass per unit length.
+ Note, from Eq.~(\ref{e13x8}), that the wavelength $\lambda$ 
+is arbitrary. However, once the wavelength is specified, the wave frequency $f$ is
+fixed via Eqs.~(\ref{e13xy}) and (\ref{e13yy}). It follows that short wavelength
+waves possess high frequencies, and {\em vice versa}.
+
+\subsection{General Waves}
+By analogy with the previous discussion, a general wave disturbance propagating
+along the $x$-axis satisfies
+\begin{equation}\label{e13zz}
+\frac{\partial^2 y}{\partial t^2}=v^2\,\frac{\partial^2 y}{\partial x^2},
+\end{equation}
+where $v$ is the common wave speed. In general, $v$ is determined by the properties of
+the  medium through which the wave propagates. Thus, for waves propagating along a string, the wave
+speed is determined by the string tension and mass per unit length; for
+sound waves propagating through a gas, the wave speed is determined by the
+gas pressure and density; and for electromagnetic waves propagating through
+a vacuum, the wave speed is a constant of nature: {\em i.e.}, $c=3\times 10^8\,{\rm m}/{\rm s}^2$.
+
+One solution of Eq.~(\ref{e13zz}) is
+\begin{equation}
+y(x,t) = y_0\,\cos\,[k\,(x - v\,t)].
+\end{equation}
+This is interpreted as a (sinusoidal) wave of amplitude $y_0$ and wavelength $\lambda=2\,\pi/k$ which
+propagates in the $+x$ direction with speed $v$. It is easily demonstrated that another
+equally good solution of Eq.~(\ref{e13zz}) is
+\begin{equation}
+y(x,t) = y_0\,\cos\,[k\,(x + v\,t)].
+\end{equation}
+This is interpreted as a (sinusoidal) wave of amplitude $y_0$ and wavelength $\lambda=2\,\pi/k$ which
+propagates in the $-x$ direction with speed $v$.
+
+Equation (\ref{e13zz}) is a {\em linear} partial differential equation (PDE): {\em i.e.}, it is invariant under the transformation
+$y\rightarrow a\,y + b$, where $a$ and $b$ are arbitrary constants. One important mathematical
+property of linear PDEs is that their solutions are {\em superposable}: {\em i.e.}, they can be added
+together and still remain solutions. Thus,  if $y_1(x,t)$ and $y_2(x,t)$ are two distinct solutions
+ of Eq.~(\ref{e13zz}) then $a\,y_1(x,t) + b\,y_2(x,t)$ (where $a$ and $b$ are arbitrary constants)
+is also a solution---this can be seen from inspection of Eq.~(\ref{e13zz}). To be
+more exact, if
+\begin{equation}
+y_1(x,t) = a_1\,\cos\,[k_1\,(x - v\,t)]
+\end{equation}
+represents a wave of amplitude $a_1$ and wavenumber $k_1$ which propagates in the
+$+x$ direction, and
+\begin{equation}
+y_2(x,t) = a_2\,\cos\,[k_2\,(x + v\,t)]
+\end{equation}
+represents a wave of amplitude $a_2$ and wavenumber $k_2$ which propagates in the
+$-x$ direction, then
+\begin{equation}
+y(x,t) = y_1(x,t) + y_2(x,t)
+\end{equation}
+is a valid solution of the wave equation, and represents the two aforementioned waves 
+propagating in the same region {\em without affecting one another}.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter13/fig110.eps}}
+\caption{\em A wave-pulse propagating down the $x$-axis. The solid, dotted, and dashed
+curves show the wave displacement at three successive and equally spaced
+times.}\label{f110}  
+\end{figure}
+
+\subsection{Wave-Pulses}
+As is easily demonstrated, the most general solution of the wave equation (\ref{e13zz}) is written
+\begin{equation}
+F (x - v\,t),
+\end{equation}
+where $F(p)$ is an {\em arbitrary} function. The above solution is interpreted
+as a pulse of {\em arbitrary shape} which propagates in the $+x$ direction with
+speed $v$, {\em without changing shape}---see Fig.~\ref{f110}. Likewise,
+\begin{equation}
+G (x + v\,t)
+\end{equation}
+represents  another arbitrary pulse  which propagates in the $-x$ direction with
+speed $v$, without changing shape. Note that, unlike our previous sinusoidal wave solutions,
+a general wave-pulse possesses a definite propagation speed but  {\em does not} possess
+a definite wavelength or frequency.
+
+What is the relationship between these new wave-pulse solutions and our previous
+sinusoidal wave solutions? It turns out that any wave-pulse can be built up from
+a suitable {\em linear superposition} of sinusoidal waves. For instance,
+if $F(x-v\,t)$ represents a wave-pulse propagating down the $x$-axis, then
+we can write
+\begin{equation}
+F (x-v\,t) = \int_0^\infty \bar{F}(k)\,\cos\,[k\,(x-v\, t)]\,dk,
+\end{equation}
+where we have assumed that $F(-p)=F(p)$, for the sake of simplicity. The above
+formula is basically a recipe for generating the propagating wave-pulse $F(x-v\,t)$ 
+from a suitable admixture of sinusoidal waves of definite wavelength and frequency:
+$\bar{F}(k)$ specifies the required amplitude of the wavelength $\lambda =2\,\pi/k$
+component. How do we determine $\bar{F}(k)$ for a given wave-pulse? Well, a
+mathematical result known as {\em Fourier's theorem} yields
+\begin{equation}
+\bar{F} (k) = \frac{2}{\pi}\int_0^\infty F(p)\,\cos\,(k\,p)\,dp,
+\end{equation}
+The above expression essentially tells us the strength of the wavenumber $k$ component
+of the wave-pulse  $F(x-v\,t)$. Note that the function $\bar{F}(k)$ is known as the
+{\em Fourier spectrum} of the wave-pulse $F(x-v\,t)$. 
+
+\begin{figure}
+\epsfysize=5in
+\centerline{\epsffile{Chapter13/fig111.eps}}
+\caption{\em A propagating wave-pulse, $F(x-v\,t)$, and its
+associated Fourier spectrum, $\bar{F}(k)$.}\label{f111}  
+\end{figure}
+
+Figures~\ref{f111} and \ref{f112} show two different wave-pulses and their associated
+Fourier spectra. Note how, by combining sinusoidal waves of varying wavenumber in different proportions,
+it is possible to build up  wave-pulses of completely different shape.
+
+\begin{figure}
+\epsfysize=5in
+\centerline{\epsffile{Chapter13/fig112.eps}}
+\caption{\em A propagating wave-pulse, $F(x-v\,t)$, and its
+associated Fourier spectrum, $\bar{F}(k)$.}\label{f112}  
+\end{figure}
+
+\subsection{Standing Waves}
+Up to now, all of the wave solutions that we have investigated have been propagating
+solutions. Is it possible to construct a wave solution which does not propagate?
+Suppose we combine a sinusoidal wave of amplitude $y_0$ and wavenumber $k$ which
+propagates in the $+x$ direction,
+\begin{equation}
+y_1(x,t) = y_0\,\cos\,(k\,x-\omega\,t),
+\end{equation}
+with a second sinusoidal wave of amplitude $y_0$ and wavenumber $k$ which
+propagates in the $-x$ direction,
+\begin{equation}
+y_2(x,t) = y_0\,\cos\,(k\,x+\omega\,t).
+\end{equation}
+The net result is
+\begin{equation}
+y(x,t) = y_1(x,t)+y_2(x,t) = y_0\left[\cos\,(k\,x-\omega\,t)+\cos\,(k\,x+\omega\,t)\right].
+\end{equation}
+Making use of the standard trigonometric identity
+\begin{equation}
+\cos x + \cos y = 2\, \cos\left(\frac{x+y}{2}\right) \, \cos\left(\frac{x-y}{2}\right),
+\end{equation}
+we obtain
+\begin{equation}
+y(x,t) = 2\,y_0\,\cos \,(k\,x)\,\cos\,(\omega\,t).
+\end{equation}
+The pattern of motion specified by the above expression is illustrated in Fig.~\ref{f113}.
+It can be seen that the wave pattern {\em does not} propagate along the $x$-axis. Note,
+however, that the amplitude of the wave now varies with position. At certain points,
+called {\em nodes}, the amplitude is zero. At other points, called {\em anti-nodes}, the amplitude
+is maximal. The nodes are halfway between successive anti-nodes, and both nodes and
+anti-nodes are evenly spaced half a wavelength apart. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter13/fig113.eps}}
+\caption{\em A standing wave. The various curves show the wave displacement at
+ different times.}\label{f113}  
+\end{figure}
+
+The standing wave shown in Fig.~\ref{f113} can be thought of as the {\em interference pattern} generated
+by combining the two traveling wave solutions $y_1(x,t)$ and $y_2(x,t)$. At the anti-nodes, the waves
+reinforce one another, so that the oscillation amplitude becomes double that associated with each
+wave individually---this is termed {\em constructive interference}. At the
+nodes, the waves completely cancel one another out---this is termed {\em destructive interference}.
+
+Most musical instruments work by exciting standing waves. 
+For instance, stringed instruments excite standing
+waves on strings, whereas wind instruments excite standing waves in columns of air.
+Consider a
+guitar string of length $L$. Suppose that the string runs along the $x$-axis, and
+extends from $x=0$ to $x=L$. Since the ends of the string are fixed, any wave excited
+on the string must satisfy the constraints
+\begin{equation}
+y(0,t) = y(L, t) = 0.
+\end{equation}
+It is fairly clear that no propagating wave solution of the form $y_0\,\cos\,[k\,(x\pm v\,t)]$
+can satisfy these constraints. However, a standing wave can easily satisfy the 
+constraints, provided two of its nodes coincide with the ends of the string. Since
+the nodes in a standing wave pattern are spaced half a wavelength apart, it follows that
+the wave frequency must be adjusted such that an integer number of half-wavelengths
+fit on the string. In other words,
+\begin{equation}
+L = n\,\frac{\lambda}{2},
+\end{equation}
+where $n=1,2,3,\ldots$. Now, from Eqs.~(\ref{e13xy}) and (\ref{e13yy}),
+\begin{equation}
+f\,\lambda = \sqrt{\frac{T}{\mu}},
+\end{equation}
+where $T$ and $\mu$ are the tension and mass per unit length of the string, respectively.
+The above two equations can be combined to give
+\begin{equation}
+f = \frac{n}{2\,L}\,\sqrt{\frac{T}{\mu}}.
+\end{equation}
+Thus, the standing waves that can be excited on a guitar string have frequencies
+$f_0$, $2\,f_0$, $3\,f_0$, {\em etc}.,  which are integer multiples of
+\begin{equation}
+f_0 = \frac{1}{2\,L}\,\sqrt{\frac{T}{\mu}}.
+\end{equation}
+These frequencies are transmitted to our ear, via sound waves which oscillate in
+sympathy with the guitar string, and are interpreted as musical notes. To be
+more exact, the frequencies correspond to  notes spaced an octave apart.
+The frequency $f_0$ is termed the {\em fundamental} frequency, whereas the
+frequencies $2\,f_0$, $3\,f_0$, {\em etc.} are termed the {\em overtone harmonic} frequencies. 
+When a guitar string is plucked an admixture of standing waves, consisting predominantly
+of the fundamental harmonic wave, is excited on the
+string. The fundamental harmonic determines the musical note which the guitar string plays.
+However, it is the overtone harmonics which give the note its peculiar timbre. Thus,
+a trumpet sounds different to a guitar, even when they are both playing the same note, because
+a trumpet excites a different mix of overtone harmonics than a guitar.
+
+\subsection{The Doppler Effect}
+Consider a sinusoidal wave of wavenumber $k$ and angular frequency $\omega$ propagating
+in the $+x$ direction:
+\begin{equation}\label{e13ccc}
+y(x,t) = y_0\,\cos\,(k\,x-\omega\,t).
+\end{equation}
+The wavelength and frequency of the wave, as seen by a stationary observer, are
+$\lambda = 2\,\pi/k$ and $f=\omega/2\,\pi$, respectively. Consider a second
+observer moving with uniform speed $v_o$ in the $+x$ direction. What are
+the wavelength and frequency of the wave, as seen by the second observer?
+Well, the $x$-coordinate in the moving observer's frame of reference
+is $x'=x-v_0\,t$ (see Sect.~\ref{frames}). Of course, both observers measure
+the same time. Hence, in the second observer's frame of reference the
+wave takes the form
+\begin{equation}
+y(x',t) = y_0\,\cos\,(k\,x'-\omega'\,t),
+\end{equation}
+where
+\begin{equation}
+\omega' = \omega - k\, v_o.
+\end{equation}
+Here, we have simply replaced $x$ by $x'+v_o\,t$ in Eq.~(\ref{e13ccc}).
+Clearly, the moving observer sees a wave possessing the {\em same wavelength} ({\em
+i.e.}, the same $k$) but a {\em different frequency} ({\em i.e.}, a different $\omega$)
+to that seen by the stationary observer. This phenomenon is called the {\em Doppler effect}. Since
+$v=\omega/k$, it follows that the wave speed is also shifted in the moving observer's
+frame of reference. In fact,
+\begin{equation}
+v' = v - v_o,
+\end{equation}
+where $v'$ is the wave speed seen by the moving observer.
+Finally, since $v=f\,\lambda$, and the wavelength is the same in both the moving and
+stationary observers' frames of reference, the wave frequency experienced by
+the moving observer is
+\begin{equation}
+f' = \left(1 - \frac{v_o}{v}\right)\,f. 
+\end{equation}
+Thus, the moving observer sees a lower frequency wave than the stationary observer. This
+occurs because the moving observer is traveling in the same
+direction as the wave, and  is therefore effectively trying to catch it up. It is easily demonstrated
+that an observer moving in the opposite direction to a wave sees a higher frequency
+than a stationary observer. Hence, the general Doppler shift formula (for a moving observer and
+a stationary wave source) is
+\begin{equation}
+f' = \left(1 \mp \frac{v_o}{v}\right)\,f,
+\end{equation}
+where the upper/lower signs correspond to the observer moving in the same/opposite direction
+to the wave.
+
+Consider a stationary observer measuring a wave emitted by a source which is moving towards
+the observer with speed $v_s$. Let $v$ be the propagation speed of the wave. 
+Consider two neighbouring wave crests emitted by the source. Suppose that the first is
+emitted at time $t=0$, and the second at time $t=T$, where $T=1/f$ is the wave period in the
+frame of reference of the source. At time $t$, the first wave crest has traveled a distance
+$d_1=v\,t$ towards the observer, whereas the second wave crest has traveled a distance
+$d_2 =v\,(t-T) + v_s\,T$ (measured from the position of the
+source at $t=0$). Here, we have taken into account the fact that the source is
+a distance $v_s\,T$ closer to the observer when the second wave crest is emitted. 
+The effective wavelength, $\lambda'$,  seen by the observer is the distance between neighbouring
+wave crests. Hence,
+\begin{equation}
+\lambda' = d_1-d_2 = (v - v_s)\,T.
+\end{equation}
+ Since $v=f'\,\lambda'$,
+the effective frequency $f'$ seen by the observer is
+\begin{equation}
+f' = \frac{f}{1-v_s/v},
+\end{equation}
+where $f$ is the wave frequency in the frame of reference of the source. We conclude that if the
+source is moving {\em  towards} the observer then the wave frequency is shifted {\em upwards}. Likewise,
+if the source is moving {\em away} from the observer then the frequency is shifted {\em downwards}.
+This manifestation of the Doppler effect should be familiar to everyone. When an ambulance
+passes us on the street, its siren has a higher pitch ({\em i.e.}, a high
+frequency) when it is coming towards us than when it is moving away from us.
+Of course, the oscillation frequency of the siren never changes. It is the Doppler
+shift induced by the motion of the siren with respect to a stationary listener which
+causes the frequency change.
+
+The general formula for the shift in a wave's frequency induced by
+relative motion of the observer and the source is
+\begin{equation}
+f' = \left(\frac{1\mp v_o/v}{1\pm v_s/v}\right) f,
+\end{equation}
+where $v_o$ is the speed of the observer, and $v_s$ is the speed of the source.
+The upper/lower signs correspond to relative motion by which the observer and the source
+move apart/together.
+
+Probably the most notorious use of the Doppler effect in everyday life is in police speed
+traps. In a speed trap, a policeman fires radar waves ({\em i.e.}, electromagnetic
+waves of centimeter wavelength) of fixed frequency at an oncoming car. These waves
+reflect off the car, which effectively becomes a moving source. Hence, by measuring the frequency increase
+of the reflected waves, the policeman can determine the car's speed.
+
+\subsection*{\em Worked Example 13.1: Piano Range}
+\noindent {\em Question:}  A piano emits sound waves whose frequencies range from $f_l =28\, {\rm Hz}$ to
+$f_h = 4200 \,{\rm Hz}$. What range of wavelengths is spanned by these waves? The speed of
+sound in air is $v=343\,{\rm m/s}$. 
+
+\noindent{\em Answer:} The relationship between a wave's frequency, $f$, wavelength, $\lambda$,
+and speed, $v$, is
+$$
+v = f\,\lambda.
+$$
+Hence, $\lambda=v/f$. The shortest wavelength (which corresponds to the highest
+frequency) is 
+$$
+\lambda_l = \frac{v}{f_h} = \frac{343}{4200} = 8.1667\times 10^{-2}\,{\rm m}.
+$$
+The longest wavelength  (which corresponds to the lowest
+frequency) is
+$$
+\lambda_h = \frac{v}{f_l} = \frac{343}{28} = 12.250\,{\rm m}.
+$$
+
+\subsection*{\em Worked Example 13.2: Middle C}
+\noindent {\em Question:} A steel wire in a piano has a length of $L=0.9\,{\rm m}$
+and a mass of $m= 5.4\,{\rm g}$. To what tension $T$ must this wire be
+stretched so that its fundamental vibration corresponds to
+middle C: {\em i.e.}, the vibration possess a frequency $f=261.6\,{\rm Hz}$. 
+
+\noindent{\em Answer:} The fundamental standing wave on a stretched wire is such that
+the length $L$ of the wire corresponds to half the wavelength $\lambda$ of the wave.
+Hence,
+$$
+\lambda = 2\,L = 1.80\,{\rm m}.
+$$
+The propagation speed of waves on the wire is given by
+$$
+v = f\,\lambda = 261.6\times 1.80= 470.88\,{\rm m/s}.
+$$
+Furthermore, the string's mass per unit length is
+$$
+\mu = \frac{m}{L} = \frac{5.4\times 10^{-3}}{0.9} = 6.00\times 10^{-3} \,{\rm kg/m}.
+$$
+Now, the relationship between the wave propagation speed, $v$, the mass per unit
+length, $\mu$, and the tension, $T$, of a stretched wire is
+$$
+v = \sqrt{\frac{T}{\mu}}.
+$$
+Thus,
+$$
+T = v^2\,\mu  = (470.88)^2\times 6.00\times 10^{-3} = 1.330\times 10^3\,{\rm N}.
+$$
+
+\subsection*{\em Worked Example 13.3: Sinusoidal Wave}
+\noindent {\em Question:} A wave is described by
+$$
+y = A\,\sin\,(k\,x-\omega\,t),
+$$
+where $A=4\,{\rm cm}$, $k=2.65\,{\rm rad./m}$, and  $\omega
+=4.78\,{\rm rad./s}$. Moreover, $x$ is in meters and $t$ is
+in seconds. What are the wavelength, frequency, and propagation
+speed of the wave?
+
+\noindent{\em Answer:} We identify $A$ as the wave amplitude, $k$ as the wavenumber,
+and $\omega$ as the angular frequency. Now, $k=2\,\pi/\lambda$, where $\lambda$ is
+the wavelength. Hence,
+$$
+\lambda = \frac{2\,\pi}{k} = \frac{2\times \pi}{2.65} = 2.371\,{\rm m}.
+$$
+Furthermore, $\omega = 2\,\pi\,f$, where $f$ is the frequency. Hence,
+$$
+f = \frac{\omega}{2\,\pi} =  \frac{4.78}{2\times\pi}=0.7608\,{\rm Hz}.
+$$
+Finally, $v=f\,\lambda$, where $v$ is the propagation speed. Thus,
+$$
+v = 0.7608\times 2.371 = 1.804\,{\rm m/s}.
+$$
+
+\subsection*{\em Worked Example 13.4: Truck Passing Stationary Siren}
+\noindent {\em Question:} A truck, moving at $v_o=80\,{\rm km/hr}$, passes a stationary
+police car whose siren has a frequency of $f=500\,{\rm Hz}$.
+What is the frequency change heard by the truck driver
+as the truck passes the police car? The speed of sound is
+$v=343\,{\rm m/s}$. 
+
+\noindent{\em Answer:} The truck's speed is
+$$
+v_o = \frac{80\times 1000}{3600} = 22.22\,{\rm m/s}.
+$$
+When the truck is moving towards the police car, the siren's
+apparent frequency is
+$$
+f_1 = \left(1+\frac{v_o}{v}\right)\,f = \left(1+\frac{22.22}{343}\right)\times
+500 = 532.39\,{\rm Hz}.
+$$
+When the truck is moving away from the police car, the siren's
+apparent frequency is
+$$
+f_2 = \left(1-\frac{v_o}{v}\right)\,f = \left(1-\frac{22.22}{343}\right)\times
+500 = 467.61\,{\rm Hz}.
+$$
+Hence, the frequency shift is
+$$
+{\mit\Delta f} = f_1-f_2 = 532.39-467.61 = 64.79\,{\rm Hz}.
+$$
+
+\subsection*{\em Worked Example 13.5: Ambulance and Car}
+\noindent {\em Question:} An ambulance is traveling down a straight road at speed
+$v_s=42\,{\rm m/s}$. The ambulance approaches a car which is traveling on the
+same road, in the same direction, at speed $v_o=33\,{\rm m/s}$. The
+ambulance driver hears his/her siren at a frequency of $f=500\,{\rm Hz}$. 
+At what frequency does the driver of the car hear the siren? The speed  of sound is
+$v=343\,{\rm m/s}$. 
+
+\noindent{\em Answer:}
+The apparent frequency $f'$ of a sound wave is given by
+$$
+f' = \left(\frac{1-v_o/v}{1-v_s/v}\right)\,f,
+$$
+where $v_o$ is the speed of the observer ({\em i.e.}, the car driver), $v_s$ is
+the speed of the source ({\em i.e.}, the ambulance), $v$ is the speed of sound,
+and $f$ is the wave frequency in the frame of reference of the source. We
+have chosen a minus sign in the numerator of the above formula because the
+observer is moving {\em away from} the source, leading to a {\em downward} Doppler
+shift. We
+have chosen a minus sign in the denominator of the above formula because the
+source is moving {\em towards}  the observer, leading to a {\em upward} Doppler
+shift. Hence,
+$$
+f' = \left(\frac{1-33/343}{1-42/343}\right)\times 500 = 514.95\,{\rm Hz}.
+$$

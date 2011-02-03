@@ -1,0 +1,1529 @@
+\section{Rotational Motion}
+\subsection{Introduction}
+Up to now, we have  only analyzed the dynamics
+of {\em point masses} ({\em i.e.}, objects whose spatial extent is either
+negligible or plays no role in their motion). Let us now
+broaden our approach   in order to take {\em extended objects} into account.
+Now, the only type of motion which a point mass object can exhibit is {\em translational
+motion}: {\em i.e.}, motion by which the object moves from one point in space
+to another. However, an extended object can exhibit another, quite distinct, type of
+motion by which it remains located (more or less) at the same spatial position,
+but constantly changes its orientation with respect to other fixed points in space.
+This new type of motion is called {\em rotation}. Let us investigate rotational motion.
+
+\subsection{Rigid Body Rotation}
+Consider a rigid body executing pure rotational motion ({\em i.e.}, rotational motion which
+has no translational component). It is possible to define an {\em axis of rotation}
+(which, for the sake of simplicity, is assumed to pass through the body)---this
+axis corresponds to   the straight-line
+which is the locus of all points inside the body which remain stationary as the body rotates. A general point
+located inside the body executes {\em circular motion} which is centred on the rotation axis, and orientated
+in the plane perpendicular to this axis. In the following, we tacitly assume that the axis
+of rotation remains fixed.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig068.eps}}
+\caption{\em Rigid body rotation.}\label{f68}  
+\end{figure}
+
+Figure~\ref{f68} shows a typical rigidly 
+rotating body. The axis of rotation is the line $AB$. A general point
+$P$ lying within the body executes a circular orbit, centred on $AB$, in the plane perpendicular to
+$AB$. Let the line $QP$ be a radius of this orbit which links the axis of rotation to the
+instantaneous position of  $P$ at time $t$. Obviously, this implies that $QP$ is normal
+to $AB$. Suppose that at time $t+\delta t$ point $P$ has moved to $P'$, and the radius
+$QP$ has rotated through an angle $\delta\phi$. The instantaneous
+{\em angular velocity}  of the body $\omega(t)$ is defined
+\begin{equation}
+\omega = \lim_{\delta t\rightarrow 0}\frac{\delta\phi}{\delta t}=\frac{d\phi}{dt}.
+\end{equation}
+Note that if the body is indeed rotating rigidly, then the calculated value of $\omega$ should
+be the same for all possible points $P$ lying within the body (except for those points lying
+exactly on the axis of rotation, for which $\omega$ is ill-defined). 
+The rotation speed $v$ of point $P$ is related to the angular velocity $\omega$
+of the body via
+\begin{equation}
+v = \sigma\,\omega,
+\end{equation}
+where $\sigma$ is the {\em perpendicular distance}  from the axis of rotation to
+point $P$. Thus,
+in a rigidly rotating body, the rotation speed increases {\em linearly} with (perpendicular) distance
+from the axis of rotation.
+
+It is helpful to introduce the {\em angular acceleration} $\alpha(t)$ of a rigidly rotating body:
+this quantity is defined as the 
+time derivative of the angular velocity. Thus,
+\begin{equation}
+\alpha  = \frac{d\omega}{dt}= \frac{d^2\phi}{dt^2},
+\end{equation}
+where $\phi$ is the angular coordinate of some arbitrarily chosen point reference
+within the body, measured
+with respect to the rotation axis.
+Note that angular velocities are conventionally measured in radians per second, whereas angular
+accelerations are measured in radians per second squared.
+ 
+ For a body rotating with constant angular velocity, $\omega$,
+the angular acceleration is zero, and the rotation angle $\phi$ increases linearly with time:
+\begin{equation}
+\phi(t) = \phi_0 + \omega\,t,
+\end{equation}
+where $\phi_0 = \phi(t=0)$. Likewise, for a body rotating with constant angular acceleration,
+$\alpha$, the angular velocity increases linearly with time, so that
+\begin{equation}
+\omega(t) = \omega_0 + \alpha\,t,
+\end{equation}
+and the rotation angle satisfies
+\begin{equation}
+\phi(t) = \phi_0 + \omega_0\,t + \frac{1}{2}\,\alpha\,t^2.
+\end{equation}
+Here, $\omega_0=\omega(t=0)$. Note that there is a clear analogy between the above
+equations, and the equations of rectilinear motion at constant acceleration introduced in 
+Sect.~\ref{caccn}---rotation angle plays the role of displacement, angular velocity plays the role of (regular) velocity, and
+angular acceleration plays the role of (regular) acceleration.
+
+\subsection{Is Rotation a Vector?}\label{srotn}
+Consider a rigid body which rotates through an angle $\phi$ about a given
+axis.
+It is tempting to try to define a rotation ``vector'' $\bphi$ which describes this
+motion. For example, suppose that $\bphi$ is defined as the ``vector'' whose magnitude
+is the angle of  rotation, $\phi$, and whose direction runs parallel to the axis of 
+rotation. Unfortunately, this  definition is ambiguous, since there are
+two possible directions which run parallel to the rotation axis. However, we can
+resolve this problem by adopting the following convention---the
+rotation ``vector'' runs parallel to the axis of rotation in the sense indicated by the
+thumb of the right-hand, when the fingers of this hand circulate around the axis in the
+direction of  rotation. This convention is known as the {\em right-hand grip} rule.
+The right-hand grip rule is illustrated in Fig.~\ref{f69}.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig069.eps}}
+\caption{\em The right-hand grip rule.}\label{f69}  
+\end{figure}
+
+The  rotation ``vector'' $\bphi$  now has a well-defined magnitude and
+ direction. But, is this quantity really a vector? 
+This may seem like a strange question to ask, but it turns out that not all
+quantities which have well-defined magnitudes and directions are necessarily
+vectors. Let us review some properties of vectors. If ${\bf a}$ and ${\bf b}$
+are two general vectors, then it is certainly the case that
+\begin{equation}
+{\bf a} + {\bf b} = {\bf b} + {\bf a}.
+\end{equation}
+In other words, the addition of vectors is necessarily {\em commutative} ({\em i.e.}, it is
+independent of the order of addition). Is this true for ``vector'' rotations, as we have 
+just defined them?
+Figure~\ref{f70}  shows the effect of applying two successive $90^\circ$ rotations---one about the $x$-axis, and the other about the $z$-axis---to a six-sided die. In the
+left-hand case, the $z$-rotation is applied before the $x$-rotation, and {\em vice
+versa} in the right-hand case. It can be seen that the die ends up in two completely
+different states. Clearly, the $z$-rotation plus the
+$x$-rotation {\em does not} equal
+the  $x$-rotation plus the $z$-rotation. This non-commutative algebra cannot be
+represented by vectors. We conclude that, although rotations have  well-defined magnitudes and
+directions, they are {\em not}, in general, vector quantities. 
+
+\begin{figure}
+\epsfysize=4in
+\centerline{\epsffile[-300 -40 860 771]{Chapter08/fig070.eps}}
+\caption{\em The addition of rotation is non-commutative.}\label{f70}
+\end{figure}
+
+There is a direct analogy between rotation and motion over the Earth's surface. After
+all, the  motion of a pointer along the Earth's equator from longitude $0^\circ$W to
+longitude $90^\circ$W could  just as well be achieved by keeping the pointer fixed and
+rotating the Earth through $90^\circ$ about a North-South axis. The non-commutative nature
+of rotation ``vectors'' is a direct consequence of the non-planar ({\em i.e.}, curved)
+nature of the Earth's surface. 
+ For instance, suppose we start off at ($0^\circ$\,N, $0^\circ$\,W), which is just off the Atlantic
+coast of equatorial Africa, and rotate $90^\circ$ northwards and then  $90^\circ$ eastwards.
+We end up at ($0^\circ$\,N, $90^\circ$\,E), which is in the middle of the Indian Ocean. However,
+if we start at the same point, and  rotate $90^\circ$ eastwards and then $90^\circ$ northwards,
+we end up at the North pole. Hence, large rotations over the Earth's surface do
+not commute.
+ Let us now repeat this experiment on a far smaller
+scale. Suppose that we walk 10\,m northwards and then 10\,m eastwards.
+Next, suppose  that---starting from
+the same initial position---we walk 10\,m eastwards and then 10\,m northwards. In this case, few people
+would need much convincing that  the two end points are essentially identical. The
+crucial  point
+is that for sufficiently small displacements the Earth's surface is approximately planar, and
+vector displacements on a plane surface commute with one another. This observation immediately
+suggests that rotation ``vectors'' which correspond to rotations through {\em small angles} 
+must also commute with
+one another. In other words, although the quantity $\bphi$, defined above, is not a true
+vector, the infinitesimal quantity $\delta\bphi$, which is defined in a similar manner but
+corresponds to a rotation through an infinitesimal angle $\delta\phi$, is a perfectly good
+vector.
+
+We have just established that it is possible to define a true  vector $\delta \bphi$ which
+describes a rotation through a {\em small} angle $\delta\phi$ about a fixed axis. But, how is this
+definition
+useful? Well, suppose that vector $\delta\bphi$ describes the small rotation that a given
+object executes in the infinitesimal time interval between $t$ and $t+\delta t$. We can 
+then define the quantity
+\begin{equation}
+\bomega = \lim_{\delta t\rightarrow 0} \frac{\delta\bphi}{\delta t} = \frac{d\bphi}{dt}.
+\end{equation}
+This quantity is clearly a true vector, since it is simply the ratio of a true vector and
+a scalar. Of course, $\bomega$ represents an {\em angular velocity vector}. The
+magnitude of this vector, $\omega$, specifies the instantaneous angular velocity of the
+object, whereas the direction of the vector indicates the axis of rotation. The sense
+of rotation is given by the right-hand grip rule: if the thumb of the right-hand points along
+the direction of the vector, then the fingers of the right-hand indicate the sense of rotation.
+We conclude that, although rotation can only be thought of as a vector quantity under certain
+very special circumstances, we can safely treat angular velocity as a vector
+quantity under all circumstances.
+
+Suppose, for example, that a rigid body rotates at constant angular velocity $\bomega_1$.
+Let us now combine this motion with rotation about a {\em different axis} at constant
+angular velocity $\bomega_2$. What is the subsequent motion of the body? Since we know
+that angular velocity is a vector, we can be certain that the combined motion simply
+corresponds to rotation about a third axis at constant angular velocity
+\begin{equation}
+\bomega_3 = \bomega_1 + \bomega_2,\label{e89}
+\end{equation}
+where the sum is performed according to the standard rules of vector addition. [Note, however,
+the following important proviso. In order for Eq.~(\ref{e89}) to be valid, the rotation
+axes corresponding to $\bomega_1$ and $\bomega_2$ must {\em cross} at a certain
+point---the rotation axis corresponding to $\bomega_3$ then passes through this point.]
+ Moreover,
+a  constant angular velocity
+\begin{equation}
+\bomega = \omega_x\,\hat{\bf x} + \omega_y\,\hat{\bf y} + \omega_z\,\hat{\bf z}
+\end{equation}
+can be thought of as representing rotation about the $x$-axis at angular velocity $\omega_x$,
+combined with rotation about the $y$-axis at angular velocity $\omega_y$, combined with
+rotation about the $z$-axis at angular velocity $\omega_z$. [There is, again, a proviso---namely,
+that the rotation axis corresponding to $\bomega$ must pass through the origin. Of course,
+we can always shift the origin such that this is the case.]
+ Clearly, the knowledge that
+angular velocity is vector quantity can be extremely useful.
+
+\subsection{The Vector Product}\label{svp}
+We saw earlier, in Sect.~\ref{s2ed}, that it is possible to combine two vectors  multiplicatively, 
+by means of a {\em scalar product}, to
+form a scalar. Recall that the scalar product ${\bf a}\!\cdot\!{\bf b}$
+of two vectors ${\bf a}=(a_x,a_y,a_z)$ and ${\bf b}=(b_x,b_y,b_z)$ is defined
+\begin{equation}\label{dsp}
+{\bf a} \!\cdot\!{\bf b} = a_x\,b_x+ a_y\,b_y + a_z\,b_z = |{\bf a}|\,|{\bf b}|\,\cos\theta,
+\end{equation}
+where $\theta$ is the angle subtended between the directions of ${\bf a}$ and ${\bf b}$. 
+
+Is it also possible to combine two vector multiplicatively to form a third (non-coplanar) vector?
+ It turns out that this goal can be achieved via the use of the so-called
+{\em vector product}. By definition, the vector product, 
+${\bf a}\times{\bf b}$, of two vectors ${\bf a}=(a_x,a_y,a_z)$ and ${\bf b}=(b_x,b_y,b_z)$ 
+is of 
+magnitude
+\begin{equation}
+|{\bf a}\times{\bf b} | 
+=|{\bf a}|\,|{\bf b}|\,\sin\theta.
+\end{equation}
+The direction of ${\bf a}\times{\bf b}$ is  {\em mutually perpendicular} to ${\bf a}$ and
+${\bf b}$, in the sense given by the right-hand grip rule when vector ${\bf a}$ is rotated onto
+vector ${\bf b}$ (the direction of rotation being
+ such that the angle of rotation is less than $180^\circ$).
+See Fig.~\ref{f71}. In coordinate form,
+\begin{equation}\label{e899}
+{\bf a}\times{\bf b}  = (a_y\,  b_z-a_z\, b_y, a_z \,b_x - a_x\, b_z, a_x\, b_y - a_y\, b_x).
+\end{equation}
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig071.eps}}
+\caption{\em The vector product.}\label{f71}  
+\end{figure}
+
+There are a number of fairly obvious consequences of the above definition. Firstly, if vector
+${\bf b}$ is parallel to vector ${\bf a}$, so that we can write ${\bf b} = \lambda\,{\bf a}$,
+then the vector product ${\bf a}\times {\bf b}$ has {\em zero magnitude}. The easiest way of seeing
+this is to note that if ${\bf a}$ and ${\bf b}$ are parallel then the angle $\theta$ subtended between
+them is zero, hence the magnitude of the vector product, $|{\bf a}|\,|{\bf b}|\,\sin\theta$, must
+also be zero (since $\sin 0^\circ=0$). Secondly, the order of multiplication matters.
+Thus, ${\bf b}\times {\bf a}$ is {\em not} equivalent to ${\bf a}\times {\bf b}$. In fact,
+as can be seen from Eq.~(\ref{e899}), 
+\begin{equation}
+{\bf b}\times {\bf a} = - {\bf a}\times {\bf b}.
+\end{equation}
+In other words, ${\bf b}\times {\bf a}$ has the same magnitude as ${\bf a}\times {\bf b}$, but
+points in diagrammatically the opposite direction.
+
+Now that we have defined the vector product of two vectors, let us find a use for this concept.
+Figure~\ref{f72} shows a rigid body rotating with angular velocity $\bomega$. For the
+sake of simplicity, the axis of rotation, which runs parallel to $\bomega$, is
+assumed to pass through the origin $O$ of our coordinate system. Point $P$, whose position
+vector is ${\bf r}$, represents a general point inside the body. What is the velocity
+of rotation ${\bf v}$ at point $P$? Well, the magnitude of this velocity is simply
+\begin{equation}
+v=\sigma\,\omega = \omega\,r\,\sin\theta,
+\end{equation}
+where $\sigma$ is the perpendicular distance of point $P$ from the axis of rotation, and 
+$\theta$ is the angle subtended between the directions of $\bomega$ and ${\bf r}$. 
+The direction of the velocity is {\em into} the page. Another way of saying this, is that the
+direction of the velocity is mutually perpendicular to the directions of $\bomega$ and
+${\bf r}$, in the sense indicated by the right-hand grip rule when $\bomega$ 
+is rotated onto ${\bf r}$ (through an angle less than $180^\circ$). It follows that
+we can write
+\begin{equation}
+{\bf v} = \bomega\times {\bf r}.
+\end{equation}
+Note, incidentally, 
+ that the direction of the angular velocity vector $\bomega$ indicates the orientation
+of the axis of rotation---however, nothing actually moves in this direction; in fact, all of the motion
+is {\em perpendicular} to the direction of $\bomega$.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig072.eps}}
+\caption{\em Rigid rotation.}\label{f72}  
+\end{figure}
+
+\subsection{Centre of Mass}\label{s85}
+The {\em centre of mass}---or centre of gravity---of an extended object is defined in much
+the same manner as we earlier defined the  centre of mass of a set of mutually
+interacting point mass objects---see Sect.~\ref{scm}. To be more exact, the
+coordinates of the centre of mass of an extended object are the mass weighted
+averages of the coordinates of the elements which make up that object. Thus,
+if  the object has net mass $M$, and is composed of $N$ elements,
+such that the $i$th element has mass $m_i$ and position vector ${\bf r}_i$, then the
+position vector of the centre of mass is given by
+\begin{equation}\label{e8cm1}
+{\bf r}_{cm} = \frac{1}{M} \sum_{i=1,N} m_i\,{\bf r}_i.
+\end{equation}
+If the object under consideration is {\em  continuous}, then
+\begin{equation}\label{e8cm2}
+m_i = \rho({\bf r}_i)\,V_i,
+\end{equation}
+where $\rho({\bf r})$ is the mass density of the object, and $V_i$ is the volume occupied by the
+$i$th element. Here, it is assumed that this volume is small compared to the
+total volume of the object. Taking the limit that the number of elements goes to
+infinity, and the volume of each element goes to zero, Eqs.~(\ref{e8cm1}) and (\ref{e8cm2})
+yield the following integral formula for the position vector of the centre of mass:
+\begin{equation}
+{\bf r}_{cm} = \frac{1}{M} \int\!\int\!\int \rho\,{\bf r}\,dV.
+\end{equation}
+Here, the integral is taken over the whole volume of the object, and $dV = dx\,dy\,dz$ is an element
+of that volume. Incidentally, the triple integral sign indicates a volume integral: {\em i.e.},
+a simultaneous integral over three independent Cartesian coordinates.
+Finally, for an object whose mass density is {\em constant}---which is the only type of
+object that we shall be considering in this course---the above expression
+reduces to
+\begin{equation}\label{e8cm3}
+{\bf r}_{cm} = \frac{1}{V} \int\!\int\!\int {\bf r}\,dV,
+\end{equation}
+where $V$ is the volume of the object. According to Eq.~(\ref{e8cm3}), 
+the centre of mass of a body of uniform density is located at the {\em geometric centre} of that body.
+
+\begin{figure}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter08/fig073.eps}}
+\caption{\em Locating the geometric centre of a cube.}\label{f73}  
+\end{figure}
+
+For many solid objects, the location of the geometric centre follows from symmetry.
+For instance, the geometric centre of a 
+cube is the point of intersection of the cube's diagonals. See Fig.~\ref{f73}. Likewise,
+the geometric centre of a right cylinder is located on the axis, half-way up the
+cylinder. See Fig.~\ref{f74}.
+
+\begin{figure}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig074.eps}}
+\caption{\em Locating the geometric centre of a right cylinder.}\label{f74}  
+\end{figure}
+
+As an illustration of the use of formula (\ref{e8cm3}), let us calculate
+the geometric centre of a regular square-sided pyramid. Figure~\ref{f75} shows such a
+pyramid. Let $a$ be the length of each side. It follows, from simple
+trigonometry,  that the height of
+the pyramid is $h=a/\sqrt{2}$. Suppose that the base of the pyramid lies on the $x$-$y$ plane,
+and  the apex is aligned with the $z$-axis, as shown in the diagram. 
+It follows, from symmetry, that the geometric centre of the pyramid lies on the $z$-axis.
+It only remains to calculate the perpendicular distance, $z_{cm}$, between the geometric
+centre and the base of the pyramid. This quantity is obtained from the $z$-component
+of Eq.~(\ref{e8cm3}):
+\begin{equation}\label{e8py}
+z_{cm} = \frac{\int\!\int\!\int z\,dx\,dy\,dz}{\int\!\int\!\int\,dx\,dy\,dz},
+\end{equation}
+where the integral is taken over the volume of the pyramid.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter08/fig075.eps}}
+\caption{\em Locating the geometric centre of a regular square-sided pyramid.}\label{f75}  
+\end{figure}
+
+In the above integral, the limits of integration for $z$ are $z=0$ to $z=h$, respectively
+({\em i.e.}, from the base  to the apex of the pyramid). 
+The corresponding limits of integration for $x$ and $y$ are $x,y=-a\,(1-z/h)/2$ to
+$x,y=+a\,(1-z/h)/2$, respectively ({\em i.e.}, the limits are $x,y=\pm a/2$ at the
+base of the pyramid, and $x,y=\pm 0$ at the apex). Hence, Eq.~(\ref{e8py}) can
+be written more explicitly as
+\begin{equation}
+z_{cm} = \frac{\int_0^h\,z\,dz\!\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,dy\!
+\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,dx}{\int_0^h\,dz\!\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,dy\!
+\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,dx}.
+\end{equation}
+As indicated above, it makes sense to perform the $x$- and $y$- integrals before the $z$-integrals,
+since the limits of integration for the $x$- and $y$- integrals are $z$-dependent.
+Performing the $x$-integrals, we obtain
+\begin{equation}
+z_{cm} = \frac{\int_0^h\,z\,dz\!\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,a\,(1-z/h)\,dy}{\int_0^h\,dz\!\int_{-a\,(1-z/h)/2}^{+a\,(1-z/h)/2}\,
+a\,(1-z/h)\,dy}.
+\end{equation}
+Performing the $y$-integrals, we obtain
+\begin{equation}
+z_{cm} = \frac{\int_0^h\,a^2\,z\,(1-z/h)^2\,dz}{\int_0^h\,a^2\,(1-z/h)^2\,dz}.
+\end{equation}
+Finally, performing the $z$-integrals, we obtain
+\begin{equation}
+z_{cm} = \frac{ a^2\left[z^2/2 - 2\,z^3/(3\,h) + z^4/(4\,h^2)\right]_0^h}
+{a^2\left[z - z^2/(h) + z^3/(3\,h)\right]_0^h} = \frac{a^2\,h^2/12}{a^2\,h/3} = \frac{h}{4}.
+\end{equation}
+Thus, the geometric centre of a regular square-sided pyramid is located on the 
+symmetry axis, one quarter of the way from the base to the apex.
+
+\subsection{Moment of Inertia}\label{smoi}
+Consider an extended object which is made up of $N$ elements. Let the $i$th element
+possess mass $m_i$, position vector ${\bf r}_i$, and velocity ${\bf v}_i$. The
+total kinetic energy of the object is written
+\begin{equation}
+K = \sum_{i=1,N} \frac{1}{2}\,m_i\,v_i^{\,2}.
+\end{equation}
+Suppose that the motion of the object consists merely of rigid rotation at angular
+velocity $\bomega$. It follows, from Sect.~\ref{svp}, that
+\begin{equation}
+{\bf v}_i = \bomega\times {\bf r}_i.
+\end{equation}
+Let us write
+\begin{equation}
+\bomega = \omega\,{\bf k},
+\end{equation}
+where ${\bf k}$ is a unit vector aligned along the axis of rotation (which
+is assumed to pass through the origin of our coordinate system). It follows from
+the above equations that the kinetic energy of rotation of the object takes the
+form 
+\begin{equation}
+K = \sum_{i=1,N} \frac{1}{2}\,m_i\,|{\bf k}\times {\bf r}_i|^2\,\omega^2,
+\end{equation}
+or
+\begin{equation}\label{e8xx}
+K = \frac{1}{2}\,I\,\omega^2.
+\end{equation}
+Here, the quantity $I$ is termed the {\em moment of inertia} of the object, and
+is written
+\begin{equation}
+I = \sum_{i=1,N} m_i\,|{\bf k}\times {\bf r}_i|^2= \sum_{i=1,N} m_i\,\sigma_i^{\,2},
+\end{equation}
+where $\sigma_i=|{\bf k}\times {\bf r}_i|$ is the perpendicular distance from the $i$th element to the axis of
+rotation. Note that for translational motion we usually write
+\begin{equation}\label{e8yy}
+K = \frac{1}{2}\,M\,v^2,
+\end{equation}
+where $M$ represents  mass and $v$ represents  speed. A comparison of
+Eqs.~(\ref{e8xx}) and (\ref{e8yy}) suggests that moment of inertia plays the
+same role in rotational motion that mass plays in translational motion.
+
+For a continuous object, analogous arguments to those employed in Sect.~\ref{s85}
+yield
+\begin{equation}
+I = \int\!\int\!\int \rho\,\sigma^2\,dV,
+\end{equation}
+where $\rho({\bf r})$ is the mass density of the object, $\sigma = |{\bf k}\times {\bf r}|$ is
+the perpendicular distance from the axis of rotation,
+and $dV$ is a volume element.
+Finally, for an object of constant density, the above expression reduces to
+\begin{equation}\label{e8bb}
+I = M\,\frac{\int\!\int\!\int \sigma^2\,dV}
+{\int\!\int\!\int \,dV}.
+\end{equation}
+Here, $M$ is the total mass of the object. Note that the integrals are taken over the whole
+volume of the object. 
+
+The moment of inertia of a uniform  object depends not only on the size and shape of that
+object but on the location of the axis about which the object is rotating. In particular,
+the same object can have  different moments of inertia when rotating about 
+different axes. 
+
+Unfortunately, the evaluation of the moment of inertia of a given body about a given axis invariably
+involves the performance of a nasty volume integral. In fact, there is only
+one trivial moment of inertia calculation---namely, the moment of inertia of a thin
+circular ring about a symmetric axis    which runs perpendicular
+to the plane of the ring. See Fig.~\ref{f76}. Suppose that $M$ is the mass of the ring, and
+$b$ is its radius. Each element of the ring shares a common perpendicular distance from
+the axis of rotation---{\em i.e.}, $\sigma=b$. Hence, Eq.~(\ref{e8bb})
+reduces to 
+\begin{equation}
+I = M\,b^2.
+\end{equation}
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig076.eps}}
+\caption{\em The moment of inertia of a ring about a perpendicular symmetric axis.}\label{f76}  
+\end{figure}
+
+In general, moments of inertia are rather tedious to calculate. Fortunately, there exist 
+two powerful theorems which enable us to simply relate the moment of inertia of a given body
+about a given axis to the moment of inertia of the same body about another axis. The first of
+these theorems is called the {\em perpendicular axis theorem}, and only applies to
+uniform {\em laminar} objects. Consider a laminar object ({\em i.e.}, a thin, planar object)
+of uniform density. Suppose, for the sake of simplicity,
+ that the object lies in the $x$-$y$ plane. The moment of inertia of the object about the
+$z$-axis is given by
+\begin{equation}
+I_z = M\,\frac{\int\,\int\, (x^2+y^2)\,dx\,dy}{\int\,\int\,dx\,dy},
+\end{equation}
+where we have suppressed the trivial $z$-integration, and the integral is taken
+over the extent of the object in the $x$-$y$ plane.  Incidentally, the
+above expression follows from the observation that $\sigma^2 = x^2+y^2$
+when the axis of rotation is coincident with the $z$-axis. Likewise, the moments of 
+inertia of the object about the $x$- and $y$- axes take the form
+\begin{eqnarray}
+I_x & =& M\,\frac{\int\,\int\, y^2\,dx\,dy}{\int\,\int\,dx\,dy},\\[0.5ex]
+I_y & =& M\,\frac{\int\,\int\, x^2\,dx\,dy}{\int\,\int\,dx\,dy},
+\end{eqnarray}
+respectively.
+Here, we have made use of the fact that $z=0$ inside the object. It follows by inspection
+of the previous three equations that
+\begin{equation}
+I_z = I_x + I_y.
+\end{equation}
+See Fig.~\ref{f77}. 
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig077.eps}}
+\caption{\em The perpendicular axis theorem.}\label{f77}  
+\end{figure}
+
+Let us use the perpendicular axis theorem to find the moment of inertia of a thin ring about
+a symmetric axis which lies in the plane of the ring. Adopting the coordinate system shown in
+Fig.~\ref{f78}, it is clear, from symmetry, that $I_x=I_y$. 
+Now, we already know that $I_z=M\,b^2$,
+where $M$ is the mass of the ring, and $b$ is its radius. Hence, the perpendicular axis
+theorem tells us that
+\begin{equation}
+2\,I_x = I_z,
+\end{equation}
+or
+\begin{equation}
+I_x = \frac{I_z}{2} = \frac{1}{2}\,M\,b^2.
+\end{equation}
+Of course, $I_z>I_x$, because when the ring spins about the $z$-axis its elements are, on average,
+farther from the axis of rotation than when it spins about the $x$-axis.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig078.eps}}
+\caption{\em The moment of inertia of a ring about a coplanar symmetric axis.}\label{f78}  
+\end{figure}
+
+The second useful theorem regarding moments of inertia is called the {\em parallel
+axis theorem}. The parallel axis theorem---which is quite general---states that if $I$
+is the moment of inertia of a given body about an axis passing through the centre of mass
+of that body, then the moment of inertia $I'$ of the same body about a second axis
+which is parallel to the first is
+\begin{equation}
+I' = I + M\,d^2,
+\end{equation}
+where $M$ is the mass of the body, and $d$ is the perpendicular distance between the
+two axes. 
+
+In order to prove the parallel axis theorem, let us choose the origin of our
+coordinate system to coincide with the centre of mass of the body in question. 
+Furthermore, let us orientate the axes of our coordinate system such that
+the $z$-axis coincides with the first axis of rotation, whereas the second
+axis pieces the $x$-$y$ plane at $x=d, y=0$. From Eq.~(\ref{e8cm3}), the fact that
+the centre of mass is located at the origin implies that
+\begin{equation}\label{e8nn}
+\int\!\int\!\int\, x\,dx\,dy\,dz = \int\!\int\!\int\,y\,dx\,dy\,dz=\int\!\int\!\int\, z\,dx\,dy\,dz=0,
+\end{equation}
+where the integrals are taken over the volume of the body. From Eq.~(\ref{e8bb}),
+the expression for the first moment of inertia is
+\begin{equation}\label{e8mm}
+I = M\,\frac{\int\!\int\!\int (x^2+y^2)\,\,dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz},
+\end{equation}
+since $x^2+y^2$ is the perpendicular distance of a general point $(x,y,z)$ from the $z$-axis.
+Likewise, the expression for the second moment of inertia takes the
+form 
+\begin{equation}
+I' = M\,\frac{\int\!\int\!\int [(x-d)^2+y^2]\,\,dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz}.
+\end{equation}
+The above equation can be expanded to give
+\begin{eqnarray}
+I' &=& M\,\frac{\int\!\int\!\int [(x^2+y^2) - 2\,d\,x + d^2]\,dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz}\nonumber\\[0.5ex]
+&=& M\frac{\int\!\int\!\int (x^2+y^2)\,dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz}-2\,d\,M\frac{\int\!\int\!\int x\,dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz}\nonumber\\[0.5ex]&&
+ + d^2\,M \frac{\int\!\int\!\int dx\,dy\,dz}
+{\int\!\int\!\int \,dx\,dy\,dz}.
+\end{eqnarray}
+It follows from Eqs.~(\ref{e8nn}) and (\ref{e8mm}) that
+\begin{equation}
+I' = I + M\,d^2,
+\end{equation}
+which proves the theorem.
+
+Let us use the parallel axis theorem to calculate the moment of inertia, $I'$, of a thin
+ring about an axis which runs perpendicular to the plane of the ring, and passes
+through the circumference of the ring. We know that the moment of inertia of a ring of mass
+$M$ and radius $b$ about an axis which runs perpendicular to the plane of the ring, and passes
+through the centre of the ring---which coincides with the centre
+of mass of the ring---is $I=M\,b^2$. Our new axis is parallel to this original axis, but shifted
+sideways by the perpendicular distance $b$. Hence, the parallel
+axis theorem tells us that
+\begin{equation}
+I' = I + M\,b^2 = 2\,M\,b^2.
+\end{equation}
+See Fig.~\ref{f79}.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig079.eps}}
+\caption{\em An application of the parallel axis theorem.}\label{f79}  
+\end{figure}
+
+As an illustration of the direct application  of formula (\ref{e8bb}), let us
+calculate the moment of inertia of a thin circular disk, of mass $M$ and radius $b$,
+about an axis which passes through the centre of the disk, and runs perpendicular to
+the plane of the disk. Let us choose our coordinate system such that the disk
+lies in the $x$-$y$ plane with its centre at the origin. The axis of rotation is, therefore,
+coincident with the $z$-axis. Hence, formula (\ref{e8bb}) reduces to
+\begin{equation}
+I = M\,\frac{\int\!\int\, (x^2+y^2)\,dx\,dy}{\int\!\int\, dx\,dy},
+\end{equation}
+where the integrals are taken over the area of the disk, and the redundant $z$-integration
+has been suppressed. Let us divide the disk up into thin annuli. Consider an annulus
+of radius $\sigma=\sqrt{x^2+y^2}$ and radial thickness $d\sigma$. The area of this annulus is simply
+$2\pi\,\sigma\,d\sigma$. Hence, we can replace $dx\,dy$ in the above integrals by
+$2\pi\,\sigma\,d\sigma$, so as to give
+\begin{equation}
+I = M\,\frac{\int_0^b 2\pi\,\sigma^3\,d\sigma}{\int_0^b 2\pi\,\sigma\,d\sigma}.
+\end{equation}
+The above expression yields
+\begin{equation}
+I = M\,\frac{\left[2\,\pi\,\sigma^4/4\right]_0^b}{\left[2\,\pi\,\sigma^2/2\right]_0^b}=
+\frac{1}{2}\,M\,b^2.
+\end{equation}
+
+Similar calculations to the above yield the following standard results:
+\begin{itemize}
+\item The moment of inertia of a thin rod of mass $M$ and length $l$ about an axis
+passing through the centre of the rod and perpendicular to its length is 
+$$
+I = \frac{1}{12}\,M\,l^2.
+$$
+\item The moment of inertia of a thin rectangular sheet of mass $M$ and dimensions $a$ and $b$
+about a perpendicular axis passing through the centre of the sheet is
+$$
+I = \frac{1}{12}\,M\,(a^2+b^2).
+$$
+\item The moment of inertia of a
+solid cylinder of mass $M$ and radius $b$ about the cylindrical axis is
+$$
+I = \frac{1}{2}\,M\,b^2.
+$$
+\item The moment of inertia of a
+thin spherical shell of mass $M$ and radius $b$ about a diameter is
+$$
+I = \frac{2}{3}\,M\,b^2.
+$$
+\item The moment of inertia of a
+solid sphere of mass $M$ and radius $b$ about a diameter is
+$$
+I = \frac{2}{5}\,M\,b^2.
+$$
+\end{itemize}
+
+\subsection{Torque}
+We have now identified the rotational equivalent of velocity---namely, angular velocity---and
+the rotational equivalent of mass---namely, moment of inertia. But, what is the
+rotational equivalent of force? 
+
+Consider a bicycle wheel of radius $b$ which is free to rotate around a perpendicular
+axis passing through its centre. Suppose that we apply a force ${\bf f}$, which is coplanar with
+the wheel, to a
+point $P$ lying on its circumference. See Fig.~\ref{f80}.
+What is the wheel's subsequent motion?
+
+Let us choose the origin $O$ of our coordinate system to coincide with the pivot
+point of the wheel---{\em i.e.}, the point of intersection between the wheel and the axis
+of rotation. Let ${\bf r}$ be the position vector of point $P$, and let $\theta$
+be the angle subtended between the directions of ${\bf r}$ and 
+${\bf f}$. We can resolve ${\bf f}$ into two components---namely, a component $f\,\cos\theta$
+which acts radially, and a  component $f\,\sin\theta$ which acts tangentially. The radial
+component of ${\bf f}$ is canceled out by a reaction at the pivot, since the wheel
+is assumed to be mounted in such a manner that it  can only rotate, and is prevented from
+displacing sideways. The tangential component of ${\bf f}$ causes the wheel to
+accelerate tangentially. Let $v$ be the instantaneous rotation velocity of the wheel's
+circumference. Newton's second law of motion, applied to the tangential motion of the
+wheel, yields
+\begin{equation}
+M\,\dot{v} = f\,\sin\theta,
+\end{equation}
+where $M$ is the mass of the wheel (which is assumed to be concentrated in the wheel's rim).
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig080.eps}}
+\caption{\em A rotating bicycle wheel.}\label{f80}  
+\end{figure}
+
+Let us now  convert the above expression into a rotational equation
+of motion. If $\omega$ is the instantaneous angular velocity of the wheel, then
+the relation between $\omega$ and $v$ is simply
+\begin{equation}
+v = b\,\omega.
+\end{equation}
+Since the wheel is basically a ring of radius $b$, rotating about a perpendicular
+symmetric axis, its moment of inertia is 
+\begin{equation}
+I = M\,b^2. 
+\end{equation}
+Combining the previous three equations, we obtain
+\begin{equation}\label{e8ang}
+I \,\dot{\omega} = \tau,
+\end{equation}
+where 
+\begin{equation}\label{e8tor}
+\tau = f\,b\,\sin\theta.
+\end{equation}
+
+Equation~(\ref{e8ang}) is the {\em angular equation of motion} of the wheel. It relates the
+wheel's angular velocity, $\omega$,  and moment of inertia, $I$, to a quantity, $\tau$, which is known
+as
+the {\em torque}. Clearly, if $I$ is analogous to mass, and $\omega$ is analogous to velocity, then
+torque must be analogous to force. In other words, torque is the rotational equivalent of
+force. 
+
+It is clear, from Eq.~(\ref{e8tor}), that a torque is the product of the magnitude
+of the applied force, $f$, and some distance $l=b\,\sin\theta$. The physical interpretation
+of $l$ is illustrated in Fig.~\ref{f81}. If can be seen that $l$ is the 
+perpendicular distance of the line of action of the force from the axis of rotation.
+We usually refer to this distance as the length of the {\em lever arm}. 
+
+In summary,
+a torque measures the propensity of a given force to cause the object upon which
+it acts to twist about a certain axis. The torque, $\tau$, is simply the product of the magnitude
+of the applied force, $f$,  and the length of the lever arm, $l$:
+\begin{equation}\label{etdef}
+\tau = f\,l.
+\end{equation}
+Of course, this definition makes a lot of sense. We all know that it is far easier to turn a
+rusty bolt using a long, rather than a short, wrench. Assuming that we exert
+the same force on the end of each wrench, the torque we apply to the bolt is larger in the
+former case, since the perpendicular distance between the line of action
+of the force and the bolt ({\em i.e.}, the length of the wrench) is greater.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig081.eps}}
+\caption{\em Definition of the length of the level arm, $l$.}\label{f81}  
+\end{figure}
+
+Since force is a vector quantity, it stands to reason that torque must also be a vector
+quantity. It follows that Eq.~(\ref{etdef}) defines the magnitude, $\tau$, of some torque vector, $\btau$.
+But, what is the direction of this vector? By convention, if a torque is such as to cause the
+object upon which it acts to twist about a certain axis, then the direction of that
+torque runs along the direction of the axis in the sense given by the right-hand grip rule.
+In other words, if the fingers of the right-hand circulate around the axis of rotation  in the sense
+in which the torque twists the object, then the thumb of the right-hand
+points along the axis in the direction of the torque. It follows that we can rewrite our
+rotational equation of motion, Eq.~(\ref{e8ang}), in vector form:
+\begin{equation}\label{eqtvec}
+I\,\frac{d\bomega}{dt} = I\,\balpha= \btau,
+\end{equation}
+where $\balpha = d\bomega/dt$ is the vector angular acceleration. Note that the
+direction of $\balpha$ indicates the direction of the rotation axis about which the object
+accelerates (in the sense given by the right-hand grip rule), whereas the direction
+of $\btau$ indicates the direction of the  rotation axis about which the torque attempts
+to twist the object (in the sense given by the right-hand grip rule). Of course, these two
+ rotation axes are identical. 
+
+Although Eq.~(\ref{eqtvec}) was derived for the special case of a torque
+applied to a ring rotating about a perpendicular symmetric axis, it is, nevertheless, completely
+general.
+
+It is important to appreciate that the directions  we 
+ascribe to angular velocities, angular
+accelerations, and torques are merely {\em conventions}. There is actually no physical motion
+in the direction of the angular velocity vector---in fact, all of the motion is in the
+plane perpendicular to this vector. Likewise, there is  no physical acceleration
+in the direction of the angular acceleration vector---again, all of the acceleration is in the
+plane perpendicular to this vector. Finally, no physical forces act
+in the direction of the torque vector---in fact, all of the forces act in the plane
+perpendicular to this vector.
+
+Consider a rigid body which is free to pivot in any direction about some fixed point $O$.
+Suppose that a force ${\bf f}$ is applied to the body at some point $P$ whose position
+vector relative to $O$ is ${\bf r}$. See Fig.~\ref{f82}.
+ Let $\theta$ be the angle subtended between
+the directions of ${\bf r}$ and ${\bf f}$. What is the vector torque $\btau$ acting
+on the object about an axis passing through the pivot point? The magnitude of this torque is simply
+\begin{equation}
+\tau = r\,f\,\sin\theta.
+\end{equation}
+In Fig.~\ref{f82}, 
+the conventional 
+direction of the torque is  out of the page. Another way of saying this is that the direction
+of the torque is mutually perpendicular to both ${\bf r}$ and ${\bf f}$, in the sense given by the
+right-hand grip rule when vector ${\bf r}$ is rotated onto vector ${\bf f}$ (through an
+angle less than $180^\circ$ degrees). 
+It follows that we can write
+\begin{equation}\label{etdeff}
+\btau = {\bf r}\times {\bf f}.
+\end{equation}
+In other words, the torque exerted by a force acting  on a rigid body which pivots about some fixed
+point is the vector product of the displacement of the point of application of the force from
+the pivot point with the force itself. Equation~(\ref{etdeff}) specifies both the magnitude
+of the torque, and the axis of rotation about which the torque twists the body upon which
+it acts. This axis runs parallel to the direction of $\btau$, and passes through the
+pivot point.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig082.eps}}
+\caption{\em Torque about a fixed point.}\label{f82}  
+\end{figure}
+
+\subsection{Power and Work}
+Consider a mass $m$ attached to the end of a light rod of length $l$ whose
+other end is attached to a fixed pivot. Suppose that the pivot is such that the rod
+is free to rotate in any direction. Suppose, further, that a force ${\bf f}$ is
+applied to the mass, whose instantaneous angular velocity about an axis of rotation passing
+through the pivot is $\bomega$. 
+
+Let ${\bf v}$ be the instantaneous velocity of the mass. We know that the
+rate at which the force ${\bf f}$ performs work on the mass---otherwise known
+as the power---is given by (see Sect.~\ref{spower})
+\begin{equation}\label{epowt}
+P = {\bf f}\!\cdot\!{\bf v}.
+\end{equation}
+However, we also know that (see Sect.~\ref{svp})
+\begin{equation}
+{\bf v} = \bomega\times {\bf r},
+\end{equation}
+where ${\bf r}$ is the vector displacement of the mass from the pivot. 
+Hence, we can write
+\begin{equation}\label{dpow}
+P = \bomega\times {\bf r} \cdot  {\bf f}
+\end{equation}
+(note that  ${\bf a}\!\cdot\!{\bf b}={\bf b}\!\cdot\!{\bf a}$).
+
+Now, for any three vectors, ${\bf a}$, ${\bf b}$, and ${\bf c}$, we can write
+\begin{equation}
+{\bf a}\times {\bf b} \cdot  {\bf c}= {\bf a}\cdot{\bf b} \times {\bf c}.
+\end{equation}
+This theorem is  easily proved by expanding the vector and scalar products in component
+form using the definitions (\ref{dsp}) and (\ref{e899}). It follows
+that Eq.~(\ref{dpow}) can be rewritten
+\begin{equation}
+P = \bomega\cdot {\bf r} \times {\bf f}.
+\end{equation}
+However,
+\begin{equation}
+\btau = {\bf r}\times{\bf f},
+\end{equation}
+where $\btau$ is the torque associated with force ${\bf f}$ about an axis of rotation passing
+through the pivot. Hence, we obtain
+\begin{equation}\label{epowr}
+P = \btau\!\cdot\!\bomega.
+\end{equation}
+In other words, the rate at which a torque performs work on the object upon which
+it acts is the scalar product of the torque and the angular velocity of the object.
+Note the great similarity between Eq.~(\ref{epowt}) and Eq.~(\ref{epowr}).
+
+Now the relationship between work, $W$, and power, $P$, is simply
+\begin{equation}
+P = \frac{dW}{dt}.
+\end{equation}
+Likewise, the relationship between angular velocity, $\bomega$, and angle
+of rotation, $\bphi$, is
+\begin{equation}
+\bomega = \frac{d\bphi}{dt}.
+\end{equation}
+It follows that Eq.~(\ref{epowr}) can be rewritten
+\begin{equation}
+dW = \btau\!\cdot\!d\bphi.
+\end{equation}
+Integration yields
+\begin{equation}\label{eworr}
+W = \int \btau\!\cdot\!d \bphi.
+\end{equation}
+Note that this is a good definition, since it only involves an infinitesimal
+rotation vector, $d\bphi$. Recall, from Sect.~\ref{srotn}, that it is impossible
+to define a finite rotation vector. For the case of translational motion, the analogous
+expression to the above is
+\begin{equation}
+W = \int {\bf f}\!\cdot\!d {\bf r}.
+\end{equation}
+Here, ${\bf f}$ is the force, and $d{\bf r}$ is an element of displacement of the body upon which
+the force acts.
+
+Although Eqs.~(\ref{epowr}) and (\ref{eworr}) were derived for the special case of
+the rotation of a mass attached to the end of a light rod, they are, nevertheless,
+completely general.
+
+Consider, finally, the special case in which the torque is aligned with the
+angular velocity, and both are constant in time. In this case, the
+rate at which the torque performs work is
+simply
+\begin{equation}
+P = \tau\,\omega.
+\end{equation}
+Likewise, the net work performed by the torque in twisting the body upon which
+it acts through an angle ${\mit\Delta}\phi$ is just
+\begin{equation}
+W = \tau\,{\mit\Delta}\phi.
+\end{equation}
+
+\subsection{Translational Motion Versus Rotational Motion}
+It should be clear, by now, that there is a strong analogy between rotational motion
+and standard translational motion. Indeed, each physical concept used to analyze rotational
+motion has its translational concomitant. Likewise, every law of physics governing
+rotational motion has a translational equivalent. The analogies between rotational
+and translational motion are summarized in Table~\ref{tt1}.
+
+\begin{table}
+\centering
+\begin{tabular}{lclc}\hline
+{\em Translational motion} & & {\em Rotational motion} &\\[0.5ex] \hline
+Displacement & $d{\bf r}$ & Angular displacement & $d\bphi$ \\[0.5ex]
+Velocity     & ${\bf v} = d{\bf r}/dt$ & Angular velocity & $\bomega = d\bphi/dt$ \\[0.5ex]
+Acceleration & ${\bf a} = d{\bf v}/dt$ & Angular acceleration & $\balpha = d\bomega/dt$ \\[0.5ex]
+Mass & $M$ & Moment of inertia & $I = 
+{\scriptstyle\int \rho\, |\hat{\bomega}\times {\bf r}|^2\,dV}$ \\[0.5ex]
+Force & ${\bf f} = M\,{\bf a}$ & Torque & $\btau \equiv{\bf r}\times {\bf f}= I\,\balpha$ \\[0.5ex]
+Work & $W = \int {\bf f}\!\cdot\!d{\bf r}$ & Work & $W = \int \btau\!\cdot\!d\bphi$ \\[0.5ex]
+Power & $P = {\bf f}\!\cdot\!{\bf v}$ & Power & $P = \btau\!\cdot\!\bomega$ \\[0.5ex]
+Kinetic energy & $K = M\,v^2/2$ & Kinetic energy & $K = I\,\omega^2/2$ \\[0.5ex]
+ \hline
+\end{tabular}
+\caption{\em The analogies between translational and rotational motion.}\label{tt1}
+\end{table}
+
+\subsection{The Physics of Baseball}
+Baseball players know from experience that there is a ``sweet spot'' on a baseball bat, about
+17\,cm from the end of the barrel, where the shock of impact with the ball, as felt
+by the hands, is minimized. In fact, if the ball strikes the bat exactly on the ``sweet spot'' then the
+hitter is almost unaware of the collision. Conversely, if the ball strikes the bat well
+away from the ``sweet spot'' then the impact is felt as a painful jarring of the hands.
+
+The existence of a ``sweet spot'' on a baseball bat is just a consequence of rotational dynamics.
+Let us analyze this problem. Consider the schematic baseball bat shown in Fig.~\ref{f83}. Let $M$
+be the mass of the bat, and let $l$ be its length. Suppose that the bat pivots about a fixed
+point located at one of its ends. Let the centre of mass of the bat be located a
+distance $b$ from the pivot point. Finally, suppose that the ball strikes the
+bat a distance $h$ from the pivot point. 
+
+The collision between the bat and the ball can be modeled as equal and opposite {\em impulses}, $J$,
+applied to each object at the time of the  collision (see Sect.~\ref{s65}). At the same time,
+equal and opposite impulses $J'$ are applied to the pivot and the bat,
+as shown in Fig.~\ref{f83}. If the pivot  actually corresponds to
+a hitter's hands then the latter
+impulse gives rise to the painful jarring sensation felt when the ball is not struck
+properly.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig083.eps}}
+\caption{\em A schematic baseball bat.}\label{f83}  
+\end{figure}
+
+We saw earlier that in a general multi-component system---which includes an extended
+body such as a baseball bat---the motion of the
+centre of mass takes a particularly simple form (see Sect.~\ref{scm}).
+To be more exact, the motion of the centre of mass is equivalent to that
+of the point particle obtained by concentrating the whole mass of the system at the centre of mass, and
+then
+allowing all of the external forces acting on the system to act upon that mass. Let us
+use this idea to analyze the effect of the collision with the ball on the motion
+of the bat's centre of mass. The centre of mass of the bat acts like a
+point particle of mass $M$ which is subject to the two impulses, $J$ and $J'$ (which
+are applied simultaneously). If $v$ is the instantaneous velocity of the centre
+of mass then the change in momentum of this point due to the action
+of the two impulses is simply
+\begin{equation}\label{ebata2}
+M\,{\mit\Delta} v = -J - J'.
+\end{equation}
+The minus signs on the right-hand side of the above equation follow
+from the fact that the impulses are oppositely directed to $v$ in Fig.~\ref{f83}.
+
+Note that in order to specify the instantaneous state of an extended body
+we must do more than just specify the location of the body's centre of mass.
+Indeed, since the body can rotate about its centre of mass, we must also specify
+its orientation in space. Thus, in order to follow the motion of an extended body,
+we must not only follow the translational motion of its centre of mass, but also
+the body's rotational motion about this point (or any other convenient reference point
+located within the body).
+
+Consider the rotational motion of the bat shown in Fig.~\ref{f83} about a perpendicular
+(to the bat) axis passing through the pivot point. This motion satisfies
+\begin{equation}\label{ebata}
+I\,\frac{d\omega}{dt} = \tau,
+\end{equation}
+where $I$ is the moment of inertia of the bat, $\omega$ is its instantaneous angular velocity,
+and $\tau$ is the applied torque. The bat is actually  subject to an
+impulsive torque ({\em i.e.}, a torque which only lasts for a short period in time) at the
+time of the collision with the ball. Defining the angular impulse $K$ associated with
+an impulsive torque $\tau$ in much the same manner as we earlier defined
+the impulse associated
+with an impulsive force  (see Sect.~\ref{s65}), we obtain
+\begin{equation}
+K = \int^t \tau\,dt.
+\end{equation}
+It follows that we can integrate Eq.~(\ref{ebata}) over the time of the collision
+to find
+\begin{equation}\label{ebata1}
+I\,{\mit\Delta}\omega = K,
+\end{equation}
+where ${\mit\Delta}\omega$ is the change in angular velocity of the bat due to the collision
+with the ball.
+
+Now, the torque associated with a given force is equal to the magnitude of the force times the 
+length of the lever arm. Thus, it stands to reason that the angular impulse, $K$, associated
+with an impulse, $J$,  is simply
+\begin{equation}
+K = J\,x,
+\end{equation}
+where $x$ is the perpendicular distance from the line of action of the impulse
+to the axis of rotation. 
+Hence, the angular impulses associated with the
+two impulses, $J$ and $J'$, to which the bat is subject when it collides with the
+ball, are $J\,h$ and $0$, respectively. The latter angular impulse is zero since the
+point of application of the associated impulse coincides with the pivot point, and so
+the length of the lever arm is zero. It follows that Eq.~(\ref{ebata1}) can be written
+\begin{equation}\label{e8cx}
+I\,{\mit\Delta}\omega = -J\,h.
+\end{equation}
+The minus sign comes from the fact that the
+impulse $J$ is oppositely directed to the angular velocity in Fig.~\ref{f83}.
+
+Now, the relationship between the instantaneous velocity of the bat's centre of mass
+ and the bat's instantaneous angular velocity  is simply
+\begin{equation}
+v = b\, \omega.
+\end{equation}
+Hence, Eq.~(\ref{ebata2}) can be rewritten
+\begin{equation}\label{e8cy}
+M\,b\,{\mit\Delta} \omega = -J - J'.
+\end{equation}
+
+Equations~(\ref{e8cx}) and (\ref{e8cy}) can be combined to yield
+\begin{equation}
+J' = -\left(1 - \frac{M\,b\,h}{I}\right) J.
+\end{equation}'
+The above expression specifies the magnitude of the impulse $J'$ applied to
+the hitter's hands terms of the magnitude of the impulse $J$ applied to the ball.
+
+Let us crudely model the bat as a uniform rod of length $l$ and
+mass $M$. It follows, by symmetry, that the centre of mass of the bat
+lies at its half-way point: {\em i.e.}, 
+\begin{equation}
+b = \frac{l}{2}.
+\end{equation}
+Moreover, the moment of inertia of the bat about a perpendicular axis passing
+through one of its ends is
+\begin{equation}
+I = \frac{1}{3}\,M\,l^2
+\end{equation}
+(this is a standard result). 
+Combining the previous three equations, we obtain 
+\begin{equation}
+J' = -\left(1 - \frac{3\,h}{2\,l}\right) J=-\left(1 - \frac{h}{h_0}\right) J,
+\end{equation}
+where 
+\begin{equation}
+h_0 = \frac{2}{3}\,l.
+\end{equation}
+Clearly, if $h=h_0$ then no matter how hard the ball is hit ({\em i.e.}, no matter how
+large we make $J$) {\em zero} impulse is applied to the hitter's hands. 
+We conclude that the ``sweet spot''---or, in scientific terms, the {\em centre of percussion}---of
+a uniform baseball bat lies two-thirds of the way down the bat from the hitter's end. If we
+adopt a more realistic model of a baseball bat, in which the bat is tapered such that the
+majority of its weight is located at its hitting end, we can easily demonstrate that the
+centre of percussion is shifted further away from the hitter ({\em i.e.}, it is
+more that two-thirds of the way along the bat).
+
+\subsection{Combined Translational and Rotational Motion}\label{sroll}
+In Sect.~\ref{sspi}, we analyzed the motion of a block sliding down a
+frictionless incline. We found that the block accelerates down the
+slope with uniform acceleration $g\,\sin\theta$, where $\theta$ is
+the angle subtended by the incline with the horizontal. In this case,
+all of the potential energy lost by the block, as it slides down
+the slope, is converted into translational kinetic energy (see
+Sect.~\ref{senergy}). In particular, no energy
+is dissipated.
+
+There is, of course, no way in which a block can  slide over a {\em frictional}
+surface without dissipating energy. However, we know from experience that
+a round object can {\em roll} over such a  surface with hardly
+any  dissipation. For instance, it is far easier to drag a heavy suitcase across the
+concourse of an airport
+if the suitcase has wheels on the bottom. Let us investigate the physics of round objects rolling
+over rough surfaces, and, in particular, rolling
+down rough inclines.
+
+Consider a uniform cylinder of radius $b$ rolling over a horizontal, frictional surface.
+See Fig.~\ref{f84}. Let $v$ be the translational velocity of the cylinder's centre of
+mass, and let $\omega$ be the angular velocity of the cylinder about an axis running along
+its length, and passing through its centre of mass. Consider the point
+of contact between the cylinder and the surface. The velocity $v'$ of this point
+is made up of two components: the translational velocity $v$, which is common to all
+elements of the cylinder, and the tangential velocity $v_t=-b\,\omega$, due to the
+cylinder's rotational motion. Thus,
+\begin{equation}
+v' = v + v_t = v - b\,\omega.
+\end{equation}
+Suppose that the cylinder rolls {\em without slipping}. In other words, suppose that
+there is no frictional energy dissipation as the cylinder moves over the surface.
+This is only possible if there is zero net motion between the surface and the 
+bottom of the cylinder, which
+implies $v'=0$, or
+\begin{equation}\label{erolls}
+v = b\,\omega.
+\end{equation}
+It follows that when a cylinder, or any other round object,  rolls across a rough surface without
+slipping---{\em i.e.}, without dissipating energy---then the cylinder's translational and
+rotational velocities are not independent, but satisfy a particular relationship (see the above equation).
+Of course, if the cylinder slips as it rolls across the surface then this relationship
+no longer holds.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig084.eps}}
+\caption{\em A cylinder rolling over a rough surface.}\label{f84}  
+\end{figure}
+
+Consider, now, what happens when the cylinder shown in Fig.~\ref{f84} rolls,
+without slipping, down a rough slope whose angle of inclination, with respect to the horizontal, is
+$\theta$. If the cylinder starts from rest, and rolls down the slope a vertical distance
+$h$, then its gravitational potential energy decreases by $-{\mit\Delta}P = M\,g\,h$,
+where $M$ is the mass of the cylinder. This decrease in potential energy must be
+offset by a corresponding increase in kinetic energy. (Recall that when a
+cylinder rolls without slipping there is no frictional energy loss.) However, a rolling
+cylinder can possesses two different types of kinetic energy. Firstly, {\em translational}
+kinetic energy: $K_t = (1/2)\,M\,v^2$, where $v$ is the cylinder's translational
+velocity; and, secondly, {\em rotational} kinetic energy: $K_r = (1/2)\,I\,\omega^2$, where $\omega$
+is the cylinder's angular velocity, and $I$ is its moment of inertia. Hence,
+energy conservation yields
+\begin{equation}\label{e890}
+M\,g\,h = \frac{1}{2}\,M\,v^2 + \frac{1}{2}\,I\,\omega^2.
+\end{equation}
+Now, when the cylinder rolls without slipping, its translational and rotational
+velocities are related via Eq.~(\ref{erolls}). It follows from Eq.~(\ref{e890}) that
+\begin{equation}
+v^2 = \frac{2\,g\,h}{1+ I/M\,b^2}.
+\end{equation}
+Making use of the fact that the moment of inertia of a uniform cylinder about its
+axis of symmetry is $I=(1/2)\,M\,b^2$, we can write the
+above equation more explicitly as
+\begin{equation}\label{e8555}
+v^2 = \frac{4}{3}\, g\,h.
+\end{equation}
+Now, if the same cylinder were to slide down a {\em frictionless} slope,
+such that it fell from rest through a vertical distance $h$, then
+its final translational velocity would satisfy
+\begin{equation}\label{e8666}
+v^2 = 2\,g\,h.
+\end{equation}
+A comparison of Eqs.~(\ref{e8555}) and (\ref{e8666}) reveals that when a uniform
+cylinder {\em rolls} down an incline without slipping, its final translational
+velocity is {\em less} than that obtained when the cylinder {\em slides} down the same
+incline without friction. The reason for this is that, in the former case,
+some of the potential energy released as the cylinder falls is converted into
+rotational kinetic energy, whereas, in the latter case, all of the
+released potential energy is converted into translational kinetic energy.
+Note that, in both cases, the cylinder's {\em total} kinetic energy 
+at the bottom of the incline is equal to the released potential
+energy.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter08/fig085.eps}}
+\caption{\em A cylinder rolling down a rough incline.}\label{f85}  
+\end{figure}
+
+Let us examine the equations of motion of a cylinder, of mass $M$ and radius $b$, rolling down a
+rough slope without slipping. As shown in Fig.~\ref{f85}, there are three
+forces acting on the cylinder. Firstly, we have the cylinder's weight, $M\,g$, which acts
+vertically downwards. Secondly, we have the reaction, $R$, of the slope, which acts
+normally outwards from the surface of the slope. Finally, we have the frictional force, $f$,
+which acts up the slope, parallel to its surface.
+
+As we have already discussed, we can most easily describe the translational
+motion of an extended body by following the motion of its centre of mass.
+This motion is equivalent to that of a point particle, whose mass equals that
+of the body, which is subject to the same external forces as those that act
+on the body. Thus, applying the three forces, $M\,g$, $R$, and $f$, to
+the cylinder's centre of mass, and resolving in the direction normal to the surface of the
+slope, we obtain
+\begin{equation}
+R = M\,g\,\cos\theta.
+\end{equation}
+Furthermore, Newton's second law,  applied to the motion of the centre of mass
+parallel to the slope, yields
+\begin{equation}\label{e8123}
+M\,\dot{v} = M\,g\,\sin\theta - f,
+\end{equation}
+where $\dot{v}$ is the cylinder's translational acceleration down the slope.
+
+Let us, now, examine the cylinder's rotational equation of motion.
+First, we must evaluate the torques associated with the three forces
+acting on the cylinder. Recall, that the torque associated with
+a given force is the product of the magnitude of that force and the
+length of the level arm---{\em i.e.}, the
+perpendicular distance between the line of action of the force and the
+axis of rotation. Now, by definition, the weight of an extended
+object acts at its centre of mass. However, in this case, the axis of
+rotation passes through the centre of mass. Hence, the length of the lever
+arm associated with the weight $M\,g$ is zero. It follows
+that the associated torque is also zero. It is clear, from Fig.~\ref{f85}, that
+the line of action of the reaction force, $R$, passes through the centre
+of mass of the cylinder, which coincides with the axis of rotation.
+Thus, the length of the lever
+arm associated with $R$ is zero, and so is the associated torque.
+Finally, according to Fig.~\ref{f85}, the perpendicular distance between the line
+of action of the friction force, $f$, and the axis of rotation is just
+the radius of the cylinder, $b$---so the associated torque is $f\,b$.
+ We conclude that the net torque acting on the
+cylinder is simply
+\begin{equation}
+\tau = f\,b.
+\end{equation}
+It follows that the rotational equation of motion of the cylinder takes the form,
+\begin{equation}\label{e8321}
+I\,\dot{\omega} = \tau=f\,b,
+\end{equation}
+where $I$ is its moment of inertia, and $\dot{\omega}$ is its rotational acceleration.
+
+Now, if the cylinder  rolls, without slipping, such that the constraint (\ref{erolls})
+is satisfied at all times, then the time derivative of this constraint implies the
+following relationship between the cylinder's translational and rotational accelerations:
+\begin{equation}
+\dot{v} = b\,\dot{\omega}.
+\end{equation}
+It follows from Eqs.~(\ref{e8123}) and (\ref{e8321}) that
+\begin{eqnarray}\label{e8333}
+\dot{v} &=& \frac{g\,\sin\theta}{1 + I/M\,b^2},\\[0.5ex]
+f &=& \frac{M\,g\,\sin\theta}{1+ M\,b^2/I}.
+\end{eqnarray}
+Since the moment of inertia of the cylinder is actually $I=(1/2)\,M\,b^2$, the above
+expressions simplify to give
+\begin{equation}
+\dot{v} = \frac{2}{3}\,g\,\sin\theta,
+\end{equation}
+and
+\begin{equation}\label{e8frict}
+f = \frac{1}{3}\,M\,g\,\sin\theta.
+\end{equation}
+Note that the acceleration of a uniform cylinder as it rolls down a slope, without
+slipping, is only {\em two-thirds}
+of the value obtained when the  cylinder slides down the same slope without friction.
+It is clear from Eq.~(\ref{e8123}) that, in the former case, the acceleration
+of the cylinder down the slope is retarded by friction. Note, however, that
+the frictional force merely acts to convert translational kinetic energy into rotational
+kinetic energy, and does not dissipate  energy.
+
+Now, in order for the slope to exert the frictional force specified in Eq.~(\ref{e8frict}),
+ without any slippage between the slope and cylinder, this force must
+be less than the maximum allowable static frictional force, $\mu\,R (=\mu\,M\,g\,\cos\theta)$, where $\mu$ is
+the coefficient of static friction. In other words, the condition for the
+cylinder to roll down the slope without slipping is $f< \mu\,R$, or
+\begin{equation}
+\tan\theta < 3\,\mu.
+\end{equation}
+This condition is easily satisfied for gentle slopes, but may well be violated for
+extremely steep slopes (depending on the size of  $\mu$). Of course, the above condition
+is always violated for frictionless slopes, for which $\mu=0$.
+
+Suppose, finally, that we place two cylinders, side by side and at rest, at the top of a
+frictional  slope
+of inclination $\theta$. Let the two cylinders possess the same mass, $M$, and the
+same radius, $b$. However, suppose that the first cylinder is uniform, whereas the
+second is a hollow shell. Which cylinder reaches the bottom of the slope first, assuming that they are
+both released simultaneously, and both roll without slipping? 
+The acceleration of each cylinder down the slope is given by Eq.~(\ref{e8333}).
+For the case of the solid cylinder, the moment of inertia is $I=(1/2)\,M\,b^2$,
+and so
+\begin{equation}
+\dot{v}_{\rm solid} = \frac{2}{3}\,g\,\sin\theta.
+\end{equation}
+For the case of the hollow cylinder, the moment of inertia is  $I=M\,b^2$ ({\em i.e.},
+the same as that of a ring with a similar mass, radius, and axis of rotation),
+and so
+\begin{equation}
+\dot{v}_{\rm hollow} = \frac{1}{2}\,g\,\sin\theta.
+\end{equation}
+It is clear that the solid cylinder reaches the bottom of the slope {\em before} the
+hollow one (since it possesses the greater acceleration). Note that the
+accelerations of the two cylinders are independent of their sizes or masses. This
+suggests that a solid cylinder will always roll down a frictional incline faster
+than a hollow one, irrespective of their relative dimensions (assuming that they
+both roll without slipping). In fact, Eq.~(\ref{e8333}) suggests that whenever two
+different objects roll (without slipping) down the same slope,
+then the {\em most compact} object---{\em i.e.}, the object
+with the smallest $I/M\,b^2$ ratio---always wins the race.
+
+\subsection*{\em Worked Example 8.1: Balancing Tires}
+\noindent{\em Question:} A tire placed on a balancing machine in a
+service station starts from rest and turns through $5.3$ revolutions
+in $2.3\,{\rm s}$ before reaching its final angular speed. What is the
+angular acceleration of the tire (assuming that this quantity remains constant)?
+What is the final angular speed of the tire?
+
+\noindent{\em Answer:} The tire turns through $\phi=5.3\times 2\,\pi = 33.30\,{\rm rad.}$
+in $t=2.3\,{\rm s}$. The relationship between $\phi$ and $t$ for the case of rotational
+motion, starting from
+rest,
+with uniform angular acceleration $\alpha$ is
+$$
+\phi = \frac{1}{2}\,\alpha\,t^2.
+$$
+Hence,
+$$
+\alpha = \frac{2\,\phi}{t^2} = \frac{2\times 33.30}{2.3^2} = 12.59\, {\rm rad./s^2}.
+$$
+
+Given that the tire starts from rest, its angular velocity after $t$ seconds takes the form
+$$
+\omega = \alpha\,t = 12.59\times 2.3 =28.96\,{\rm rad./s}.
+$$
+
+\subsection*{\em Worked Example 8.2: Accelerating a Wheel}
+\noindent{\em Question:} The net work done in accelerating a wheel from rest to
+an angular speed of $30\, {\rm rev./min.}$ is $W=5500\,{\rm J}$. What is the moment
+of inertia of the wheel?
+
+\noindent{\em Answer:} The final angular speed of the wheel
+is
+$$
+\omega = 30\times 2\,\pi/60 = 3.142\,{\rm rad./s}.
+$$
+Assuming that all of the work $W$ performed on the wheel goes to increase its
+rotational kinetic energy, we have
+$$
+W = \frac{1}{2}\,I\,\omega^2,
+$$
+where $I$ is the wheel's moment of inertia. It follows that
+$$
+I = \frac{2\,W}{\omega^2} = \frac{2\times 5500}{3.142^2}= 1114.6\,{\rm kg\,m^2}.
+$$
+
+\subsection*{\em Worked Example 8.3: Moment of Inertia of a Rod}
+\noindent{\em Question:} A rod of mass $M=3\,{\rm kg}$ and length $L=1.2\,{\rm m}$ pivots
+about an axis, perpendicular to its length, which passes through one of its ends. What
+is the moment of inertia of the rod? Given that the rod's instantaneous angular velocity is
+$60\,{\rm deg./s}$, what is its rotational kinetic energy?
+
+\noindent{\em Answer:} The moment of inertia of a rod of mass $M$ and length $L$ about
+an axis,   perpendicular to its length, which passes through its midpoint is
+$I=(1/12)\,M\,L^2$. This is a standard result.
+Using the parallel axis theorem, the moment of inertia
+about a parallel axis passing through one of the ends of the rod
+is
+$$
+I' = I + M\,\left(\frac{L}{2}\right)^2 = \frac{1}{3}\,M\,L^2,
+$$
+so
+$$
+I' = \frac{3\times 1.2^2}{3} = 1.44\,{\rm kg\,m^2}.
+$$
+
+The instantaneous angular velocity of the rod is
+$$
+\omega = 60 \times \frac{\pi}{180} = 1.047\,{\rm rad./s}.
+$$
+Hence, the rod's rotational kinetic energy is written
+$$
+K = \frac{1}{2}\,I'\,\omega^2 = 0.5\times 1.44\times 1.047^2 = 0.789\,{\rm J}.
+$$
+
+\subsection*{\em Worked Example 8.4: Weight and Pulley}
+\noindent{\em Question:} A weight of mass $m=2.6\,{\rm kg}$ is suspended via
+a light inextensible cable which is wound around a pulley of mass $M=6.4\,{\rm kg}$
+and radius $b=0.4\,{\rm m}$. Treating the pulley as a uniform disk, find the downward
+acceleration of the weight and the tension in the cable. Assume that the cable
+does not slip with respect to the pulley.
+
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter08/fig085a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let $v$ be the instantaneous downward velocity of the weight, $\omega$ the
+instantaneous angular velocity of the pulley, and $T$ the tension in the cable.
+Applying Newton's second law to the vertical motion of the weight, we obtain
+$$
+m\, \dot{v} = m\,g-T.
+$$
+The angular equation of motion of the pulley is written
+$$
+I\,\dot{\omega} = \tau,
+$$
+where $I$ is its moment of inertia, and $\tau$ is the torque acting
+on the pulley. Now, the only force acting on the pulley (whose
+line of action does not pass through the pulley's axis of rotation) is the tension in the cable. The
+torque associated with this force is the product of the tension, $T$, and the perpendicular
+distance from the line of action of this force to the rotation axis, which is equal to the
+radius, $b$, of the pulley. Hence,
+$$
+\tau = T\,b.
+$$
+If the cable does not slip with respect to the pulley, then its
+downward velocity, $v$, must match the tangential velocity of the outer surface of the
+pulley, $b\,\omega$. Thus,
+$$
+v = b\,\omega.
+$$
+It follows that
+$$
+\dot{v} = b\,\dot{\omega}.
+$$
+
+The above equations can be combined to give
+\begin{eqnarray}
+\dot{v} &=& \frac{g}{1+I/m\,b^2},\nonumber\\[0.5ex]
+T &=& \frac{m\,g}{1+ m\,b^2/I}.\nonumber
+\end{eqnarray}
+Now, the moment of inertia of the pulley is $I=(1/2)\,M\,b^2$. Hence,
+the above expressions reduce to
+\begin{eqnarray}
+\dot{v} &=& \frac{g}{1+M/2\,m} = \frac{9.81}{1+6.4/2\times 2.6}=4.40\,{\rm m/s^2},\nonumber\\[0.5ex]
+T &=& \frac{m\,g}{1+ 2\,m/M}= \frac{2.6\times 9.81}{1+2\times 2.6/6.4}
+=14.07\,{\rm N}.\nonumber
+\end{eqnarray}
+
+\subsection*{\em Worked Example 8.5: Hinged Rod}
+\noindent{\em Question:} A uniform rod of mass $m=5.3\,{\rm kg}$ and length $l=1.3\,{\rm m}$
+rotates about a fixed frictionless pivot located at one of its ends. The rod is released from
+rest at an angle $\theta=35^\circ$ beneath the horizontal. What is the angular acceleration
+of the rod immediately after it is released?
+
+\begin{figure*}[h]
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter08/fig085b.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} The moment of inertia of a rod of mass $m$ and length $l$ about
+an axis, perpendicular to its length, which passes through one of its ends is
+$I= (1/3)\,m\,l^2$ (see question 8.3). Hence,
+$$
+I = \frac{5.3\times 1.3^2}{3} = 2.986\,{\rm kg\,m^2}.
+$$
+The angular equation of motion of the rod is
+$$
+I\,\alpha = \tau,
+$$
+where $\alpha$ is the rod's angular acceleration, and $\tau$ is the net torque exerted on the
+rod. Now, the only force acting on the rod (whose line of action does not pass through
+the pivot) is the rod's weight, $m\,g$. This force acts at the centre of mass of the rod,
+which is situated at the rod's midpoint. The perpendicular distance $x$ between the 
+line of action of the weight and the pivot point is simply
+$$
+x = \frac{l}{2}\,\cos\theta = \frac{1.3\times \cos 35^\circ}{2} = 0.532\,{\rm m}.
+$$
+Thus, the torque acting on the rod is 
+$$
+\tau = m\,g\,x.
+$$
+It follows that the rod's angular acceleration is written
+$$
+\alpha = \frac{\tau}{I} = \frac{m\,g\,x}{I} = \frac{5.3\times 9.81\times 0.532}{2.986} = 9.26\,{\rm
+rad./s^2}.
+$$
+
+\subsection*{\em Worked Example 8.6: Horsepower of Engine}
+\noindent{\em Question:} A car engine develops a torque
+of $\tau=500\,{\rm N\,m}$ and rotates at $3000\,{\rm rev./min.}$.
+What horsepower does the engine generate? ($1\,{\rm hp} = 746\,{\rm W}$).
+
+\noindent{\em Answer:} The angular speed of the engine is
+$$
+\omega = 3000\times 2\,\pi/ 60= 314.12\,{\rm rad./s}.
+$$
+Thus, the power output of the engine is
+$$
+P = \omega\,\tau = 314.12\times 500 = 1.57\times 10^5\,{\rm W}.
+$$
+In units of horsepower, this becomes
+$$
+P = \frac{1.57\times 10^5}{746} = 210.5\,{\rm hp}.
+$$
+
+\subsection*{\em  Worked Example 8.7: Rotating Cylinder}
+\noindent{\em Question:} A uniform cylinder of radius $b=0.25\,{\rm m}$ is given
+an angular speed of $\omega_0=35\,{\rm rad./s}$ about an axis, parallel
+to its length, which passes through its centre. The cylinder is gently lowered onto
+a horizontal frictional surface, and released. The coefficient of friction
+of the surface is $\mu=0.15$. How long does it take before the 
+cylinder starts to roll without slipping? What distance does the cylinder
+travel between its release point and the point at which it commences to
+roll without slipping?
+
+\begin{figure*}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter08/fig085c.eps}}
+\end{figure*}
+
+\noindent{\em Answer:} Let $v$ be the velocity of the cylinder's centre of mass, 
+$\omega$ the cylinder's angular velocity, $f$ the frictional force exerted by the
+surface on the cylinder, $M$ the cylinder's mass, and $I$ the cylinder's moment of inertia. 
+The cylinder's translational equation of motion is written
+$$
+M\,\dot{v} =  f.
+$$
+Note that the friction force acts to accelerate the cylinder's translational motion.
+Likewise, the cylinder's rotational equation of motion takes the form
+$$
+I\,\dot{\omega} = - f\,b,
+$$
+since the perpendicular distance between the line of action of $f$ and the axis
+of rotation is the radius, $b$, of the cylinder.
+Note that the friction force acts to decelerate the cylinder's rotational
+motion.
+If the cylinder is slipping with respect to the surface, then the friction force,
+$f$, is equal to the coefficient of friction, $\mu$, times the normal reaction,
+$M\,g$, at the surface:
+$$
+f = \mu\,M\,g.
+$$
+Finally, the moment of inertia of the cylinder is
+$$
+I = \frac{1}{2}\,M\,b^2.
+$$
+
+The above equations can be solved to give
+\begin{eqnarray}
+\dot{v} &=& \mu\,g,\nonumber\\[0.5ex]
+b\,\dot{\omega} &=& - 2\,\mu\,g.\nonumber
+\end{eqnarray}
+Given that $v=0$ ({\em i.e.}, the cylinder
+is initially at rest) and $\omega=\omega_0$ at time $t=0$, the above
+expressions can be integrated to give
+\begin{eqnarray}
+v &=& \mu\,g\,t,\nonumber\\[0.5ex]
+b\,\omega &=& b\,\omega_0 - 2\,\mu\,g\,t,\nonumber
+\end{eqnarray}
+which yields
+$$
+v - b\,\omega = -(b\,\omega_0 - 3\,\mu\,g\,t).
+$$
+
+Now, the cylinder stops slipping as soon as the ``no slip'' condition,
+$$
+v = b\,\omega,
+$$
+is  satisfied. This occurs when
+$$
+t = \frac{b\,\omega_0}{3\,\mu\,g}=\frac{0.25\times 35}{3\times 0.15\times 9.81} = 1.98\,{\rm s}.
+$$
+Whilst it is slipping, the cylinder travels a distance
+$$
+x = \frac{1}{2}\,\mu\,g\,t^2 = 0.5\times 0.15 \times 9.81\times 1.98^2=2.88\,{\rm m}.
+$$

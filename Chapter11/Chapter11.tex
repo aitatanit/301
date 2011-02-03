@@ -1,0 +1,517 @@
+\section{Oscillatory motion}
+\subsection{Introduction}
+We have  seen previously (for instance, in Sect.~\ref{s103}) that when systems
+are perturbed from a {\em stable} equilibrium state they experience a {\em restoring
+force} which acts to return them to that state. In many cases of interest, the magnitude of the 
+restoring force is directly  proportional to the displacement from equilibrium.
+In this section, we shall investigate the motion of systems subject to such a  force.
+
+\subsection{Simple Harmonic Motion}
+Let us reexamine the problem of a mass on a spring (see Sect.~\ref{s56}).
+Consider a mass $m$ which slides over a horizontal frictionless surface. Suppose that
+the mass is attached
+to a light horizontal spring whose other end is anchored to an immovable object. See
+Fig.~\ref{f42}. Let $x$ be the extension of the spring: {\em i.e.}, the difference between
+the spring's actual length and its unstretched length. Obviously, $x$ can also be used as
+a coordinate to determine the horizontal displacement of the mass. 
+
+The equilibrium state of the system corresponds to the situation where
+the mass is at rest, and the spring is unextended ({\em i.e.}, $x=0$).
+In this state, zero net force acts on the mass, so there is no reason for it to start to move.
+If the system is perturbed from this equilibrium state ({\em i.e.}, if the mass is moved, so that the
+spring becomes extended) then the mass experiences a {\em restoring force} given by Hooke's law:
+\begin{equation}
+f = -k\,x.
+\end{equation}
+Here, $k>0$ is the {\em force constant} of the spring. The negative sign indicates that $f$ is indeed a restoring force. 
+Note that the magnitude of the restoring
+force is {\em directly proportional} to the displacement of the system from equilibrium 
+({\em i.e.}, $f\propto x$). Of course, Hooke's law only holds for {\em small}\/ spring extensions.
+Hence, the displacement from equilibrium cannot be made too large.
+The motion of this system is representative of the
+motion of a wide range of systems when they are {\em slightly} disturbed from a stable equilibrium state.
+
+Newton's second law gives following equation of motion for the system:
+\begin{equation}
+m\,\ddot{x} = - k\,x.\label{eshm}
+\end{equation}
+This {\em differential equation} is known as the {\em simple harmonic equation}, and its solution has been known
+for centuries. In fact, the solution is
+\begin{equation}
+x = a\,\cos(\omega\,t-\phi),\label{shm}
+\end{equation}
+where $a$, $\omega$, and $\phi$ are constants. We can demonstrate that Eq.~(\ref{shm}) is indeed a
+solution of Eq.~(\ref{eshm}) by direct substitution. Substituting  Eq.~(\ref{shm}) into
+Eq.~(\ref{eshm}), and recalling from calculus that $d(\cos\theta)/d\theta = -\sin\theta$ and
+$d (\sin\theta)/d\theta = \cos\theta$, we obtain
+\begin{equation}
+-m\,\omega^2\,a\,\cos(\omega\,t-\phi) =- k\,a\,\cos(\omega\,t-\phi).
+\end{equation}
+It follows that Eq.~(\ref{shm}) is the correct solution provided
+\begin{equation}\label{eomega}
+\omega = \sqrt{\frac{k}{m}}.
+\end{equation}
+
+Figure~\ref{f96} shows a graph of $x$ versus $t$ obtained from Eq.~(\ref{shm}). The type of motion shown here is
+called {\em simple harmonic motion}.
+It can be seen that
+the displacement $x$ {\em oscillates} between $x=-a$ and $x=+a$. Here, $a$ is termed the {\em amplitude}
+of the oscillation. Moreover, the motion is {\em periodic} in time ({\em i.e.}, it repeats exactly after
+a certain time period has elapsed). In fact, the {\em period} is
+\begin{equation}
+T = \frac{2\,\pi}{\omega}.
+\end{equation}
+This result is easily obtained from Eq.~(\ref{shm}) by noting that $\cos\theta$ is a periodic function 
+of $\theta$ with
+period $2\,\pi$. The frequency of the motion ({\em i.e.}, the number of oscillations completed per
+second) is
+\begin{equation}
+f = \frac{1}{T} = \frac{\omega}{2\,\pi}.
+\end{equation}
+It can be seen that $\omega$ is the motion's {\em angular frequency}  ({\em i.e.}, the frequency
+$f$ converted into radians per second).
+Finally, the {\em phase angle} $\phi$ determines the times at which the oscillation attains its maximum amplitude,
+$x=a$: in fact,
+\begin{equation}
+t_{\rm max} = T \left(n + \frac{\phi}{2\,\pi}\right).
+\end{equation}
+Here, $n$ is an arbitrary integer. 
+
+\begin{table}\centering
+\begin{tabular}{c|cccc}\hline
+$\omega\,t-\phi$ & $0^\circ$ & $90^\circ$ & $180^\circ$ & $270^\circ$\\[0.5ex]\hline
+$x$              & $+a$     & 0         & $-a$       & 0 \\[0.5ex]
+$\dot{x}$        & 0        & $-\omega\,a$ & 0 & $+\omega\,a$ \\[0.5ex]
+$\ddot{x}$       & $-\omega^2\,a$ &0& $+\omega^2\,a$ & 0
+\end{tabular}
+\caption{\em Simple harmonic motion.}\label{tshm}
+\end{table}
+
+Table~\ref{tshm} lists the displacement, velocity, and acceleration of the mass at various phases of the
+simple harmonic cycle. The information contained in this table can easily be derived from the
+simple harmonic equation, Eq.~(\ref{shm}). Note that all of the non-zero values
+shown in this table represent either the maximum or the minimum value taken by   the quantity in question during the
+oscillation  cycle.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter11/fig096.eps}}
+\caption{\em Simple harmonic motion.}\label{f96}  
+\end{figure}
+
+We have seen that when a mass on a spring is disturbed from equilibrium it executes {\em simple harmonic
+motion} about its equilibrium state. In physical terms, if the initial displacement is positive ($x>0$) then the
+restoring force {\em overcompensates}, and sends the system past the equilibrium state ($x=0$) to
+negative displacement states ($x<0$). The restoring force again overcompensates, and sends the
+system back through $x=0$ to positive displacement states. The motion then repeats itself {\em ad infinitum}. 
+The frequency of the oscillation is determined by the spring stiffness, $k$,  and the system
+inertia, $m$,  via Eq.~(\ref{eomega}). 
+In contrast, the amplitude and phase angle of the oscillation are determined by the {\em initial conditions}. 
+Suppose that the instantaneous displacement and velocity of the mass at $t=0$ are $x_0$ and $v_0$,
+respectively. It follows from Eq.~(\ref{shm}) that
+\begin{eqnarray}
+x_0 &=& x(t=0) = a\,\cos\phi,\\[0.5ex]
+v_0 &=& \dot{x}(t=0) =a\,\omega\,\sin\phi.
+\end{eqnarray}
+Here, use has been made of the well-known identities $\cos(-\theta) =\cos\theta$ and $\sin(-\theta)
+=-\sin\theta$. Hence, we obtain
+\begin{equation}
+a = \sqrt{x_0^{\,2} + (v_0/\omega)^2},
+\end{equation}
+and
+\begin{equation}
+\phi =\tan^{-1}\!\left(\frac{v_0}{\omega\,x_0}\right),
+\end{equation}
+since $\sin^2\theta+\cos^2\theta =1$ and $\tan\theta = \sin\theta/\cos\theta$.
+
+The kinetic energy of the system is written
+\begin{equation}
+K = \frac{1}{2}\,m\,\dot{x}^2 = \frac{m\,a^2\,\omega^2\,\sin^2(\omega\,t-\phi)}{2}.
+\end{equation}
+Recall, from Sect.~\ref{s56}, that the potential energy takes the form
+\begin{equation}
+U = \frac{1}{2}\,k\,x^2= \frac{k\,a^2\,\cos^2(\omega\,t-\phi)}{2}.
+\end{equation}
+Hence, the total energy can be written
+\begin{equation}
+E = K + U = \frac{a^2\,k}{2},
+\end{equation}
+since $m\,\omega^2 = k$ and $\sin^2\theta+\cos^2\theta = 1$. Note that the
+total energy is a {\em constant of the motion}, as expected for an isolated system. Moreover,
+the energy is proportional to the {\em amplitude squared}\/ of the motion.
+It is clear, from the above expressions, that simple harmonic motion is characterized
+by a constant backward and forward flow of energy between kinetic and potential components.
+The kinetic energy attains its maximum value, and the potential energy attains
+it minimum value,  when the displacement is zero ({\em i.e.}, when $x=0$). Likewise,
+the potential energy attains its maximum value, and the kinetic energy attains
+its minimum value, when the displacement is maximal ({\em i.e.}, when $x=\pm a$). 
+Note that the minimum value of $K$ is {\em zero}, since the system is instantaneously at rest
+when the displacement is maximal.
+
+\subsection{The Torsion Pendulum}
+Consider a disk suspended from a torsion wire attached to its centre. See Fig.~\ref{f97}.  This setup is known as a {\em torsion
+pendulum}.
+A torsion wire is essentially inextensible, but is free to {\em twist} about its axis.
+Of course, as the wire twists it also causes the disk attached to it to {\em rotate} in the horizontal
+plane. Let $\theta$ be the angle of rotation of the disk, and let $\theta=0$
+correspond to the case in which the wire is untwisted.
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter11/fig097.eps}}
+\caption{\em A torsion pendulum.}\label{f97}  
+\end{figure}
+
+Any twisting of the wire is inevitably associated with mechanical deformation. The wire resists such deformation by developing
+a {\em restoring torque}, $\tau$, which acts to restore the wire to its untwisted state. For relatively small angles
+of twist, the magnitude of this torque is directly proportional to the twist angle. Hence, we can write
+\begin{equation}\label{thook}
+\tau = -k\,\theta,
+\end{equation}
+where $k>0$ is the {\em torque constant} of the wire. The above equation is essentially a torsional
+equivalent to Hooke's law. The rotational equation of motion of the system is
+written
+\begin{equation}
+I\,\ddot{\theta} = \tau,
+\end{equation}
+where $I$ is the moment of inertia of the disk (about a perpendicular axis through its centre). The moment
+of inertia of the wire is assumed to be negligible. Combining the previous two equations, we obtain
+\begin{equation}\label{shm1}
+I\,\ddot{\theta} = - k\,\theta.
+\end{equation} 
+
+Equation~(\ref{shm1}) is clearly a simple harmonic equation [{\em cf.}, Eq.~(\ref{eshm})]. Hence,
+we can immediately write the standard solution [{\em cf.}, Eq.~(\ref{shm})]
+\begin{equation}
+\theta = a\,\cos(\omega\,t -\phi),
+\end{equation}
+where [{\em cf.}, Eq.~(\ref{eomega})]
+\begin{equation}
+\omega  =\sqrt{\frac{k}{I}}.
+\end{equation}
+We conclude that when a torsion pendulum is perturbed from its equilibrium state ({\em i.e.}, $\theta=0$),
+it executes torsional oscillations about this state at a fixed frequency, $\omega$, which
+depends only on the torque constant of the wire and the moment of inertia of the disk. Note,
+in particular, that the frequency is independent of the amplitude of the oscillation [provided $\theta$
+remains small enough that Eq.~(\ref{thook}) still applies]. Torsion pendulums are often
+used for time-keeping purposes. For instance, the balance wheel in a mechanical wristwatch is a torsion
+pendulum in which the restoring torque is provided by a coiled spring.
+
+\subsection{The Simple Pendulum}
+Consider a mass $m$ suspended from a light inextensible string of length $l$, such that the
+mass is free to swing from side to side in a vertical plane, as shown in Fig.~\ref{f98}.
+This setup is known as a {\em simple pendulum}. 
+ Let $\theta$ be the angle subtended between the string and
+the downward vertical. Obviously, the equilibrium state of the simple pendulum corresponds to
+the situation in which the mass is stationary and hanging vertically down ({\em i.e.}, $\theta=0$).
+The angular equation of motion of the pendulum is simply
+\begin{equation}
+I\,\ddot{\theta} = \tau,
+\end{equation}
+where $I$ is the moment of inertia of the mass, and $\tau$ is the torque acting on the system. For the
+case in hand, given that the mass is essentially a point particle, and is situated a distance $l$ from
+the axis of rotation ({\em i.e.}, the pivot point), it is easily seen that $I=m\,l^2$. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter11/fig098.eps}}
+\caption{\em A simple pendulum.}\label{f98}  
+\end{figure}
+
+The two forces acting on the mass are the downward gravitational force, $m \,g$, and the tension, $T$, in the string.
+Note, however, that the tension makes no contribution to the torque, since its line of action clearly passes
+through the pivot point. From simple trigonometry, 
+the line of action of the gravitational force passes a distance $l\,\sin\theta$ from the
+pivot point. Hence, the magnitude of the gravitational torque is $m\,g\,l\,\sin\theta$.
+Moreover, the gravitational torque is  a {\em restoring torque}: {\em i.e.}, if the mass is
+displaced slightly from its equilibrium state ({\em i.e.}, $\theta =0$) then the gravitational force  clearly acts
+ to push the mass back toward that state. Thus, we can write
+\begin{equation}
+\tau = - m\,g\,l\,\sin\theta.
+\end{equation}
+Combining the previous two equations, we obtain the following  angular equation of motion of the pendulum:
+\begin{equation}\label{epend}
+l\,\ddot{\theta} = - g\,\sin\theta.
+\end{equation}
+Unfortunately, this is {\em not} the simple harmonic equation. Indeed, the above equation possesses no
+closed solution which can be expressed in terms of simple functions. 
+
+Suppose that
+we restrict our attention to relatively {\em  small} deviations from the equilibrium state. In other
+words, suppose that the angle $\theta$ is constrained to take fairly small values. We know,
+from trigonometry, that for $|\theta|$ less than about $6^\circ$ it is a good approximation to
+write
+\begin{equation}
+\sin\theta \simeq \theta.
+\end{equation}
+Hence, in the {\em small angle limit}, Eq.~(\ref{epend}) reduces to
+\begin{equation}
+l\,\ddot{\theta} = - g\,\theta,
+\end{equation}
+which {\em is} in the familiar form of a simple harmonic equation. Comparing with our original simple harmonic
+equation, Eq.~(\ref{eshm}), and its solution, we conclude that the angular frequency of small amplitude
+oscillations of a simple pendulum is given by
+\begin{equation}
+\omega = \sqrt{\frac{g}{l}}.
+\end{equation}
+In this case, the pendulum frequency is dependent only on the length of the pendulum and the local gravitational acceleration,
+and is independent of the mass of the pendulum and the amplitude of the pendulum swings (provided that $\sin\theta\simeq \theta$ remains
+a good approximation). Historically, 
+the simple pendulum was the basis of virtually all accurate time-keeping devices before the
+advent of electronic clocks. Simple pendulums can also be used to measure local variations in $g$.
+
+\subsection{The Compound Pendulum}
+Consider an extended body of mass $M$ with a hole drilled though it. Suppose that the body is suspended
+from a fixed peg, which passes through the hole, such that it is free to swing from side to side,
+as shown in Fig.~\ref{f99}. This setup is known as a {\em compound pendulum}.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter11/fig099.eps}}
+\caption{\em A compound pendulum.}\label{f99}  
+\end{figure}
+
+Let $P$ be the pivot point, and let $C$ be the body's centre of mass, which is located a distance $d$ from the
+pivot. Let $\theta$ be the angle subtended between the downward vertical (which passes through point $P$) and the
+line $PC$. The equilibrium state of the compound pendulum corresponds to the case in which the centre of
+mass lies  vertically below the pivot point: {\em i.e.}, $\theta=0$. See Sect.~\ref{s103}.
+The angular equation of motion of the pendulum is simply
+\begin{equation}
+I\,\ddot{\theta} = \tau,
+\end{equation}
+where $I$ is the moment of inertia of the body about the pivot point, and $\tau$ is the torque.
+Using similar arguments to those employed for the case of the simple pendulum (recalling that all
+the weight of the pendulum acts at its centre of mass), we can write
+\begin{equation}
+\tau = - M\,g\,d\,\sin\theta.
+\end{equation}
+Note that the reaction, $R$, at the peg does not contribute to the torque, since its line of action passes
+through the pivot point.
+Combining the previous two equations, we obtain the following  angular equation of motion of the pendulum:
+\begin{equation}
+I\,\ddot{\theta} = - M\,g\,d\,\sin\theta.
+\end{equation}
+Finally, adopting the small angle approximation, $\sin\theta \simeq \theta$, we arrive at the
+ simple harmonic equation:
+\begin{equation}
+I\,\ddot{\theta} = - M\,g\,d\,\theta.
+\end{equation}
+It is clear, by analogy with our previous solutions of such equations, that the angular frequency of small
+amplitude oscillations of a compound pendulum is given by
+\begin{equation}\label{ecomp}
+\omega = \sqrt{\frac{M\,g\,d}{I}}.
+\end{equation}
+
+It is helpful to  define the length
+\begin{equation}
+L = \frac{I}{M\,d}.
+\end{equation}
+Equation~(\ref{ecomp})  reduces to
+\begin{equation}
+\omega = \sqrt{\frac{g}{L}},
+\end{equation}
+which is identical in form to the corresponding expression for a simple pendulum. We conclude that a
+compound pendulum behaves like a simple pendulum with {\em effective length} $L$. 
+
+\subsection{Uniform Circular Motion}
+Consider an object executing uniform circular motion of radius $a$. Let us set
+up a cartesian coordinate system whose origin coincides with the centre of the circle,
+and which is such that the motion is confined to the $x$-$y$ plane.
+As illustrated in Fig.~\ref{f100}, the instantaneous position of the object can be conveniently
+parameterized in terms of an angle $\theta$. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter11/fig100.eps}}
+\caption{\em Uniform circular motion.}\label{f100}  
+\end{figure}
+
+Since the object is executing {\em uniform} circular motion, we expect the angle $\theta$ to increase
+{\em linearly} with time. In other words, we can write
+\begin{equation}
+\theta = \omega\,t,
+\end{equation}
+where $\omega$ is the angular rotation frequency ({\em i.e.}, the number of radians through which the
+object rotates per second). Here, it is assumed that $\theta=0$ at $t=0$, for the sake of convenience. 
+
+From simple trigonometry, the $x$- and $y$-coordinates of the object can be written
+\begin{eqnarray}
+x &=& a\,\cos\theta,\\[0.5ex]
+y &=& a\,\sin\theta,
+\end{eqnarray}
+respectively. Hence, combining the previous equations, we obtain
+\begin{eqnarray}
+x &=& a\,\cos(\omega\,t),\\[0.5ex]
+y &=& a\,\cos(\omega\,t - \pi/2).
+\end{eqnarray}
+Here, use has been made of the trigonometric identity $\sin\theta = \cos(\theta-\pi/2)$. 
+A comparison of the above two equations with the standard equation of simple harmonic motion,
+Eq.~(\ref{shm}), reveals that our object is executing simple harmonic motion simultaneously along both the
+$x$- and the $y$ -axes. Note, however, that these two motions are $90^\circ$ ({\em i.e.}, $\pi/2$ radians)
+{\em out of phase}. Moreover, the amplitude of the motion equals the radius of the circle.
+ Clearly, there is a close relationship between simple harmonic motion
+and circular motion.
+
+\subsection*{\em Worked Example 11.1: Piston in Steam Engine}
+\noindent{\em Question:} A piston in a stream engine executes simple harmonic motion.
+Given that the maximum displacement of the piston from its centre-line is $\pm 7\,{\rm cm}$,
+and that the mass of the piston is $4\,{\rm kg}$, find the maximum velocity of the piston
+when the steam engine is running at 4000\,rev./min. What is the maximum acceleration?
+
+\noindent{\em Answer:} We are told that the amplitude of the oscillation is $a=0.07\,{\rm m}$. 
+Moreover, when converted to cycles per second ({\em i.e.}, hertz), the frequency of the oscillation becomes
+$$
+f = \frac{4000}{60} = 66.6666\,{\rm Hz}.
+$$
+Hence, the angular frequency is
+$$
+\omega = 2\,\pi\,f = 418.88\,{\rm rad./sec}.
+$$
+Consulting Tab.~\ref{tshm}, we note that the maximum velocity of an object executing
+simple harmonic motion is $v_{\rm max} = a\,\omega$. Hence, the maximum velocity is
+$$
+v_{\rm max} = a\,\omega = 0.07\times 418.88 = 29.32\,{\rm m/s}.
+$$
+Likewise, according to Tab.~\ref{tshm}, the maximum acceleration is given by
+$$
+a_{\rm max} = a\,\omega^2 = 0.07 \times 418.88\times 418.88 = 1.228\times 10^4\,{\rm m/s^2}.
+$$
+
+\subsection*{\em Worked Example 11.2: Block and Spring}
+\noindent{\em Question:} A block attached to a spring executes simple harmonic motion
+in a horizontal plane with an amplitude of $0.25\,{\rm m}$. At a point $0.15\,{\rm m}$
+away from the equilibrium position, the velocity of the block is $0.75\,{\rm m/s}$.
+What is the period of oscillation of the block?
+
+\noindent{\em Answer:} The equation of simple harmonic motion is
+$$
+x = a\,\cos(\omega\,t-\phi),
+$$
+where $x$ is the displacement, and $a$ is the amplitude. We are told that  $a=0.25\,{\rm m}$.
+The velocity of the block is obtained by taking the time derivative of the above expression:
+$$
+\dot{x} =-a\,\omega\,\sin(\omega\,t -\phi).
+$$
+We are told that at $t=0$ (say), $x = 0.15\,{\rm m}$ and $\dot{x} = 0.75\,{\rm m/s}$.
+Hence, 
+\begin{eqnarray}
+0.15 &=& 0.25\,\cos(\phi),\nonumber\\[0.5ex]
+0.75 &=& 0.25\,\omega\,\sin(\phi).\nonumber
+\end{eqnarray}
+The first equation gives $\phi = \cos^{-1}(0.15/0.25) = 53.13^\circ$. The
+second equation yields
+$$
+\omega = \frac{0.75}{0.25\times\sin(53.13^\circ)} = 3.75\,{\rm rad./s}.
+$$
+Hence, the period of the motion is
+$$
+T = \frac{2\,\pi}{\omega} = 1.676\,{\rm s}.
+$$
+
+\subsection*{\em Worked Example 11.3: Block and Two Springs}
+\noindent{\em Question:} A block of mass $m=3\,{\rm kg}$ is attached to
+two springs, as shown below, and slides over a horizontal frictionless
+surface. Given that the force constants of the two springs
+are $k_1= 1200\,{\rm N/m}$ and $k_2= 400\,{\rm N/m}$, find the period
+of oscillation of the system.
+
+\begin{figure*}[h]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter11/fig100a.eps}}
+\end{figure*}
+
+\noindent{\em Answer:}
+Let $x_1$ and $x_2$ represent the extensions of the first and second springs, respectively. 
+The net displacement $x$ of the mass from its equilibrium position is then given by
+$$
+x = x_1 + x_2.
+$$
+Let $f_1 = k_1\,x_1$ and $f_2=k_2\,x_2$ be the  magnitudes of the forces exerted by the first and second springs,
+respectively. Since the springs  (presumably)  possess negligible inertia,
+they must exert equal and opposite forces on one another. This implies that $f_1 = f_2$, or
+$$
+k_1\, x_1 = k_2\,x_2.
+$$
+Finally, if $f$ is the magnitude of the restoring force acting on the mass, then 
+force balance implies that $f = f_1 = f_2$, or
+$$
+f = k_{\rm eff}\, x = k_1\,x_1.
+$$
+Here, $k_{\rm eff}$ is the effective force constant of the two springs. 
+The above equations can be combined to give
+$$
+k_{\rm eff} = \frac{k_1\,x_1}{x_1+x_2} = \frac{k_1}{1+ k_1/k_2} = \frac{k_1\,k_2}{k_1+k_2}.
+$$
+Thus, the problem reduces to that of a block of mass $m=3\,{\rm kg}$ attached to
+a spring of effective force constant
+$$
+k_{\rm eff} = \frac{k_1\,k_2}{k_1+k_2} = \frac{1200\times 400}{1200+400} = 300\,{\rm N/m}.
+$$
+The angular frequency of oscillation is immediately given by the standard formula
+$$
+\omega = \sqrt{\frac{k_{\rm eff}}{m}}=\sqrt{\frac{300}{3}} = 10\,{\rm rad./s}.
+$$
+Hence, the period of oscillation is
+$$
+T = \frac{2\,\pi}{\omega} = 0.6283\,{\rm s}.
+$$
+
+\subsection*{\em Worked Example 11.4: Energy in Simple Harmonic Motion}
+\noindent{\em Question:}
+A block of mass $m=4\,{\rm kg}$ is attached to a spring, and undergoes simple harmonic
+motion with a period of $T=0.35\,{\rm s}$. The total energy of the system is
+$E=2.5\,{\rm J}$. What is the force constant of the spring? What is the amplitude
+of the motion?
+
+\noindent{\em Answer:}
+The angular frequency of the motion is
+$$
+\omega = \frac{2\,\pi}{T} = \frac{2\,\pi}{0.35} = 17.95\,{\rm rad./s}.
+$$
+Now, $\omega=\sqrt{k/m}$ for a mass on a spring. Rearrangement of this formula yields
+$$
+k = m\,\omega^2 = 4 \times 17.95\times 17.95 = 1289.1\,{\rm N/m}.
+$$
+The total energy of a system executing simple harmonic motion is
+$E= a^2\,k/2$. Rearrangement of this formula gives
+$$
+a = \sqrt{\frac{2\,E}{k}} = \sqrt{\frac{2\times 2.5}{1289.1}} = 0.06228\,{\rm m}.
+$$
+Thus, the force constant is $ 1289.1\,{\rm N/m}$ and the amplitude is $0.06228\,{\rm m}$. 
+
+\subsection*{\em Worked Example 11.5: Gravity on a New Planet}
+\noindent{\em Question:} Having landed on a newly discovered planet, an astronaut sets up 
+a simple pendulum of length $0.6\,{\rm m}$, and finds that it makes 51 complete
+oscillations in 1 minute. The amplitude of the oscillations is small compared to the
+length of the pendulum. What is the surface gravitational acceleration on the planet?
+
+\noindent{\em Answer:} The frequency of the oscillations is
+$$
+f = \frac{51}{60}  = 0.85 \,{\rm Hz}.
+$$
+Hence, the angular frequency is
+$$
+\omega = 2\,\pi\,f = 2\times \pi\times 1.833 = 5.341\,{\rm rad./s}.
+$$
+Now, $\omega = \sqrt{g/l}$ for small amplitude oscillations of a simple pendulum. Rearrangement off this formula gives 
+$$
+g = \omega^2\,l = 5.341\times 5.341\times 0.6 = 17.11\,{\rm m/s^2}.
+$$
+Hence, the  surface gravitational acceleration is $17.11\,{\rm m/s^2}$.
+
+\subsection*{\em Worked Example 11.6: Oscillating Disk}
+\noindent{\em Question:} A uniform disk of radius $r = 0.8\,{\rm m}$ and mass $M = 3\,{\rm kg}$
+is freely suspended from a horizontal pivot located a radial distance  $d=0.25\,{\rm m}$ from its centre.
+Find the angular frequency of small amplitude oscillations of the disk. 
+
+\noindent{\em Answer:} The moment of inertia of the disk about a perpendicular axis passing through its
+centre is $I= (1/2)\,M\,r^2$. From the parallel axis theorem, the moment of inertia of the disk
+about the pivot point is
+$$
+I' = I + M\,d^2 = \frac{3\times 0.8\times 0.8}{2} + 3\times 0.25\times 0.25 = 1.1475\,{\rm kg\,m^2}.
+$$
+The angular frequency of small amplitude oscillations of a compound pendulum is given by
+$$
+\omega = \sqrt{\frac{M\,g\,d}{I'}} = \sqrt{\frac{3\times 9.81\times 0.25}{1.1475}} = 2.532\,{\rm rad./s}.
+$$
+Hence, the answer is $2.532\,{\rm rad./s}$.
